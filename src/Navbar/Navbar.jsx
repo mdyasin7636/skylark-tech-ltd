@@ -2,13 +2,13 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="bg-white">
+    <div className="bg-black">
      <nav className="flex justify-between items-center w-[92%] mx-auto">
       <div>
-        <img className="w-20" src="https://i.ibb.co/g9rCyYj/download.png" alt="" />
+        <img className="w-32" src="https://i.ibb.co/XJBtKym/Skylark-Tech-Ltd.png" alt="" />
       </div>
-      <div className="">
-        <ul className="flex items-center gap-12">
+      <div className="absolute bg-black">
+        <ul className="flex md:flex-row flex-col items-center gap-12 text-white">
           <li>
             <Link>HOME</Link>
           </li>
