@@ -27,14 +27,14 @@ const Navbar = () => {
 
         <div
           onClick={() => setIsOpen(!isOpen)}
-          className="w-7 h-7 absolute right-8 top-6 cursor-pointer md:hidden"
+          className="absolute right-8 top-6 cursor-pointer md:hidden"
         >
           {isOpen ? <AiOutlineClose /> : <FiMenu />}
         </div>
 
         {/* nav links */}
         <ul
-          className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
+          className={`md:flex md:items-center md:pb-0 pb-8 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-300 ease-in ${
             isOpen ? "top-12" : "top-[-490px]"
           }`}
         >
