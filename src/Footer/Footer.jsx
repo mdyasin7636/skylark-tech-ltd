@@ -2,7 +2,7 @@
 const Footer = () => {
     return (
         <div>
-            <p>this is footer</p>
+            <p className="text-3xl text-blue-800 text-center my-5">Footer Section</p>
         </div>
     );
 };
