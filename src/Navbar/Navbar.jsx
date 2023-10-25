@@ -2,6 +2,7 @@ import { GrTechnology } from "react-icons/gr";
 import { FiMenu } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const Links = [
@@ -18,10 +19,12 @@ const Navbar = () => {
     <div className="shadow-md w-full top-0 left-0">
       <div className="md:px-10 py-4 px-7 md:flex justify-between items-center bg-white">
         {/* logo here */}
-        <div className="flex items-center gap-1 text-2xl cursor-pointer">
+        <Link to="/">
+        <div className="flex items-center gap-1 text-2xl">
           <GrTechnology className="w-7 h-7" />
           <span className="font-bold">Skylark Tech Ltd</span>
         </div>
+        </Link>
 
         {/* menu links */}
 
