@@ -1,31 +1,34 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import bannerImg1 from "../../assets/banner1.jpg"
+import bannerImg2 from "../../assets/banner2.jpg"
+import bannerImg3 from "../../assets/banner3.jpg"
 
 
 const Slider = () => {
   return (
     <div>
       <Swiper
-        rewind={true}
-        navigation={true}
-        modules={[Navigation]}
+        loop={true}
+        modules={[Navigation, Autoplay]}
+        autoplay={{
+          delay: 4000,
+          disableOnInteraction: false,
+        }}
         lazy={true}
         className="mySwiper"
-        style={{
-          "--swiper-navigation-color": "#fff",
-          "--swiper-pagination-color": "#fff",
-        }}
+        
       >
         <SwiperSlide>
-          <img src="https://i.ibb.co/pXGBP7P/img-1.jpg" alt="" loading="lazy" />
+          <img src={bannerImg1} alt="Banner Image" loading="lazy" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://i.ibb.co/TM6C4Gr/img-2.jpg" alt="" loading="lazy" />
+          <img src={bannerImg2} alt="Banner Image" loading="lazy" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://i.ibb.co/QpxMX4S/img-3.jpg" alt="" loading="lazy" />
+          <img src={bannerImg3} alt="Banner Image" loading="lazy" />
         </SwiperSlide>
       </Swiper>
     </div>

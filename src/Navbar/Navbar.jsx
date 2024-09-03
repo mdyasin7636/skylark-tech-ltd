@@ -20,10 +20,10 @@ const Navbar = () => {
       <div className="md:px-10 py-4 px-7 md:flex justify-between items-center bg-white">
         {/* logo here */}
         <Link to="/">
-        <div className="flex items-center gap-1 text-2xl">
-          <GrTechnology className="w-7 h-7" />
-          <span className="font-bold">Skylark Tech Ltd</span>
-        </div>
+          <div className="flex items-center gap-1 text-2xl">
+            <GrTechnology className="w-7 h-7" />
+            <span className="font-bold">Skylark Tech Ltd</span>
+          </div>
         </Link>
 
         {/* menu links */}
