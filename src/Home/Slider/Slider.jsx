@@ -24,17 +24,17 @@ const Slider = () => {
           <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
           <img
             src={bannerImg1}
-            className="w-full h-[50vh] md:h-[70vh] lg:h-[100vh] object-cover"
+            className="w-full h-[60vh] md:h-[70vh] lg:h-[100vh] object-cover"
             alt="Banner Image"
             loading="lazy"
           />
           <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-          <div className="absolute bottom-10 md:bottom-36 left-10 z-20 text-white">
-            <p className="font-semibold">SECURE & IT SERVICES</p>
-            <h2 className="text-6xl font-bold mt-2">
+          <div className="absolute bottom-28 md:bottom-36 md:left-10 z-20 text-white text-center md:text-left">
+            <p className="font-semibold ">SECURE & IT SERVICES</p>
+            <h2 className="md:text-6xl text-4xl font-bold mt-2">
               Perfect IT Solution <br /> For Your Business
             </h2>
-            <p className="text-lg mt-4">
+            <p className="text-lg mt-4 mx-4">
               Energetically harness ubiquitous imperatives without state of the
               art collaboration <br /> and ide-sharing. Monotonically parallel
               task cross-unit experiences and front-end.
@@ -54,7 +54,7 @@ const Slider = () => {
           <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
           <img
             src={bannerImg2}
-            className="w-full h-[50vh] md:h-[70vh] lg:h-[100vh] object-cover"
+            className="w-full h-[60vh] md:h-[70vh] lg:h-[100vh] object-cover"
             alt="Banner Image"
             loading="lazy"
           />
@@ -75,7 +75,7 @@ const Slider = () => {
           <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
           <img
             src={bannerImg3}
-            className="w-full h-[50vh] md:h-[70vh] lg:h-[100vh] object-cover"
+            className="w-full h-[60vh] md:h-[70vh] lg:h-[100vh] object-cover"
             alt="Banner Image"
             loading="lazy"
           />
