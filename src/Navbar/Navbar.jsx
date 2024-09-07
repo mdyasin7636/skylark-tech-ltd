@@ -1,8 +1,8 @@
-import { GrTechnology } from "react-icons/gr";
 import { FiMenu } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import skylarkLogo from "../assets/logo.png"
 
 const Navbar = () => {
   const Links = [
@@ -17,12 +17,11 @@ const Navbar = () => {
 
   return (
     <div className="shadow-md w-full top-0 left-0">
-      <div className="md:px-10 py-4 px-7 md:flex justify-between items-center bg-white">
+      <div className="md:px-10 py-2 px-7 md:flex justify-between items-center bg-white">
         {/* logo here */}
         <Link to="/">
-          <div className="flex items-center gap-1 text-2xl">
-            <GrTechnology className="w-7 h-7" />
-            <span className="font-bold">Skylark Tech Ltd</span>
+          <div>
+            <img src={skylarkLogo} className="w-40 h-16" alt="SKYLARK IT" />
           </div>
         </Link>
 
@@ -30,7 +29,7 @@ const Navbar = () => {
 
         <div
           onClick={() => setIsOpen(!isOpen)}
-          className="absolute right-8 top-6 cursor-pointer md:hidden z-10"
+          className="absolute right-8 top-10 cursor-pointer md:hidden z-10"
         >
           {isOpen ? <AiOutlineClose /> : <FiMenu />}
         </div>
@@ -38,7 +37,7 @@ const Navbar = () => {
         {/* nav links */}
         <ul
           className={`md:flex md:items-center md:pb-0 pb-8 absolute md:static bg-white left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-300 ease-in ${
-            isOpen ? "top-12" : "top-[-490px]"
+            isOpen ? "top-20" : "top-[-490px]"
           } z-10`}
         >
           {Links.map((link, index) => (
@@ -46,7 +45,7 @@ const Navbar = () => {
               <a href="/">{link.name}</a>
             </li>
           ))}
-          <button className="bg-blue-600 text-white py-1 px-3 md:ml-8 rounded-md md:static">
+          <button className="bg-deep-sky text-white py-1 px-3 md:ml-8 rounded-md md:static">
             Contact Us
           </button>
         </ul>

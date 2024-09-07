@@ -11,12 +11,12 @@ const Slider = () => {
   return (
     <div>
       <Swiper
-        // loop={true}
+        loop={true}
         modules={[Navigation, Autoplay]}
-        // autoplay={{
-        //   delay: 4000,
-        //   disableOnInteraction: false,
-        // }}
+        autoplay={{
+          delay: 4000,
+          disableOnInteraction: false,
+        }}
         lazy={true}
         className="mySwiper relative"
       >
@@ -34,13 +34,13 @@ const Slider = () => {
             <h2 className="md:text-6xl text-4xl font-bold mt-2">
               Perfect IT Solution <br /> For Your Business
             </h2>
-            <p className="text-lg mt-4 mx-4">
+            <p className="text-lg mt-4 mx-4 md:mx-0">
               Energetically harness ubiquitous imperatives without state of the
               art collaboration <br /> and ide-sharing. Monotonically parallel
               task cross-unit experiences and front-end.
             </p>
-            <div className="flex space-x-4 mt-6">
-              <button className="flex items-center space-x-2 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+            <div className="flex space-x-4 mt-6 justify-center md:justify-normal">
+              <button className="flex items-center space-x-2 bg-deep-sky text-white py-2 px-4 rounded hover:bg-normal-sky">
                 <span>DISCOVER MORE</span> <FaArrowRightLong />
               </button>
 
@@ -59,16 +59,25 @@ const Slider = () => {
             loading="lazy"
           />
           <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-          <div className="absolute bottom-10 left-10 z-20 text-white">
-            <p>SECURE & IT SERVICES</p>
-            <h2 className="text-2xl font-bold">
+          <div className="absolute bottom-28 md:bottom-36 md:left-10 z-20 text-white text-center md:text-left">
+            <p className="font-semibold ">SECURE & IT SERVICES</p>
+            <h2 className="md:text-6xl text-4xl font-bold mt-2">
               Make The Easiest <br /> Solution For You
             </h2>
-            <p className="text-lg mt-2">
+            <p className="text-lg mt-4 mx-4 md:mx-0">
               Energetically harness ubiquitous imperatives without state of the
               art collaboration <br /> and ide-sharing. Monotonically parallel
               task cross-unit experiences and front-end.
             </p>
+            <div className="flex space-x-4 mt-6 justify-center md:justify-normal">
+              <button className="flex items-center space-x-2 bg-deep-sky text-white py-2 px-4 rounded hover:bg-normal-sky">
+                <span>DISCOVER MORE</span> <FaArrowRightLong />
+              </button>
+
+              <button className="flex items-center space-x-2 bg-transparent border border-white text-white py-2 px-4 rounded hover:bg-white hover:text-black">
+                <span>CONTACT US</span> <FaArrowRightLong />
+              </button>
+            </div>
           </div>
         </SwiperSlide>
         <SwiperSlide className="relative">
@@ -80,16 +89,25 @@ const Slider = () => {
             loading="lazy"
           />
           <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-          <div className="absolute bottom-10 left-10 z-20 text-white">
-            <p>SECURE & IT SERVICES</p>
-            <h2 className="text-2xl font-bold">
+          <div className="absolute bottom-28 md:bottom-36 md:left-10 z-20 text-white text-center md:text-left">
+            <p className="font-semibold ">SECURE & IT SERVICES</p>
+            <h2 className="md:text-6xl text-4xl font-bold mt-2">
               Skylark Is The Best <br /> IT Solution 2024
             </h2>
-            <p className="text-lg mt-2">
+            <p className="text-lg mt-4 mx-4 md:mx-0">
               Energetically harness ubiquitous imperatives without state of the
               art collaboration <br /> and ide-sharing. Monotonically parallel
               task cross-unit experiences and front-end.
             </p>
+            <div className="flex space-x-4 mt-6 justify-center md:justify-normal">
+              <button className="flex items-center space-x-2 bg-deep-sky text-white py-2 px-4 rounded hover:bg-normal-sky">
+                <span>DISCOVER MORE</span> <FaArrowRightLong />
+              </button>
+
+              <button className="flex items-center space-x-2 bg-transparent border border-white text-white py-2 px-4 rounded hover:bg-white hover:text-black">
+                <span>CONTACT US</span> <FaArrowRightLong />
+              </button>
+            </div>
           </div>
         </SwiperSlide>
       </Swiper>
