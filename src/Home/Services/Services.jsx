@@ -1,23 +1,24 @@
 import { SiMicrostrategy } from "react-icons/si";
+import ServiceCard from "./ServiceCard";
 
 const Services = () => {
   const services = [
     {
       icon: <SiMicrostrategy />,
-      title: "IT Consultancy & Marketing Strategy",
-      description: "Create your Marketing Strategy with our Expert Team",
-    },
-    {
-      icon: <SiMicrostrategy />,
-      title: "Prototype Design",
-      description:
-        "Scratch your imagination from the beginning before the Final Project. Live Your Dream Project.",
+      title: "WordPress Development",
+      description: "Create your WordPress site with our Expert Team",
     },
     {
       icon: <SiMicrostrategy />,
       title: "Web Development",
       description:
         "Bug-Free and Secure Custom Web Development According to Business Needs.",
+    },
+    {
+      icon: <SiMicrostrategy />,
+      title: "Prototype Design",
+      description:
+        "Scratch your imagination from the beginning before the Final Project. Live Your Dream Project.",
     },
     {
       icon: <SiMicrostrategy />,
@@ -33,18 +34,6 @@ const Services = () => {
     },
     {
       icon: <SiMicrostrategy />,
-      title: "Photography",
-      description:
-        "We offer professional Photography services To Promote Your Brand.",
-    },
-    {
-      icon: <SiMicrostrategy />,
-      title: "Videography",
-      description:
-        "We offer professional Videography services To Promote Your Brand.",
-    },
-    {
-      icon: <SiMicrostrategy />,
       title: "Digital Marketing",
       description:
         "SkyLark is ready to Promote your Brand with Data-Driven Marketing. We Ensure Your Sale",
@@ -57,24 +46,16 @@ const Services = () => {
         <h1 className="text-3xl text-blue-800 text-center font-extrabold">
           Our Services
         </h1>
-        <p className="mt-2 font-semibold">
-          We are committed to digitalizing your business. We provide Integrated
-          marketing <br /> company that  delivers graphics, web, and marketing solutions
-          for businesses of all sizes.
+        <p className="mt-2 font-bold text-4xl">
+          We Provide Exclusive Service <br /> For Your Business
         </p>
       </div>
-      <div className="grid md:grid-cols-4 gap-10 mt-10 mx-20">
-        {
-            services.map((service, index) => <div key={index} className="p-10 bg-slate-200 rounded-md mx-2 shadow-xl shadow-black hover:scale-105 duration-500">
-            <div>
-            <p>
-              {service.icon}
-            </p>
-            </div>
-            <h1 className="my-2 font-bold text-lg">{service.title}</h1>
-            <p className="my-2">{service.description}</p>
-          </div>)
-        }
+      <div className="grid md:grid-cols-3 justify-items-center gap-12 mt-11 md:mx-[115px]">
+        {services.map((service, index) => (
+          <div key={index} >
+            <ServiceCard service={service} />
+          </div>
+        ))}
       </div>
     </div>
   );
