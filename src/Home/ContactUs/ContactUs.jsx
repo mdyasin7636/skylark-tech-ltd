@@ -14,11 +14,16 @@ const ContactUs = () => {
         </div>
       </div>
       <div className="grid md:grid-cols-2">
-        <div>
-          <Lottie className="" animationData={contactImg} loop={true}></Lottie>
-        </div>
+      <div className="flex justify-center items-center">
+    <Lottie 
+      className="" 
+      animationData={contactImg}
+      loop={true} 
+    />
+  </div>
         <div className="">
-          <form className="relative border-2 border-deep-sky p-6 rounded-lg grid gap-8 md:flex-1 md:max-w-lg my-4 md:my-12 lg:my-16 bg-white dark:bg-normal-sky w-full">
+          <form className="relative border-2 border-deep-sky p-6 rounded-lg grid gap-8 md:flex-1 md:max-w-lg my-4 md:my-12 lg:my-16 bg-white dark:bg-normal-sky w-full"
+          >
             <h2 id="contact" className="text-3xl font-bold">
               Let&apos;s Connect
             </h2>
