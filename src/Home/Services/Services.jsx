@@ -1,45 +1,30 @@
-import { SiMicrostrategy } from "react-icons/si";
-import ServiceCard from "./ServiceCard";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/pagination';
+import { FreeMode } from 'swiper/modules';
 
 const Services = () => {
-  const services = [
-    {
-      icon: <SiMicrostrategy />,
-      title: "WordPress Development",
-      description: "Create your WordPress site with our Expert Team",
-    },
-    {
-      icon: <SiMicrostrategy />,
-      title: "Web Development",
-      description:
-        "Bug-Free and Secure Custom Web Development According to Business Needs.",
-    },
-    {
-      icon: <SiMicrostrategy />,
-      title: "Prototype Design",
-      description:
-        "Scratch your imagination from the beginning before the Final Project. Live Your Dream Project.",
-    },
-    {
-      icon: <SiMicrostrategy />,
-      title: "App Development",
-      description:
-        "Custom iOS/Android App Design and Development for Businesses of All Sizes. Get Start Today",
-    },
-    {
-      icon: <SiMicrostrategy />,
-      title: "Graphics Solution",
-      description:
-        "SkyLark Offers A Complete Graphics Solution from Branding to Product Promotion.",
-    },
-    {
-      icon: <SiMicrostrategy />,
-      title: "Digital Marketing",
-      description:
-        "SkyLark is ready to Promote your Brand with Data-Driven Marketing. We Ensure Your Sale",
-    },
-  ];
 
+  const services = [
+  {
+    title: "Machine Learning",
+    description: "Conveniently promote transparent materials and stand-alone strategic theme areas.",
+    icon: "🤖", // Replace this with your preferred icon component or image
+  },
+  {
+    title: "IT Management",
+    description: "Conveniently promote transparent materials and stand-alone strategic theme areas.",
+    icon: "💻",
+  },
+  {
+    title: "Cloud Computing",
+    description: "Conveniently promote transparent materials and stand-alone strategic theme areas.",
+    icon: "☁️",
+  },
+  // Add more services as needed
+];
+  
   return (
     <div className="mt-10">
       <div className="text-center">
@@ -50,13 +35,43 @@ const Services = () => {
           We Provide Exclusive Service <br /> For Your Business
         </p>
       </div>
-      <div className="grid md:grid-cols-3 justify-items-center gap-12 mt-11 md:mx-[115px]">
-        {services.map((service, index) => (
-          <div key={index} >
-            <ServiceCard service={service} />
-          </div>
-        ))}
+      <div className="mt-10">
+      <div className="text-center">
+        <h1 className="text-3xl text-blue-800 font-extrabold">
+          Our Services
+        </h1>
+        <p className="mt-2 font-bold text-4xl">
+          We Provide Exclusive Service <br /> For Your Business
+        </p>
       </div>
+      <div className="mt-8">
+        <Swiper
+          slidesPerView={3}
+          spaceBetween={30}
+          freeMode={true}
+          modules={[FreeMode]}
+          className="mySwiper"
+        >
+          {services.map((service, index) => (
+            <SwiperSlide key={index}>
+              <div className="bg-white shadow-lg rounded-lg p-6 text-center">
+                <div className="text-5xl mb-4 text-indigo-600">
+                  {service.icon}
+                </div>
+                <h3 className="text-xl font-bold mb-2">{service.title}</h3>
+                <p className="text-gray-600">{service.description}</p>
+                <div className="mt-4">
+                  <button className="bg-blue-500 text-white p-2 rounded-full">
+                    →
+                  </button>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    </div>
+
     </div>
   );
 };
