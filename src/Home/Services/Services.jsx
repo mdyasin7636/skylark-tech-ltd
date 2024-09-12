@@ -2,7 +2,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
-import { FreeMode, Autoplay } from 'swiper/modules';
+import 'swiper/css/navigation';
+import { FreeMode, Autoplay, Navigation } from 'swiper/modules';
 
 const Services = () => {
 
@@ -10,7 +11,7 @@ const Services = () => {
   {
     title: "Machine Learning",
     description: "Conveniently promote transparent materials and stand-alone strategic theme areas.",
-    icon: "🤖", // Replace this with your preferred icon component or image
+    icon: "🤖",
   },
   {
     title: "IT Management",
@@ -25,7 +26,7 @@ const Services = () => {
   {
     title: "Machine Learning",
     description: "Conveniently promote transparent materials and stand-alone strategic theme areas.",
-    icon: "🤖", // Replace this with your preferred icon component or image
+    icon: "🤖",
   },
   {
     title: "IT Management",
@@ -55,7 +56,7 @@ const Services = () => {
           slidesPerView={1}
           spaceBetween={30}
           freeMode={true}
-          modules={[FreeMode, Autoplay]}
+          modules={[FreeMode, Autoplay, Navigation]}
           autoplay={{
             delay: 4000,
             disableOnInteraction: false,
