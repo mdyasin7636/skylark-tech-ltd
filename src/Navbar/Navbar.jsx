@@ -29,9 +29,9 @@ const Navbar = () => {
 
         <div
           onClick={() => setIsOpen(!isOpen)}
-          className="absolute right-8 top-10 cursor-pointer md:hidden z-10"
+          className="absolute right-8 top-28 cursor-pointer md:hidden z-20"
         >
-          {isOpen ? <AiOutlineClose /> : <FiMenu />}
+          {isOpen ? <AiOutlineClose size={30} color="black" /> : <FiMenu size={30} color="black" />}
         </div>
 
         {/* nav links */}

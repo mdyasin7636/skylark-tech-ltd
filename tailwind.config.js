@@ -9,6 +9,7 @@ export default {
       colors: {
         'deep-sky': '#1C75BC',
         'normal-sky': '#2FB3E3',
+        'custom-purple': '#6f42c1',
       },
     },
   },
