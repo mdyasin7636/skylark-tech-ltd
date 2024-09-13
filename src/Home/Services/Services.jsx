@@ -71,12 +71,12 @@ const Services = () => {
         >
           {services.map((service, index) => (
             <SwiperSlide key={index}>
-              <div className="relative mx-9">
+              <div className="relative mx-14">
                 {/* Adjusted gray background */}
-                <div className="absolute inset-x-0 top-16 bottom-16 bg-gray-300 opacity-70 rounded"></div>
+                <div className="absolute top-12 bottom-12 left-1/2 -translate-x-1/2 w-[calc(100%+4rem)] bg-gray-300 opacity-70 rounded-lg"></div>
 
                 {/* Card content */}
-                <div className="relative bg-white shadow-lg rounded-lg p-8 text-center z-10 mx-2 border border-black">
+                <div className="relative bg-white shadow-lg rounded-lg p-6 text-center z-10 mx-4 border border-black">
                   {/* Icon */}
                   <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-indigo-100 flex items-center justify-center">
                     <div className="text-3xl text-indigo-600">
@@ -96,7 +96,7 @@ const Services = () => {
                   
                   {/* Button with arrow */}
                   <div className="flex justify-center mt-4">
-                    <button className="bg-blue-500 text-white p-3 w-12 h-12 flex items-center justify-center rounded-full transition hover:bg-white hover:text-blue-500 border border-transparent hover:border-blue-500">
+                    <button className="bg-blue-500 text-white p-3 w-12 h-12 flex items-center justify-center rounded-full transition hover:bg-white hover:text-blue-500 border border-transparent hover:border-blue-500 hover:shadow-glow">
                       →
                     </button>
                   </div>
