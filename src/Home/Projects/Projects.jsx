@@ -46,7 +46,7 @@ const Projects = () => {
 
       {/* Content for the Active Tab */}
       <div className="mt-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-8">
           {cards[activeTab].map((card, index) => (
             <div key={index} className="bg-white p-4 rounded-lg shadow-lg border border-black">
               <img src={card.img} alt={card.title} className="h-32 w-full object-cover rounded-t-lg" />

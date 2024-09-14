@@ -74,7 +74,7 @@ const ContactUs = () => {
             <a
               href="#"
               role="menuitem"
-              className=" py-2 px-6 bg-neutral-900 text-white w-max shadow-xl hover:shadow-none transition-shadow focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-md ring-offset-4 ring-offset-white dark:ring-offset-amber-400 "
+              className=" py-2 px-6 bg-neutral-900 text-white w-max rounded-md"
             >
               Send
             </a>
