@@ -1,6 +1,7 @@
 import contactImg from "../../assets/contact.json";
 import Lottie from "lottie-react";
 import { MdContactMail } from "react-icons/md";
+import CustomButton from "../../CustomButton/CustomButton";
 
 const ContactUs = () => {
   return (
@@ -71,13 +72,7 @@ const ContactUs = () => {
                 How can we help?
               </label>
             </div>
-            <a
-              href="#"
-              role="menuitem"
-              className=" py-2 px-6 bg-neutral-900 text-white w-max rounded-md"
-            >
-              Send
-            </a>
+            <CustomButton text="Send" onClick={() => console.log('Button Clicked!')} />
           </form>
         </div>
       </div>

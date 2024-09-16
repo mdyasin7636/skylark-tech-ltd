@@ -4,8 +4,10 @@ const Clients = () => {
   return (
     <div className="mt-6 mb-10">
       <div className="text-center">
-        <h2 className="text-5xl font-bold">Our Partners</h2>
-        <p className="text-lg mt-4 font-semibold">Beloved Allies</p>
+        <h1 className="text-3xl text-blue-800 font-extrabold">Our Partners</h1>
+        <p className="mt-2 font-bold text-4xl">
+          We Provide Exclusive Service <br /> For Your Business
+        </p>
       </div>
       <div className="flex mt-4">
         <Marquee speed={150}>

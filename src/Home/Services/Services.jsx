@@ -8,32 +8,32 @@ import { FreeMode, Autoplay, Navigation } from 'swiper/modules';
 const Services = () => {
   const services = [
     {
-      title: "Machine Learning",
+      title: "Web Development",
       description: "Conveniently promote transparent materials and stand-alone strategic theme areas.",
       icon: "🤖",
     },
     {
-      title: "IT Management",
+      title: "Website Design",
       description: "Conveniently promote transparent materials and stand-alone strategic theme areas.",
       icon: "💻",
     },
     {
-      title: "Cloud Computing",
+      title: "Digital Marketing",
       description: "Conveniently promote transparent materials and stand-alone strategic theme areas.",
       icon: "☁️",
     },
     {
-      title: "Machine Learning",
+      title: "SEO Optimization",
       description: "Conveniently promote transparent materials and stand-alone strategic theme areas.",
       icon: "🤖",
     },
     {
-      title: "IT Management",
+      title: "Digital Marketing",
       description: "Conveniently promote transparent materials and stand-alone strategic theme areas.",
       icon: "💻",
     },
     {
-      title: "Cloud Computing",
+      title: "IT Management",
       description: "Conveniently promote transparent materials and stand-alone strategic theme areas.",
       icon: "☁️",
     }

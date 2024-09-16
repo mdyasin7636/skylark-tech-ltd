@@ -28,7 +28,14 @@ const Projects = () => {
   };
 
   return (
-    <div className="p-4">
+    <div>
+      <div className="text-center">
+        <h1 className="text-3xl text-blue-800 font-extrabold">Our Projects</h1>
+        <p className="mt-2 font-bold text-4xl">
+          We Provide Exclusive Service <br /> For Your Business
+        </p>
+      </div>
+      <div className="p-4">
       {/* Tab Navigation */}
       <div className="flex justify-center space-x-4 flex-wrap">
         {tabs.map((tab) => (
@@ -60,6 +67,7 @@ const Projects = () => {
           ))}
         </div>
       </div>
+    </div>
     </div>
   );
 };

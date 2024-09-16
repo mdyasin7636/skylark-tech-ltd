@@ -3,78 +3,55 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import { FreeMode, Navigation, Autoplay } from "swiper/modules";
-import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
-import { useRef } from "react";
 
 const TeamMembers = () => {
-  const prevRef = useRef(null);
-  const nextRef = useRef(null);
-
-  const placeholderImages = [
-    "https://randomuser.me/api/portraits/men/1.jpg",
-    "https://randomuser.me/api/portraits/women/2.jpg",
-    "https://randomuser.me/api/portraits/men/3.jpg",
-    "https://randomuser.me/api/portraits/women/4.jpg",
-    "https://randomuser.me/api/portraits/men/5.jpg",
-    "https://randomuser.me/api/portraits/women/6.jpg",
-  ];
-
   const members = [
     {
       name: "Alex Furnandes",
       role: "Project Manager",
-      image: placeholderImages[0],
+      image: "https://i.ibb.co.com/Kr6tyHp/Julian-Myers.jpg",
     },
     {
       name: "Mary Crispy",
       role: "Chief Expert",
-      image: placeholderImages[1],
+      image: "https://i.ibb.co.com/JdbsDP9/Oliver-Hayes.jpg",
     },
     {
       name: "Henry Joshep",
       role: "Product Manager",
-      image: placeholderImages[2],
+      image: "https://i.ibb.co.com/QMtsyf1/Henry-Fletcher.jpg",
     },
     {
       name: "Sanjida Carlose",
       role: "IT Consultant",
-      image: placeholderImages[3],
+      image: "https://i.ibb.co.com/s9m41Tt/Isaac-Reynolds.jpg",
     },
     {
       name: "John Doe",
       role: "Data Scientist",
-      image: placeholderImages[4],
+      image: "https://i.ibb.co.com/mJTNHMx/Alexander-Brooks.jpg",
     },
     {
       name: "Jane Doe",
       role: "Business Analyst",
-      image: placeholderImages[5],
+      image: "https://i.ibb.co.com/ZBCCG0D/Ethan-Mitchell.jpg",
     },
   ];
 
   return (
     <div className="py-12 relative">
-      <h2 className="text-center text-3xl font-bold mb-8">
-        See Our Skilled Expert <span className="text-indigo-600">Team</span>
-      </h2>
+      <div className="text-center">
+        <h1 className="text-3xl text-blue-800 font-extrabold">TEAM MEMBERS</h1>
+        <p className="mt-2 font-bold text-4xl">See Our Skilled Expert Team</p>
+      </div>
 
-      <div className="relative max-w-6xl mx-auto">
+      <div className="relative max-w-6xl mx-auto mt-8">
         {/* Swiper container */}
         <Swiper
           loop={true}
           slidesPerView={1}
           spaceBetween={30}
           freeMode={true}
-          navigation={{
-            prevEl: prevRef.current,
-            nextEl: nextRef.current,
-          }}
-          onSwiper={(swiper) => {
-            swiper.params.navigation.prevEl = prevRef.current;
-            swiper.params.navigation.nextEl = nextRef.current;
-            swiper.navigation.init();
-            swiper.navigation.update();
-          }}
           modules={[Navigation, Autoplay, FreeMode]}
           autoplay={{
             delay: 4000,
@@ -92,11 +69,11 @@ const TeamMembers = () => {
         >
           {members.map((member, index) => (
             <SwiperSlide key={index}>
-              <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-500 hover:shadow-xl">
+              <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-500 hover:shadow-xl border border-black">
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="w-full h-full object-cover"
+                  className="object-cover"
                 />
 
                 {/* Name and Role (Visible at all times) */}
@@ -106,41 +83,10 @@ const TeamMembers = () => {
                   </h3>
                   <p className="text-sm text-indigo-600">{member.role}</p>
                 </div>
-
-                {/* Social Media Icons (Visible on hover in a rounded shape) */}
-                <div className="absolute top-20 left-0 w-full h-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="bg-white p-4 rounded-full shadow-lg flex space-x-4">
-                    <a href="#" className="text-gray-700 hover:text-indigo-500">
-                      <FaFacebookF />
-                    </a>
-                    <a href="#" className="text-gray-700 hover:text-indigo-500">
-                      <FaTwitter />
-                    </a>
-                    <a href="#" className="text-gray-700 hover:text-indigo-500">
-                      <FaInstagram />
-                    </a>
-                  </div>
-                </div>
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
-
-        {/* Custom Navigation Buttons */}
-        <div className="absolute top-1/2 left-0 transform -translate-y-1/2 flex w-full justify-between px-4">
-          <button
-            ref={prevRef}
-            className="absolute -left-16 bg-indigo-600 text-white p-4 rounded-full shadow-lg hover:bg-indigo-700 transition-colors duration-300"
-          >
-            &#8249; {/* Left arrow */}
-          </button>
-          <button
-            ref={nextRef}
-            className="absolute -right-16 bg-indigo-600 text-white p-4 rounded-full shadow-lg hover:bg-indigo-700 transition-colors duration-300"
-          >
-            &#8250; {/* Right arrow */}
-          </button>
-        </div>
       </div>
     </div>
   );
