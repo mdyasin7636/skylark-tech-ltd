@@ -5,7 +5,7 @@ import ContactUs from "../ContactUs/ContactUs";
 import Projects from "../Projects/Projects";
 import Services from "../Services/Services";
 import Slider from "../Slider/Slider";
-// import SocialMediaPosts from "../SocialMediaPosts/SocialMediaPosts";
+import SocialMediaPosts from "../SocialMediaPosts/SocialMediaPosts";
 import TeamMembers from "../TeamMembers/TeamMembers";
 import WhyChooseUs from "../WhyChooseUs/WhyChooseUs";
 
@@ -20,7 +20,7 @@ const Home = () => {
       <Achievements />
       <TeamMembers />
       <Clients />
-      {/* <SocialMediaPosts /> */}
+      <SocialMediaPosts />
       <ContactUs />
     </div>
   );
