@@ -33,11 +33,11 @@ const MiniNav = () => {
                     </div>
                 </div>
 
-                {/* Mobile View: Follow Us On and Social Media Icons */}
-                <div className="md:hidden flex flex-col items-center space-y-2 w-full mt-2">
-                    {/* Follow Us On Text and Social Media Icons on the same line */}
+                {/* Mobile View: Follow Us On and Social Media Icons */} 
+                <div className="md:hidden flex flex-row justify-evenly items-center w-full my-2">
+                    {/* Follow Us On Text and Social Media Icons */}
                     <div className="flex items-center space-x-1">
-                        <span>Follow Us On :</span>
+                        <span>Follow Us :</span>
                         <div className="flex space-x-1">
                             <FaFacebookF className="hover:text-gray-200 cursor-pointer text-lg" />
                             <FaTwitter className="hover:text-gray-200 cursor-pointer text-lg" />
