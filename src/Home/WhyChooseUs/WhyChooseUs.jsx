@@ -1,5 +1,5 @@
 import { AiOutlineCheck } from 'react-icons/ai';
-import chooseUs from "../../assets/chooseUs.png"
+import chooseImg from "../../assets/chooseImg.png"
 
 const WhyChooseUs = () => {
     return (
@@ -57,7 +57,7 @@ const WhyChooseUs = () => {
                     <div className="relative rounded-full overflow-hidden">
                         <img
                             className="w-full h-auto rounded-lg"
-                            src={chooseUs}
+                            src={chooseImg}
                             alt="Team analyzing data"
                         />
                         <div className="absolute top-0 right-0 w-48 h-48 bg-indigo-100 rounded-full transform translate-x-10 translate-y-10 z-[-1]"></div>
