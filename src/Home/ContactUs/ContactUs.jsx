@@ -32,13 +32,17 @@ const ContactUs = () => {
           <h2 className="text-xl font-semibold">Get In Touch</h2>
         </div>
       </div>
-      
+
       <div className="grid md:grid-cols-2 gap-6 mx-auto p-6 justify-center items-center">
         {/* Lottie Animation */}
         <div className="flex justify-center items-center p-6">
-          <Lottie animationData={contactImg} loop={true} className="w-64 h-64" />
+          <Lottie
+            animationData={contactImg}
+            loop={true}
+            className=""
+          />
         </div>
-        
+
         {/* Contact Form */}
         <form className="relative border-2 border-deep-sky p-6 rounded-lg grid gap-6 bg-white dark:bg-normal-sky max-w-xl w-full">
           <h2 className="text-2xl font-bold">Make An Appointment</h2>
@@ -46,13 +50,28 @@ const ContactUs = () => {
           {/* Name and Email in one row */}
           <div className="grid md:grid-cols-2 gap-4">
             <InputField id="name" type="text" placeholder="Name" label="Name" />
-            <InputField id="email" type="text" placeholder="Email" label="Email" />
+            <InputField
+              id="email"
+              type="text"
+              placeholder="Email"
+              label="Email"
+            />
           </div>
 
           {/* Subject and Phone in one row */}
           <div className="grid md:grid-cols-2 gap-4">
-            <InputField id="subject" type="text" placeholder="Subject" label="Subject" />
-            <InputField id="phone" type="text" placeholder="Phone Number" label="Phone Number" />
+            <InputField
+              id="subject"
+              type="text"
+              placeholder="Subject"
+              label="Subject"
+            />
+            <InputField
+              id="phone"
+              type="text"
+              placeholder="Phone Number"
+              label="Phone Number"
+            />
           </div>
 
           {/* Message textarea */}
@@ -72,7 +91,10 @@ const ContactUs = () => {
             </label>
           </div>
 
-          <CustomButton text="Send" onClick={() => console.log("Button Clicked!")} />
+          <CustomButton
+            text="Send"
+            onClick={() => console.log("Button Clicked!")}
+          />
         </form>
       </div>
     </div>
