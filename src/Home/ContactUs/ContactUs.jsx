@@ -33,9 +33,9 @@ const ContactUs = () => {
         </div>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-6 mx-auto p-6 justify-center items-center">
+      <div className="grid md:grid-cols-2 gap-6 my-5 justify-center items-center">
         {/* Lottie Animation */}
-        <div className="flex justify-center items-center p-6">
+        <div className="">
           <Lottie
             animationData={contactImg}
             loop={true}
@@ -44,7 +44,7 @@ const ContactUs = () => {
         </div>
 
         {/* Contact Form */}
-        <form className="relative border-2 border-deep-sky p-6 rounded-lg grid gap-6 bg-white dark:bg-normal-sky max-w-xl w-full">
+        <form className="relative border-2 border-deep-sky p-6 rounded-lg grid gap-8 bg-white dark:bg-normal-sky max-w-xl w-full">
           <h2 className="text-2xl font-bold">Make An Appointment</h2>
 
           {/* Name and Email in one row */}
