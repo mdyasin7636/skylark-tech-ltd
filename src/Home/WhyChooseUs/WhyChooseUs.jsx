@@ -57,14 +57,14 @@ const WhyChooseUs = () => {
           </div>
 
           {/* Image Content */}
-          <div className="relative">
-            <div className="relative rounded-full">
+          <div className="">
+            <div className=" rounded-full">
               <img
                 className="w-full h-auto"
                 src={bannerImg}
                 alt="Team Analyzing"
               />
-              <div className="absolute top-0 right-0 w-48 h-48 bg-indigo-100 rounded-full transform translate-x-10 translate-y-10 z-[-1]"></div>
+              
             </div>
           </div>
         </div>

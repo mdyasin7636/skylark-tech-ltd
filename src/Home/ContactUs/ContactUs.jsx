@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
-import contactImg from "../../assets/contact.json";
-import Lottie from "lottie-react";
+import { IoMailOutline } from "react-icons/io5";
+import { FiPhoneCall } from "react-icons/fi";
 import { MdContactMail } from "react-icons/md";
 import CustomButton from "../../CustomButton/CustomButton";
 
@@ -34,13 +34,37 @@ const ContactUs = () => {
       </div>
 
       <div className="grid md:grid-cols-2 gap-6 my-5 justify-center items-center">
-        {/* Lottie Animation */}
-        <div className="">
-          <Lottie
-            animationData={contactImg}
-            loop={true}
-            className=""
-          />
+        {/* New Design */}
+        <div className="p-6 bg-gray-100 rounded-lg shadow-md text-center">
+          <div className="mb-4 text-sm uppercase text-indigo-600 font-semibold">
+            Appointment Now
+          </div>
+          <h2 className="text-3xl font-bold text-gray-800 mb-4">
+            We’re Ready To Talk About Your{" "}
+            <span className="text-purple-600">Opportunities</span>
+          </h2>
+          <p className="text-gray-600 mb-8">
+            Progressively morph principle-centered e-markets without an
+            expanded array of opportunities. Conveniently incubate e-tailers for
+            extensive leadership skills. Holistically extend leading-edge
+            vortals vis-a-vis 24/7 e-markets.
+          </p>
+          <div className="flex justify-center space-x-8">
+            <div className="flex items-center space-x-2 bg-white text-purple-600 border border-purple-500 py-4 px-6 rounded-lg shadow-md">
+              <FiPhoneCall size={24} />
+              <div className="text-left">
+                <p className="text-xs text-gray-500">Call Us On:</p>
+                <p className="text-lg font-semibold">+190-8800-0393</p>
+              </div>
+            </div>
+            <div className="flex items-center space-x-2 bg-white text-purple-600 border border-purple-500 py-4 px-6 rounded-lg shadow-md">
+              <IoMailOutline size={24} />
+              <div className="text-left">
+                <p className="text-xs text-gray-500">Quick Mail Us:</p>
+                <p className="text-lg font-semibold">info@traga.com</p>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Contact Form */}

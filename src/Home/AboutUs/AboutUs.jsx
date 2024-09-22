@@ -13,7 +13,7 @@ const AboutUs = () => {
       </div>
 
       <div className="mt-8">
-        <div className="container mx-14">
+        <div className="container ">
           <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
             {/* Image Section */}
             <div className="mb-8 lg:mb-2">
@@ -61,7 +61,7 @@ const AboutUs = () => {
                     <p className="text-sm text-gray-500">100% Expert Team</p>
                   </div>
                 </div>
-              </div> 
+              </div>
               {/* Button & Call Section */}
               <div className="flex items-center space-x-4">
                 <a
