@@ -17,7 +17,7 @@ const MiniNav = () => {
                     </div>
                     <div className="flex items-center space-x-1">
                         <FaEnvelope />
-                        <span>info@skylarkitltd.com</span>
+                        <span>skylarkitltd@gmail.com</span>
                     </div>
                 </div>
 

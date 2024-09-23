@@ -13,7 +13,7 @@ const WhyChooseUs = () => {
           We Provide Exclusive Service <br /> For Your Business
         </p>
       </div>
-      <div className="bg-white py-12">
+      <div className=" py-12">
         <div className="container mx-auto px-6 md:px-12 lg:px-24 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           {/* Text Content */}
           <div>

@@ -34,34 +34,44 @@ const ContactUs = () => {
       </div>
 
       <div className="grid md:grid-cols-2 gap-6 my-5 justify-center items-center">
-        {/* New Design */}
-        <div className="p-6 bg-gray-100 rounded-lg shadow-md text-center">
-          <div className="mb-4 text-sm uppercase text-indigo-600 font-semibold">
-            Appointment Now
-          </div>
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">
-            We’re Ready To Talk About Your{" "}
-            <span className="text-purple-600">Opportunities</span>
-          </h2>
-          <p className="text-gray-600 mb-8">
-            Progressively morph principle-centered e-markets without an
-            expanded array of opportunities. Conveniently incubate e-tailers for
-            extensive leadership skills. Holistically extend leading-edge
-            vortals vis-a-vis 24/7 e-markets.
-          </p>
-          <div className="flex justify-center space-x-8">
-            <div className="flex items-center space-x-2 bg-white text-purple-600 border border-purple-500 py-4 px-6 rounded-lg shadow-md">
-              <FiPhoneCall size={24} />
-              <div className="text-left">
-                <p className="text-xs text-gray-500">Call Us On:</p>
-                <p className="text-lg font-semibold">+190-8800-0393</p>
-              </div>
-            </div>
-            <div className="flex items-center space-x-2 bg-white text-purple-600 border border-purple-500 py-4 px-6 rounded-lg shadow-md">
-              <IoMailOutline size={24} />
-              <div className="text-left">
-                <p className="text-xs text-gray-500">Quick Mail Us:</p>
-                <p className="text-lg font-semibold">info@traga.com</p>
+        {/* Contact Info */}
+
+        <div className="min-h-screen flex items-center justify-center px-16">
+          <div className="relative w-full max-w-lg">
+            <div className="absolute top-0 -left-4 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+            <div className="absolute top-0 -right-4 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+            <div className="absolute -bottom-8 left-20 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+            <div className="m-8 relative space-y-4">
+              <div className="px-10 py-20 rounded-lg text-center">
+                <div className="mb-4 text-sm uppercase text-indigo-600 font-semibold">
+                  Appointment Now
+                </div>
+                <h2 className="text-3xl font-bold text-gray-800 mb-4">
+                  We’re Ready To Talk About Your{" "}
+                  <span className="text-purple-600">Opportunities</span>
+                </h2>
+                <p className="text-gray-600 mb-8">
+                  Progressively morph principle-centered e-markets without an
+                  expanded array of opportunities. Conveniently incubate
+                  e-tailers for extensive leadership skills. Holistically extend
+                  leading-edge vortals vis-a-vis 24/7 e-markets.
+                </p>
+                <div className="flex justify-center space-x-8">
+                  <div className="flex items-center space-x-2 bg-white text-purple-600 border border-purple-500 py-4 px-6 rounded-lg shadow-md">
+                    <FiPhoneCall size={24} />
+                    <div className="text-left">
+                      <p className="text-xs text-gray-500">Call Us On:</p>
+                      <p className="text-lg font-semibold">+190-8800-0393</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center space-x-2 bg-white text-purple-600 border border-purple-500 py-4 px-6 rounded-lg shadow-md">
+                    <IoMailOutline size={24} />
+                    <div className="text-left">
+                      <p className="text-xs text-gray-500">Quick Mail Us:</p>
+                      <p className="text-lg font-semibold">info@traga.com</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

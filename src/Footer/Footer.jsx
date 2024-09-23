@@ -141,15 +141,15 @@ const Footer = () => {
                       </li>
                       <li>
                         <a
-                          href="/terms"
+                          href="/UserDataDeletion"
                           className="text-md leading-6 text-gray-300 hover:text-gray-50"
                         >
-                          Terms of Service
+                          User Data Deletion
                         </a>
                       </li>
                       <li>
                         <a
-                          href="/privacy"
+                          href="/PrivacyPolicy"
                           className="text-md leading-6 text-gray-300 hover:text-gray-50"
                         >
                           Privacy Policy
