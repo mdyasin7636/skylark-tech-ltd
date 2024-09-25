@@ -2,27 +2,41 @@ import { useState } from "react";
 
 const Projects = () => {
 
-  const [activeTab, setActiveTab] = useState("Popular Theme");
+  const [activeTab, setActiveTab] = useState("News Site");
 
   const tabs = [
-    { name: "Popular Theme" },
-    { name: "Newspaper Theme" },
-    { name: "TV Theme" },
-    { name: "E-Commerce Theme" },
-    { name: "PHP Site" },
-    { name: "Others Theme" },
+    { name: "News Site" },
+    { name: "Elevator Site" },
+    { name: "Corporate Site" },
+    { name: "SEO Optimized Site" },
+    { name: "Graphics Solution" }
   ];
 
   const cards = {
-    "Popular Theme": [
+    "News Site": [
       { title: "ESchool", price: "$42.38", license: "Single", img: "path-to-img" },
       { title: "Smart Edu", price: "$42.38", license: "Single", img: "path-to-img" },
       { title: "EduCare", price: "$42.38", license: "Single", img: "path-to-img" },
     ],
-    "Newspaper Theme": [
+    "Elevator Site": [
       { title: "Lara TVSite", price: "$349", license: "Single", img: "path-to-img" },
       { title: "Lara Creative", price: "$210", license: "Single", img: "path-to-img" },
       { title: "Lara NewsSun", price: "$349", license: "Single", img: "path-to-img" },
+    ],
+    "Corporate Site": [
+      { title: "ESchool", price: "$42.38", license: "Single", img: "path-to-img" },
+      { title: "Smart Edu", price: "$42.38", license: "Single", img: "path-to-img" },
+      { title: "EduCare", price: "$42.38", license: "Single", img: "path-to-img" },
+    ],
+    "SEO Optimized Site": [
+      { title: "Lara TVSite", price: "$349", license: "Single", img: "path-to-img" },
+      { title: "Lara Creative", price: "$210", license: "Single", img: "path-to-img" },
+      { title: "Lara NewsSun", price: "$349", license: "Single", img: "path-to-img" },
+    ],
+    "Graphics Solution": [
+      { title: "ESchool", price: "$42.38", license: "Single", img: "path-to-img" },
+      { title: "Smart Edu", price: "$42.38", license: "Single", img: "path-to-img" },
+      { title: "EduCare", price: "$42.38", license: "Single", img: "path-to-img" },
     ],
     
   };
@@ -43,7 +57,7 @@ const Projects = () => {
             key={tab.name}
             onClick={() => setActiveTab(tab.name)}
             className={`px-4 py-2 rounded-t-lg ${
-              activeTab === tab.name ? "bg-green-600 text-white" : "bg-gray-200 text-gray-600"
+              activeTab === tab.name ? "bg-deep-sky text-white" : "bg-gray-200 text-gray-600"
             } mb-2 sm:mb-0`}
           >
             {tab.name}
@@ -60,7 +74,7 @@ const Projects = () => {
               <h3 className="text-lg font-bold mt-2">{card.title}</h3>
               <p className="text-sm">License: {card.license}</p>
               <p className="text-sm">Price: {card.price}</p>
-              <button className="mt-2 bg-green-500 text-white py-1 px-4 rounded-lg">
+              <button className="mt-2 bg-deep-sky text-white py-1 px-4 rounded-lg">
                 View Demo
               </button>
             </div>
