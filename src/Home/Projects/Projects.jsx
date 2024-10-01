@@ -14,9 +14,22 @@ const Projects = () => {
 
   const cards = {
     "News Site": [
-      { title: "ESchool", price: "$42.38", license: "Single", img: "path-to-img" },
-      { title: "Smart Edu", price: "$42.38", license: "Single", img: "path-to-img" },
-      { title: "EduCare", price: "$42.38", license: "Single", img: "path-to-img" },
+      { id: 1,
+        title: "Newscricket24", 
+        img: "path-to-img",
+        link: "https://newscricket24.com/"
+       },
+      { id: 2,
+        title: "Bangladesher Kontha", 
+        img: "path-to-img",
+        link: "https://bangladesherkontha.com/"
+       },
+      { id: 3,
+        title: "Nogor Pratidin", 
+        img: "path-to-img",
+        link: "https://nogorpratidin.com/"
+       },
+      
     ],
     "Elevator Site": [
       { title: "Lara TVSite", price: "$349", license: "Single", img: "path-to-img" },
@@ -72,8 +85,6 @@ const Projects = () => {
             <div key={index} className="bg-white p-4 rounded-lg shadow-lg border border-black">
               <img src={card.img} alt={card.title} className="h-32 w-full object-cover rounded-t-lg" />
               <h3 className="text-lg font-bold mt-2">{card.title}</h3>
-              <p className="text-sm">License: {card.license}</p>
-              <p className="text-sm">Price: {card.price}</p>
               <button className="mt-2 bg-deep-sky text-white py-1 px-4 rounded-lg">
                 View Demo
               </button>
