@@ -6,8 +6,8 @@ const Projects = () => {
   const tabs = [
     { name: "News Site" },
     { name: "Elevator Site" },
-    { name: "Corporate Site" },
     { name: "SEO Optimized Site" },
+    { name: "Corporate Site" },
     { name: "Graphics Solution" },
   ];
 
@@ -16,7 +16,7 @@ const Projects = () => {
       {
         id: 1,
         title: "Newscricket24",
-        img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1727875085/newscricket24_wiobo0.png",
+        img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1727888066/newscricket24_lrvyan.png",
         link: "https://newscricket24.com/",
       },
       {
@@ -34,82 +34,58 @@ const Projects = () => {
     ],
     "Elevator Site": [
       {
-        title: "Lara TVSite",
-        price: "$349",
-        license: "Single",
-        img: "path-to-img",
+        id: 1,
+        title: "Sigma Lift Company",
+        img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1727888616/sigma-lift-company-ltd_g3bs9a.png",
+        link: "https://sigmaliftcompany.com/",
       },
       {
-        title: "Lara Creative",
-        price: "$210",
-        license: "Single",
-        img: "path-to-img",
+        id: 2,
+        title: "LG Elevator Ltd",
+        img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1727888651/LG-ELEVATOR_ojeenh.png",
+        link: "https://lgelevators.com/",
       },
       {
-        title: "Lara NewsSun",
-        price: "$349",
-        license: "Single",
-        img: "path-to-img",
-      },
-    ],
-    "Corporate Site": [
-      {
-        title: "ESchool",
-        price: "$42.38",
-        license: "Single",
-        img: "path-to-img",
-      },
-      {
-        title: "Smart Edu",
-        price: "$42.38",
-        license: "Single",
-        img: "path-to-img",
-      },
-      {
-        title: "EduCare",
-        price: "$42.38",
-        license: "Single",
-        img: "path-to-img",
+        id: 3,
+        title: "Hyundai Lift Ltd",
+        img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1727888616/Hyundai-Lift_ucdtwp.png",
+        link: "https://hyundailiftltd.com/",
       },
     ],
     "SEO Optimized Site": [
       {
-        title: "Lara TVSite",
-        price: "$349",
-        license: "Single",
-        img: "path-to-img",
+        id: 1,
+        title: "Hyundai Elevator Ltd",
+        img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1727890174/Hyundai-Elevator-Ltd_tmukff.png",
+        link: "https://hyundaielevatorltd.com/",
       },
       {
-        title: "Lara Creative",
-        price: "$210",
-        license: "Single",
-        img: "path-to-img",
+        id: 2,
+        title: "SB Elevator Group",
+        img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1727890193/SB-Elevator-Group_xgef0j.png",
+        link: "https://sbelevatorgroup.com/",
       },
       {
-        title: "Lara NewsSun",
-        price: "$349",
-        license: "Single",
-        img: "path-to-img",
+        id: 3,
+        title: "Elevator Spare Parts",
+        img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1727890219/ELEVATOR-SPARE-PARTS_iyhima.png",
+        link: "https://elevatorsparesparts.com/",
+      },
+    ],
+    "Corporate Site": [
+      {
+        id: 1,
+        title: "D&D Experts",
+        img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1727890682/Denim-and-Design-Expert_u7rzoo.png",
+        link: "https://dndexperts.com/",
       },
     ],
     "Graphics Solution": [
       {
-        title: "ESchool",
-        price: "$42.38",
-        license: "Single",
-        img: "path-to-img",
-      },
-      {
-        title: "Smart Edu",
-        price: "$42.38",
-        license: "Single",
-        img: "path-to-img",
-      },
-      {
-        title: "EduCare",
-        price: "$42.38",
-        license: "Single",
-        img: "path-to-img",
+        id: 1,
+        title: "Daily Bonik Bangladesh",
+        img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1727890935/Daily-Bonik-Bangladesh_vxbxlg.png",
+        link: "https://dailybonikbangladesh.com/",
       },
     ],
   };
@@ -162,12 +138,15 @@ const Projects = () => {
                 </div>
                 <div className="flex justify-evenly">
                   <div>
-                  <h3 className="text-lg font-bold mt-2">{card.title}</h3>
+                    <h3 className="text-lg font-bold mt-2">{card.title}</h3>
                   </div>
                   <div>
-                  <button onClick={() => handleSiteLink(card.link)} className="mt-2 bg-deep-sky text-white py-1 px-4 rounded-lg">
-                    View Site
-                  </button>
+                    <button
+                      onClick={() => handleSiteLink(card.link)}
+                      className="mt-2 bg-deep-sky text-white py-1 px-4 rounded-lg"
+                    >
+                      View Site
+                    </button>
                   </div>
                 </div>
               </div>
