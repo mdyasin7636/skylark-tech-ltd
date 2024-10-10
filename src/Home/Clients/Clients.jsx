@@ -11,36 +11,106 @@ const Clients = () => {
       </div>
       <div className="flex mt-4">
         <Marquee speed={150}>
-          <div className="w-3/4">
-            <img src="https://picsum.photos/200/100?random=1" alt="Partner 1" />
+          <div className="w-60 mx-5">
+            <img
+              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1728573105/news-cricket_cos45n.jpg"
+              alt="Partner 1"
+            />
           </div>
-          <div className="w-3/4">
-            <img src="https://picsum.photos/200/100?random=2" alt="Partner 2" />
+          <div className="w-60 mx-5">
+            <img
+              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1728573103/hyundai-elevator_db2msr.jpg"
+              alt="Partner 2"
+            />
           </div>
-          <div className="w-3/4">
-            <img src="https://picsum.photos/200/100?random=3" alt="Partner 3" />
+          <div className="w-60 mx-5">
+            <img
+              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1728573105/morning-mirror_x80gov.jpg"
+              alt="Partner 3"
+            />
           </div>
-          <div className="w-3/4">
-            <img src="https://picsum.photos/200/100?random=4" alt="Partner 4" />
+          <div className="w-60 mx-5">
+            <img
+              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1728573105/otis-elevator_s6jkyp.jpg"
+              alt="Partner 4"
+            />
           </div>
-          <div className="w-3/4">
-            <img src="https://picsum.photos/200/100?random=5" alt="Partner 5" />
+          <div className="w-60 mx-5">
+            <img
+              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1728573106/sigma-lift_mxwm4q.jpg"
+              alt="Partner 5"
+            />
           </div>
-          <div className="w-3/4">
-            <img src="https://picsum.photos/200/100?random=6" alt="Partner 6" />
+          <div className="w-60 mx-5">
+            <img
+              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1728573104/lg-elevator_sudbz2.jpg"
+              alt="Partner 6"
+            />
           </div>
-          <div className="w-3/4">
-            <img src="https://picsum.photos/200/100?random=7" alt="Partner 7" />
+          <div className="w-60 mx-5">
+            <img
+              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1728573104/hyundai-lift_yfwr7i.jpg"
+              alt="Partner 7"
+            />
           </div>
-          <div className="w-3/4">
-            <img src="https://picsum.photos/200/100?random=8" alt="Partner 8" />
+          <div className="w-60 mx-5">
+            <img
+              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1728573103/elevator-parts_pq688f.jpg"
+              alt="Partner 8"
+            />
           </div>
-          <div className="w-3/4">
-            <img src="https://picsum.photos/200/100?random=9" alt="Partner 9" />
+          <div className="w-60 mx-5">
+            <img
+              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1728573105/sb-elevator_pysiom.jpg"
+              alt="Partner 9"
+            />
           </div>
-          <div className="w-3/4">
-            <img src="https://picsum.photos/200/100?random=10" alt="Partner 10" />
+          <div className="w-60 mx-5">
+            <img
+              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1728573103/boinik-bangladesh_x549gw.jpg"
+              alt="Partner 10"
+            />
           </div>
+          <div className="w-60 mx-5">
+            <img
+              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1728573102/ajkaler-kontho_kqv27o.jpg"
+              alt="Partner 10"
+            />
+          </div>
+          <div className="w-60 mx-5">
+            <img
+              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1728573103/doinik-sirajganj_rozfau.jpg"
+              alt="Partner 10"
+            />
+          </div>
+          <div className="w-60 mx-5">
+            <img
+              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1728573103/bangladesher-kontho_nl8dbh.jpg"
+              alt="Partner 10"
+            />
+          </div>
+          <div className="w-60 mx-5">
+            <img
+              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1728573102/banglar-mukh_vjaknf.jpg"
+              alt="Partner 10"
+            />
+          </div>
+          <div className="w-60 mx-5">
+            <img
+              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1728573105/jago-songbad_veette.jpg"
+              alt="Partner 10"
+            />
+          </div>
+          <div className="w-60 mx-5">
+            <img
+              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1728573105/nogor-protidin_t0ccyq.jpg"
+              alt="Partner 10"
+            />
+          </div>
+          {/* <div className="w-60">
+            <img src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1728573103/dnd_lyr9z5.jpg
+" alt="Partner 10" />
+          </div> */}
         </Marquee>
       </div>
     </div>

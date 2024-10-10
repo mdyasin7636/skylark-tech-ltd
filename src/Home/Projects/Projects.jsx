@@ -1,37 +1,17 @@
 import { useState } from "react";
 
 const Projects = () => {
-  const [activeTab, setActiveTab] = useState("News Site");
+  const [activeTab, setActiveTab] = useState("Elevator Site");
 
   const tabs = [
-    { name: "News Site" },
     { name: "Elevator Site" },
+    { name: "News Site" },
     { name: "SEO Optimized Site" },
     { name: "Corporate Site" },
     { name: "Graphics Solution" },
   ];
 
   const cards = {
-    "News Site": [
-      {
-        id: 1,
-        title: "Newscricket24",
-        img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1727888066/newscricket24_lrvyan.png",
-        link: "https://newscricket24.com/",
-      },
-      {
-        id: 2,
-        title: "Bangladesher Kontha",
-        img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1727875089/Bangladesher-Kontha_makkox.png",
-        link: "https://bangladesherkontha.com/",
-      },
-      {
-        id: 3,
-        title: "Nogor Pratidin",
-        img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1727875091/Nogor-Pratidin_sd0jdf.png",
-        link: "https://nogorpratidin.com/",
-      },
-    ],
     "Elevator Site": [
       {
         id: 1,
@@ -50,6 +30,26 @@ const Projects = () => {
         title: "Hyundai Lift Ltd",
         img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1727888616/Hyundai-Lift_ucdtwp.png",
         link: "https://hyundailiftltd.com/",
+      },
+    ],
+    "News Site": [
+      {
+        id: 1,
+        title: "Newscricket24",
+        img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1727888066/newscricket24_lrvyan.png",
+        link: "https://newscricket24.com/",
+      },
+      {
+        id: 2,
+        title: "Bangladesher Kontha",
+        img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1727875089/Bangladesher-Kontha_makkox.png",
+        link: "https://bangladesherkontha.com/",
+      },
+      {
+        id: 3,
+        title: "Nogor Pratidin",
+        img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1727875091/Nogor-Pratidin_sd0jdf.png",
+        link: "https://nogorpratidin.com/",
       },
     ],
     "SEO Optimized Site": [
