@@ -191,10 +191,9 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="mt-10 border-t border-gray-400/30 md:pt-7 md:pb-0 m pt-4 pb-4">
+            <div className="mt-4 border-t border-gray-400/30 md:pt-7 md:pb-0 m pt-4 pb-2">
               <div className="text-md text-center text-white">
-                Copyright © {Year} . Crafted with
-                <span className="text-gray-50"> ♥ </span> by SkyLark IT
+                Copyright © {Year} SkyLark IT
               </div>
             </div>
           </div>

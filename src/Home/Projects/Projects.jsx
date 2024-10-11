@@ -93,7 +93,6 @@ const Projects = () => {
       },
     ],
   };
-  
 
   const handleSiteLink = (link) => {
     window.open(link, "_blank");
@@ -157,7 +156,7 @@ const Card = ({ card, handleSiteLink }) => {
         {/* Maintain hover style while centering loading animation */}
         <div className="h-max w-full transition-transform duration-[3500ms] ease-linear transform translate-y-0 hover:-translate-y-[calc(100%-18rem)] rounded-lg">
           {loading ? (
-            <div className="absolute inset-0 flex items-center justify-center bg-white">
+            <div className="absolute inset-40 flex items-center justify-center bg-white">
               <div className="flex flex-row gap-2">
                 <div className="w-4 h-4 rounded-full bg-blue-700 animate-bounce"></div>
                 <div className="w-4 h-4 rounded-full bg-blue-700 animate-bounce [animation-delay:-.3s]"></div>

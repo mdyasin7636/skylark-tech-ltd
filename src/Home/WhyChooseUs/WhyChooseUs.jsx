@@ -20,7 +20,7 @@ const WhyChooseUs = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
               We Deal With The Aspects
               <br />
-              <span className="text-indigo-600">Professional IT Services</span>
+              <span className="text-deep-sky">Professional IT Services</span>
             </h2>
             <p className="text-gray-600 mb-8">
               Collaboratively envision user-friendly supply chains and
@@ -30,27 +30,27 @@ const WhyChooseUs = () => {
             <div className="grid grid-cols-2 gap-4">
               {/* List of Services */}
               <div className="flex items-center">
-                <AiOutlineCheck className="text-indigo-600 w-6 h-6 mr-2" />
+                <AiOutlineCheck className="text-deep-sky w-6 h-6 mr-2" />
                 Big Data Analysis
               </div>
               <div className="flex items-center">
-                <AiOutlineCheck className="text-indigo-600 w-6 h-6 mr-2" />
+                <AiOutlineCheck className="text-deep-sky w-6 h-6 mr-2" />
                 High Quality Security
               </div>
               <div className="flex items-center">
-                <AiOutlineCheck className="text-indigo-600 w-6 h-6 mr-2" />
+                <AiOutlineCheck className="text-deep-sky w-6 h-6 mr-2" />
                 24/7 Online Support
               </div>
               <div className="flex items-center">
-                <AiOutlineCheck className="text-indigo-600 w-6 h-6 mr-2" />
+                <AiOutlineCheck className="text-deep-sky w-6 h-6 mr-2" />
                 24/7 Expert Team
               </div>
               <div className="flex items-center">
-                <AiOutlineCheck className="text-indigo-600 w-6 h-6 mr-2" />
+                <AiOutlineCheck className="text-deep-sky w-6 h-6 mr-2" />
                 Business Improvement
               </div>
               <div className="flex items-center">
-                <AiOutlineCheck className="text-indigo-600 w-6 h-6 mr-2" />
+                <AiOutlineCheck className="text-deep-sky w-6 h-6 mr-2" />
                 Easy Solutions
               </div>
             </div>
