@@ -1,4 +1,8 @@
-import { useState } from "react";
+/* eslint-disable react/prop-types */
+import { useState, useEffect } from "react";
+import { Cloudinary } from "cloudinary-core";
+
+const cloudinary = new Cloudinary({ cloud_name: "dlaatmz5a" });
 
 const Projects = () => {
   const [activeTab, setActiveTab] = useState("Elevator Site");
@@ -16,19 +20,19 @@ const Projects = () => {
       {
         id: 1,
         title: "Sigma Lift Company",
-        img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1727888616/sigma-lift-company-ltd_g3bs9a.png",
+        img: "sigma-lift-company-ltd_g3bs9a",
         link: "https://sigmaliftcompany.com/",
       },
       {
         id: 2,
         title: "LG Elevator Ltd",
-        img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1727888651/LG-ELEVATOR_ojeenh.png",
+        img: "LG-ELEVATOR_ojeenh",
         link: "https://lgelevators.com/",
       },
       {
         id: 3,
         title: "Hyundai Lift Ltd",
-        img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1727888616/Hyundai-Lift_ucdtwp.png",
+        img: "Hyundai-Lift_ucdtwp",
         link: "https://hyundailiftltd.com/",
       },
     ],
@@ -36,19 +40,19 @@ const Projects = () => {
       {
         id: 1,
         title: "Newscricket24",
-        img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1727888066/newscricket24_lrvyan.png",
+        img: "newscricket24_lrvyan",
         link: "https://newscricket24.com/",
       },
       {
         id: 2,
         title: "Bangladesher Kontha",
-        img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1727875089/Bangladesher-Kontha_makkox.png",
+        img: "Bangladesher-Kontha_makkox",
         link: "https://bangladesherkontha.com/",
       },
       {
         id: 3,
         title: "Nogor Pratidin",
-        img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1727875091/Nogor-Pratidin_sd0jdf.png",
+        img: "Nogor-Pratidin_sd0jdf",
         link: "https://nogorpratidin.com/",
       },
     ],
@@ -56,19 +60,19 @@ const Projects = () => {
       {
         id: 1,
         title: "Hyundai Elevator Ltd",
-        img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1727890174/Hyundai-Elevator-Ltd_tmukff.png",
+        img: "Hyundai-Elevator-Ltd_tmukff",
         link: "https://hyundaielevatorltd.com/",
       },
       {
         id: 2,
         title: "SB Elevator Group",
-        img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1727890193/SB-Elevator-Group_xgef0j.png",
+        img: "SB-Elevator-Group_xgef0j",
         link: "https://sbelevatorgroup.com/",
       },
       {
         id: 3,
         title: "Elevator Spare Parts",
-        img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1727890219/ELEVATOR-SPARE-PARTS_iyhima.png",
+        img: "ELEVATOR-SPARE-PARTS_iyhima",
         link: "https://elevatorsparesparts.com/",
       },
     ],
@@ -76,7 +80,7 @@ const Projects = () => {
       {
         id: 1,
         title: "D&D Experts",
-        img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1727890682/Denim-and-Design-Expert_u7rzoo.png",
+        img: "Denim-and-Design-Expert_u7rzoo",
         link: "https://dndexperts.com/",
       },
     ],
@@ -84,11 +88,12 @@ const Projects = () => {
       {
         id: 1,
         title: "Daily Bonik Bangladesh",
-        img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1727890935/Daily-Bonik-Bangladesh_vxbxlg.png",
+        img: "Daily-Bonik-Bangladesh_vxbxlg",
         link: "https://dailybonikbangladesh.com/",
       },
     ],
   };
+  
 
   const handleSiteLink = (link) => {
     window.open(link, "_blank");
@@ -123,35 +128,62 @@ const Projects = () => {
         {/* Content for the Active Tab */}
         <div className="mt-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-8">
-            {cards[activeTab].map((card, id) => (
-              <div
-                key={id}
-                className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-black px-2"
-              >
-                <div className="relative max-w-full h-72 overflow-hidden rounded-lg border border-gray-400">
-                  <div className="h-max w-full transition-transform duration-[3500ms] ease-linear transform translate-y-0 hover:-translate-y-[calc(100%-18rem)] rounded-lg">
-                    <img
-                      src={card.img}
-                      className="w-full object-cover object-top rounded-lg"
-                    />
-                  </div>
-                </div>
-                <div className="flex justify-evenly">
-                  <div>
-                    <h3 className="text-lg font-bold mt-2">{card.title}</h3>
-                  </div>
-                  <div>
-                    <button
-                      onClick={() => handleSiteLink(card.link)}
-                      className="mt-2 bg-deep-sky text-white py-1 px-4 rounded-lg"
-                    >
-                      View Site
-                    </button>
-                  </div>
-                </div>
-              </div>
+            {cards[activeTab].map((card) => (
+              <Card
+                key={`${activeTab}-${card.id}`}
+                card={card}
+                handleSiteLink={handleSiteLink}
+              />
             ))}
           </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const Card = ({ card, handleSiteLink }) => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const img = new Image();
+    img.src = cloudinary.url(card.img, { secure: true });
+    img.onload = () => setLoading(false);
+  }, [card.img]);
+
+  return (
+    <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-black px-2">
+      <div className="relative max-w-full h-72 overflow-hidden rounded-lg border border-gray-400">
+        {/* Maintain hover style while centering loading animation */}
+        <div className="h-max w-full transition-transform duration-[3500ms] ease-linear transform translate-y-0 hover:-translate-y-[calc(100%-18rem)] rounded-lg">
+          {loading ? (
+            <div className="absolute inset-0 flex items-center justify-center bg-white">
+              <div className="flex flex-row gap-2">
+                <div className="w-4 h-4 rounded-full bg-blue-700 animate-bounce"></div>
+                <div className="w-4 h-4 rounded-full bg-blue-700 animate-bounce [animation-delay:-.3s]"></div>
+                <div className="w-4 h-4 rounded-full bg-blue-700 animate-bounce [animation-delay:-.5s]"></div>
+              </div>
+            </div>
+          ) : (
+            <img
+              src={cloudinary.url(card.img, { secure: true })}
+              alt={card.title}
+              className="w-full h-full object-cover object-top rounded-lg"
+            />
+          )}
+        </div>
+      </div>
+      <div className="flex justify-evenly">
+        <div>
+          <h3 className="text-lg font-bold mt-2">{card.title}</h3>
+        </div>
+        <div>
+          <button
+            onClick={() => handleSiteLink(card.link)}
+            className="mt-2 bg-deep-sky text-white py-1 px-4 rounded-lg"
+          >
+            View Site
+          </button>
         </div>
       </div>
     </div>
