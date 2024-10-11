@@ -6,9 +6,9 @@ const AboutUs = () => {
   return (
     <div className="mt-10 px-4">
       <div className="text-center">
-        <h1 className="text-3xl text-blue-800 font-extrabold">About Us</h1>
+        <h1 className="text-3xl text-deep-sky font-extrabold">About Us</h1>
         <p className="mt-2 font-bold text-4xl">
-          We Provide Exclusive Service <br /> For Your Business
+        We Deliver Innovative <br/> Solutions for Your Growth
         </p>
       </div>
 
@@ -26,15 +26,12 @@ const AboutUs = () => {
             {/* Text Section */}
             <div>
             <div className="text-center lg:text-left">
-            <h2 className="text-2xl lg:text-4xl font-bold text-gray-800 mb-4">
+            <h2 className="text-2xl lg:text-4xl font-bold text-black mb-4">
               We Are Increasing Business <br /> Success With
               <span className="text-deep-sky"> IT Solution</span>
             </h2>
             <p className="text-gray-600 mb-6">
-              Collaboratively envision user-friendly supply chains and cross
-              unit imperatives. Authoritatively fabricate competitive resources
-              and holistic synergy. Uniquely <br /> generate efficient schemas before
-              the future.
+            Skylark IT is your trusted partner for comprehensive IT solutions. We believe in building strong relationships and delivering results that help your business reach new heights
             </p>
             </div>
 

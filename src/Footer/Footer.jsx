@@ -19,9 +19,7 @@ const Footer = () => {
                   </a>
                 </div>
                 <div className="max-w-md pr-16 text-md text-gray-200">
-                  Enhance productivity and efficiency with cutting-edge
-                  artificial intelligence solutions for your business
-                  operations.
+                Transforming Ideas into Effective <br /> Digital Solutions for Your Needs
                 </div>
                 <div className="flex space-x-2">
                   <a
@@ -72,7 +70,7 @@ const Footer = () => {
                           href="/aiplatform"
                           className="text-md leading-6 text-gray-300 hover:text-gray-50"
                         >
-                          AI Platform
+                          Web Development
                         </a>
                       </li>
                       <li>
@@ -80,7 +78,7 @@ const Footer = () => {
                           href="/aialgorithms"
                           className="text-md leading-6 text-gray-300 hover:text-gray-50"
                         >
-                          AI Algorithms
+                          Website Design
                         </a>
                       </li>
                       <li>
@@ -88,7 +86,7 @@ const Footer = () => {
                           href="/industryapplications"
                           className="text-md leading-6 text-gray-300 hover:text-gray-50"
                         >
-                          Industry Applications
+                         Digital Marketing
                         </a>
                       </li>
                     </ul>

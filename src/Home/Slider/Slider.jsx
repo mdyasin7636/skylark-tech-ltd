@@ -11,17 +11,17 @@ const slidesData = [
   {
     img: bannerImg1,
     heading: "Perfect IT Solution\nFor Your Business",
-    text: "Energetically harness ubiquitous imperatives without state of the art collaboration\nand idea-sharing. Monotonically parallel task cross-unit experiences and front-end.",
+    text: "At Skylark IT, we innovate cutting-edge IT solutions designed to\nelevate your business for tomorrow's challenges and opportunities.",
   },
   {
     img: bannerImg2,
-    heading: "Make The Easiest\nSolution For You",
-    text: "Energetically harness ubiquitous imperatives without state of the art collaboration\nand idea-sharing. Monotonically parallel task cross-unit experiences and front-end.",
+    heading: "Creating the Easiest\nSolution for You",
+    text: "Empowering businesses with smart IT solutions, Skylark IT transforms\nyour potential into success, shaping a brighter future for your company.",
   },
   {
     img: bannerImg3,
-    heading: "Skylark Is The Best\nIT Solution 2024",
-    text: "Energetically harness ubiquitous imperatives without state of the art collaboration\nand idea-sharing. Monotonically parallel task cross-unit experiences and front-end.",
+    heading: "Shaping IT Solutions\nFor Your Business",
+    text: "Unlock your business potential with Skylark IT’s innovative solutions,\ndesigned to streamline operations and propel you toward success.",
   },
 ];
 

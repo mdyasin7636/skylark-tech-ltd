@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 // import { IoMailOutline } from "react-icons/io5";
 // import { FiPhoneCall } from "react-icons/fi";
-import { MdContactMail } from "react-icons/md";
+// import { MdContactMail } from "react-icons/md";
 import CustomButton from "../../CustomButton/CustomButton";
 
 const InputField = ({ id, type, placeholder, label }) => (
@@ -23,17 +23,20 @@ const InputField = ({ id, type, placeholder, label }) => (
 
 const ContactUs = () => {
   return (
-    <div id="contact" className="mt-8 p-6">
-      <div className="flex items-center justify-center mb-8">
+    <div id="contact" className="mt-4 p-6">
+      {/* <div className="flex items-center justify-center mb-8">
         <div className="flex items-center border-b-2 border-indigo-800">
           <h2 className="mr-1 text-lg">
             <MdContactMail />
           </h2>
           <h2 className="text-xl font-semibold">Get In Touch</h2>
         </div>
+      </div> */}
+      <div className="text-center">
+        <h1 className="text-3xl text-deep-sky font-extrabold">Get In Touch</h1>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-6 my-5 justify-center items-center">
+      <div className="grid md:grid-cols-2 gap-6 my-10 justify-center items-center">
         {/* Contact Info */}
 
         <div className="flex items-center justify-center">
@@ -49,15 +52,12 @@ const ContactUs = () => {
                 <div className="mb-2 text-base uppercase text-deep-sky font-bold">
                   Appointment Now
                 </div>
-                <h2 className="text-3xl font-bold text-gray-800 mb-4">
+                <h2 className="text-3xl font-bold text-black mb-4">
                   We’re Ready To Talk About Your{" "}
                   <span className="text-deep-sky">Opportunities</span>
                 </h2>
                 <p className="text-gray-600 mb-8">
-                  Progressively morph principle-centered e-markets without an
-                  expanded array of opportunities. Conveniently incubate
-                  e-tailers for extensive leadership skills. Holistically extend
-                  leading-edge vortals vis-a-vis 24/7 e-markets.
+                We’d love to hear from you! Whether you have questions, need assistance, or want to explore our services, feel free to reach out. Our team is here to help.
                 </p>
                 {/* <div className="flex justify-center space-x-8">
                   <div className="flex items-center space-x-2 bg-white text-deep-sky border border-black py-4 px-6 rounded-lg shadow-md">

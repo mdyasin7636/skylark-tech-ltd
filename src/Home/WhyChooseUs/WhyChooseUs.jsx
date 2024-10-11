@@ -3,14 +3,14 @@ import bannerImg from "../../assets/bannerImgChoose.png";
 
 const WhyChooseUs = () => {
   return (
-    <div>
+    <div className="mt-10">
       <div className="text-center">
-        <h1 className="text-3xl text-blue-800 font-extrabold">
+        <h1 className="text-3xl text-deep-sky font-extrabold">
           {" "}
           WHY CHOOSE US
         </h1>
         <p className="mt-2 font-bold text-4xl">
-          We Provide Exclusive Service <br /> For Your Business
+        We Focus on Every <br /> Aspect of IT Solutions.
         </p>
       </div>
       <div className=" py-12">
@@ -23,9 +23,7 @@ const WhyChooseUs = () => {
               <span className="text-deep-sky">Professional IT Services</span>
             </h2>
             <p className="text-gray-600 mb-8">
-              Collaboratively envision user-friendly supply chains and
-              cross-unit imperatives. Authoritatively fabricate competitive
-              resources and holistic solutions.
+            Choosing Skylark IT means partnering with a trusted ally dedicated to your business&apos;s success. Our proven track record of satisfied customers speaks volumes about our commitment to excellence.
             </p>
             <div className="grid grid-cols-2 gap-4">
               {/* List of Services */}

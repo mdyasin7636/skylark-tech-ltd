@@ -41,7 +41,7 @@ const TeamMembers = () => {
   return (
     <div className="py-12 relative">
       <div className="text-center">
-        <h1 className="text-3xl text-blue-800 font-extrabold">TEAM MEMBERS</h1>
+        <h1 className="text-3xl text-deep-sky font-extrabold">TEAM MEMBERS</h1>
         <p className="mt-2 font-bold text-4xl">See Our Skilled Expert Team</p>
       </div>
 
