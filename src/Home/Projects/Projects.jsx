@@ -99,7 +99,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="md:mt-5git mt-14">
+    <div className="md:mt-5git mt-14" id="projects">
       <div className="text-center">
         <h1 className="text-3xl text-deep-sky font-extrabold">Our Projects</h1>
         <p className="mt-2 mb-4 font-bold text-4xl">

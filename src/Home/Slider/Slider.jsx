@@ -27,7 +27,7 @@ const slidesData = [
 
 const Slider = () => {
   return (
-    <div>
+    <div id="home">
       <Swiper
         loop={true}
         modules={[Navigation, Autoplay]}
