@@ -3,17 +3,16 @@ import bannerImg from "../../assets/bannerImgChoose.png";
 
 const WhyChooseUs = () => {
   return (
-    <div className="mt-10">
+    <div className="">
       <div className="text-center">
         <h1 className="text-3xl text-deep-sky font-extrabold">
-          {" "}
           WHY CHOOSE US
         </h1>
-        <p className="mt-2 font-bold text-4xl">
+        {/* <p className="mt-2 font-bold text-4xl">
         We Focus on Every <br /> Aspect of IT Solutions.
-        </p>
+        </p> */}
       </div>
-      <div className=" py-12">
+      <div className="">
         <div className="container mx-auto px-6 md:px-12 lg:px-24 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           {/* Text Content */}
           <div>

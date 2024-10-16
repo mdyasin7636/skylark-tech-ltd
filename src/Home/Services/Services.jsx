@@ -47,15 +47,15 @@ const Services = () => {
   ];
 
   return (
-    <div className="mt-10" id="services">
+    <div className="" id="services">
       <div className="text-center">
         <h1 className="text-3xl text-deep-sky font-extrabold">Our Services</h1>
-        <p className="mt-2 font-bold text-4xl">
+        <p className="font-bold text-4xl">
           We Provide Exclusive Service <br /> For Your Business
         </p>
       </div>
 
-      <div className="mt-8">
+      <div className="">
         <Swiper
           loop={true}
           slidesPerView={1}

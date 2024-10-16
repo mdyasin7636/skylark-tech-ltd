@@ -39,13 +39,13 @@ const TeamMembers = () => {
   ];
 
   return (
-    <div className="py-12 relative">
+    <div className="relative">
       <div className="text-center">
         <h1 className="text-3xl text-deep-sky font-extrabold">TEAM MEMBERS</h1>
-        <p className="mt-2 font-bold text-4xl">See Our Skilled Expert Team</p>
+        {/* <p className="mt-2 font-bold text-4xl">See Our Skilled Expert Team</p> */}
       </div>
 
-      <div className="relative max-w-6xl mx-auto mt-8">
+      <div className="relative max-w-6xl mx-auto">
         {/* Swiper container */}
         <Swiper
           loop={true}

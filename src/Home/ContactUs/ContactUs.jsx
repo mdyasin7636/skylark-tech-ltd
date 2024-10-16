@@ -23,7 +23,7 @@ const InputField = ({ id, type, placeholder, label }) => (
 
 const ContactUs = () => {
   return (
-    <div id="contact" className="mt-4 p-6">
+    <div id="contact" className="">
       {/* <div className="flex items-center justify-center mb-8">
         <div className="flex items-center border-b-2 border-indigo-800">
           <h2 className="mr-1 text-lg">
@@ -36,7 +36,7 @@ const ContactUs = () => {
         <h1 className="text-3xl text-deep-sky font-extrabold">Get In Touch</h1>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-6 my-10 justify-center items-center">
+      <div className="grid md:grid-cols-2 gap-6 justify-center items-center">
         {/* Contact Info */}
 
         <div className="flex items-center justify-center">

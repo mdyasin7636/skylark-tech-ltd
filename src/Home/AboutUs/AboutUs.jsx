@@ -4,19 +4,19 @@ import aboutImage from "../../assets/aboutImage.png";
 
 const AboutUs = () => {
   return (
-    <div className="mt-10 px-4" id="about">
+    <div className="" id="about">
       <div className="text-center">
         <h1 className="text-3xl text-deep-sky font-extrabold">About Us</h1>
-        <p className="mt-2 font-bold text-4xl">
+        {/* <p className="mt-2 font-bold text-4xl">
         We Deliver Innovative <br/> Solutions for Your Growth
-        </p>
+        </p> */}
       </div>
 
-      <div className="mt-8">
+      <div className="">
         <div className="">
           <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
             {/* Image Section */}
-            <div className="mb-8 lg:mb-2 ml-16">
+            <div className="">
               <img
                 src={aboutImage}
                 alt="Team working"
@@ -61,7 +61,7 @@ const AboutUs = () => {
               </div>
             </div>
               {/* Button & Call Section */}
-              <div className="flex items-center space-x-4">
+              <div className="flex items-center ">
                 <a
                   href="#discover-more"
                   className="bg-deep-sky text-white py-2 px-6 rounded-lg text-sm hover:bg-normal-sky"
