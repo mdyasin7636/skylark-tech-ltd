@@ -10,8 +10,8 @@ const Clients = () => {
         </p> */}
       </div>
       <div className="flex">
-        <Marquee speed={120}>
-          <div className="w-60 mx-3 border-2 border-deep-sky rounded-full p-5">
+        <Marquee speed={0}>
+          <div className="w-60 mx-3 border-2 border-deep-sky rounded-full p-4">
             <img
               src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1728573105/news-cricket_cos45n.jpg"
               alt="Partner 1"
