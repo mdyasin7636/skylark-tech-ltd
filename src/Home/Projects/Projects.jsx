@@ -99,14 +99,11 @@ const Projects = () => {
   };
 
   return (
-    <div className="" id="projects">
+    <div className="mt-7" id="projects">
       <div className="text-center">
         <h1 className="text-3xl text-deep-sky font-extrabold">Our Projects</h1>
-        {/* <p className="mt-2 mb-4 font-bold text-4xl">
-        Explore Our Successful <br /> IT Projects
-        </p> */}
       </div>
-      <div className="">
+      <div className="mt-5">
         {/* Tab Navigation */}
         <div className="flex justify-center space-x-4 flex-wrap">
           {tabs.map((tab) => (
@@ -125,7 +122,7 @@ const Projects = () => {
         </div>
 
         {/* Content for the Active Tab */}
-        <div className="">
+        <div className="mt-5">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-8">
             {cards[activeTab].map((card) => (
               <Card

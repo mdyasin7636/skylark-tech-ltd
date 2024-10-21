@@ -3,23 +3,20 @@ import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import { FaArrowRightLong } from "react-icons/fa6";
-import bannerImg1 from "../../assets/banner1.jpg";
-import bannerImg2 from "../../assets/banner2.jpg";
-import bannerImg3 from "../../assets/banner3.jpg";
 
 const slidesData = [
   {
-    img: bannerImg1,
+    img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1729540688/banner1_fmzljr.jpg",
     heading: "Perfect IT Solution\nFor Your Business",
     text: "At Skylark IT, we innovate cutting-edge IT solutions designed to\nelevate your business for tomorrow's challenges and opportunities.",
   },
   {
-    img: bannerImg2,
+    img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1729540687/banner2_vzdaqt.jpg",
     heading: "Creating the Easiest\nSolution for You",
     text: "Empowering businesses with smart IT solutions, Skylark IT transforms\nyour potential into success, shaping a brighter future for your company.",
   },
   {
-    img: bannerImg3,
+    img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1729540688/banner3_rnkfi2.jpg",
     heading: "Shaping IT Solutions\nFor Your Business",
     text: "Unlock your business potential with Skylark IT’s innovative solutions,\ndesigned to streamline operations and propel you toward success.",
   },

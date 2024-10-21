@@ -1,18 +1,14 @@
 import { AiOutlineCheck } from "react-icons/ai";
-import bannerImg from "../../assets/bannerImgChoose.png";
 
 const WhyChooseUs = () => {
   return (
-    <div className="">
+    <div className="mt-7">
       <div className="text-center">
         <h1 className="text-3xl text-deep-sky font-extrabold">
           WHY CHOOSE US
         </h1>
-        {/* <p className="mt-2 font-bold text-4xl">
-        We Focus on Every <br /> Aspect of IT Solutions.
-        </p> */}
       </div>
-      <div className="">
+      <div className="mt-6">
         <div className="container mx-auto px-6 md:px-12 lg:px-24 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           {/* Text Content */}
           <div>
@@ -58,7 +54,7 @@ const WhyChooseUs = () => {
             <div className=" rounded-full">
               <img
                 className="w-full h-auto"
-                src={bannerImg}
+                src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1729540687/bannerImgChoose_wgnx3e.png"
                 alt="Team Analyzing"
               />
               

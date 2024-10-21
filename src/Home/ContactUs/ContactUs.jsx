@@ -23,7 +23,7 @@ const InputField = ({ id, type, placeholder, label }) => (
 
 const ContactUs = () => {
   return (
-    <div id="contact" className="">
+    <div id="contact" className="mt-7 mb-7">
       {/* <div className="flex items-center justify-center mb-8">
         <div className="flex items-center border-b-2 border-indigo-800">
           <h2 className="mr-1 text-lg">
@@ -36,7 +36,7 @@ const ContactUs = () => {
         <h1 className="text-3xl text-deep-sky font-extrabold">Get In Touch</h1>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-6 justify-center items-center">
+      <div className="grid md:grid-cols-2 justify-center items-center">
         {/* Contact Info */}
 
         <div className="flex items-center justify-center">
@@ -47,16 +47,16 @@ const ContactUs = () => {
             <div className="absolute -bottom-8 left-20 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div> */}
             <div >
             {/* className="m-8 relative space-y-4" */}
-              <div className="rounded-lg text-center">
+              <div className="rounded-lg text-center mt-5">
               {/* <div className="px-10 py-10 rounded-lg text-center"> */}
-                <div className="mb-2 text-base uppercase text-deep-sky font-bold">
+                <div className="text-base uppercase text-deep-sky font-bold">
                   Appointment Now
                 </div>
-                <h2 className="text-3xl font-bold text-black mb-4">
+                <h2 className="text-3xl font-bold text-black mt-2">
                   We’re Ready To Talk About Your{" "}
                   <span className="text-deep-sky">Opportunities</span>
                 </h2>
-                <p className="text-gray-600 mb-8">
+                <p className="text-gray-600 mt-2">
                 We’d love to hear from you! Whether you have questions, need assistance, or want to explore our services, feel free to reach out. Our team is here to help.
                 </p>
                 {/* <div className="flex justify-center space-x-8">
@@ -81,7 +81,7 @@ const ContactUs = () => {
         </div>
 
         {/* Contact Form */}
-        <form className="relative border-2 border-deep-sky p-6 rounded-lg grid gap-8 bg-white dark:bg-normal-sky max-w-xl w-full">
+        <form className="relative border-2 border-deep-sky p-6 rounded-lg grid gap-8 bg-white  max-w-xl w-full mt-7">
           <h2 className="text-2xl font-bold">Make An Appointment</h2>
 
           {/* Name and Email in one row */}

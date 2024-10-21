@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const MiniNav = () => {
     return (
-        <div className="bg-deep-sky text-white p-2">
+        <div className="bg-[#1A1D2B] text-white p-2">
             <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
                 
                 {/* Contact Info for Desktop */}
@@ -52,7 +52,7 @@ const MiniNav = () => {
                     {/* Follow Us On Text and Social Media Icons */}
                     <div className="flex items-center space-x-2">
                         <span className='text-xl font-semibold'>Find Us On:</span>
-                        <div className="flex space-x-2">
+                        <div className="flex space-x-1">
                         <Link to='https://www.facebook.com/SkyLarkITLtd' className='cursor-pointer w-7'>
                         <img src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1729435146/facebook_5968764_ekshhw.png" alt="" />
                         </Link>

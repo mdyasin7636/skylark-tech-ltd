@@ -11,7 +11,7 @@ const stats = [
 
 const Achievements = () => {
     return (
-        <div className="bg-[#1A1D2B] p-8 rounded-lg grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-4 mx-10">
+        <div className="bg-[#1A1D2B] p-8 rounded-lg grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-4 mx-10 mt-7">
             {stats.map((stat) => (
                 <AchievementCard key={stat.id} icon={stat.icon} label={stat.label} target={stat.target} />
             ))}

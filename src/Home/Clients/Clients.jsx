@@ -2,15 +2,12 @@ import Marquee from "react-fast-marquee";
 
 const Clients = () => {
   return (
-    <div className="">
+    <div className="mt-7">
       <div className="text-center">
         <h1 className="text-3xl text-deep-sky font-extrabold">Our Clients</h1>
-        {/* <p className="mt-2 font-bold text-4xl">
-        Clients Who Choose Us
-        </p> */}
       </div>
-      <div className="flex">
-        <Marquee speed={0}>
+      <div className="flex mt-5">
+        <Marquee speed={120}>
           <div className="w-60 mx-3 border-2 border-deep-sky rounded-full p-4">
             <img
               src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1728573105/news-cricket_cos45n.jpg"

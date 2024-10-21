@@ -4,7 +4,14 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { FreeMode, Autoplay, Navigation } from "swiper/modules";
-import { FaCode, FaPaintBrush, FaBullhorn, FaSearch, FaCogs, FaImages } from "react-icons/fa"; 
+import {
+  FaCode,
+  FaPaintBrush,
+  FaBullhorn,
+  FaSearch,
+  FaCogs,
+  FaImages,
+} from "react-icons/fa";
 
 const Services = () => {
   const services = [
@@ -12,13 +19,13 @@ const Services = () => {
       title: "Web Development",
       description:
         "Building robust, scalable websites to elevate your online presence.",
-      icon:  <FaCode />,
+      icon: <FaCode />,
     },
     {
       title: "Website Design",
       description:
         "Creating stunning, user-friendly designs that engage and convert visitors.",
-      icon:  <FaPaintBrush />,
+      icon: <FaPaintBrush />,
     },
     {
       title: "Digital Marketing",
@@ -29,7 +36,7 @@ const Services = () => {
     {
       title: "SEO Optimization",
       description:
-        "Enhancing your site’s visibility and ranking on search engines.",
+        "Enhancing your site’s visibility and ranking across search engines.",
       icon: <FaSearch />,
     },
     {
@@ -47,15 +54,15 @@ const Services = () => {
   ];
 
   return (
-    <div className="" id="services">
+    <div className="mt-7" id="services">
       <div className="text-center">
         <h1 className="text-3xl text-deep-sky font-extrabold">Our Services</h1>
-        <p className="font-bold text-4xl">
-          We Provide Exclusive Service <br /> For Your Business
+        <p className="font-bold text-3xl sm:text-4xl mt-2">
+          <span className="block">Exclusive Solutions</span>
+          <span className="block">For Your Business</span>
         </p>
       </div>
-
-      <div className="">
+      <div className="mt-7">
         <Swiper
           loop={true}
           slidesPerView={1}
