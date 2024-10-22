@@ -8,106 +8,102 @@ const Clients = () => {
       </div>
       <div className="flex mt-5">
         <Marquee speed={120}>
-          <div className="w-60 mx-3 border-2 border-deep-sky rounded-full p-4">
+          <div className="w-60 mx-3 border-2 border-[#1A1D2B] rounded-full p-4">
             <img
-              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1728573105/news-cricket_cos45n.jpg"
+              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1729609651/news-cricket_tya5kz.jpg"
               alt="Partner 1"
             />
           </div>
-          <div className="w-60 mx-3 border-2 border-deep-sky rounded-full p-5">
+          <div className="w-60 mx-3 border-2 border-[#1A1D2B] rounded-full p-4">
             <img
-              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1728573103/hyundai-elevator_db2msr.jpg"
+              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1729609175/hyundai-elevator_kvng8e.jpg"
               alt="Partner 2"
             />
           </div>
-          <div className="w-60 mx-3 border-2 border-deep-sky rounded-full p-5">
+          <div className="w-60 mx-3 border-2 border-[#1A1D2B] rounded-full p-4">
             <img
-              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1728573105/morning-mirror_x80gov.jpg"
+              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1729609174/morning-mirror_jo3kmx.jpg"
               alt="Partner 3"
             />
           </div>
-          <div className="w-60 mx-3 border-2 border-deep-sky rounded-full p-5">
+          <div className="w-60 mx-3 border-2 border-[#1A1D2B] rounded-full p-4">
             <img
-              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1728573105/otis-elevator_s6jkyp.jpg"
+              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1729609175/otis-elevator_g5lqh6.jpg"
               alt="Partner 4"
             />
           </div>
-          <div className="w-60 mx-3 border-2 border-deep-sky rounded-full p-5">
+          <div className="w-60 mx-3 border-2 border-[#1A1D2B] rounded-full p-4">
             <img
-              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1728573106/sigma-lift_mxwm4q.jpg"
+              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1729609176/sigma-lift_nvu7vo.jpg"
               alt="Partner 5"
             />
           </div>
-          <div className="w-60 mx-3 border-2 border-deep-sky rounded-full p-5">
+          <div className="w-60 mx-3 border-2 border-[#1A1D2B] rounded-full p-4">
             <img
-              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1728573104/lg-elevator_sudbz2.jpg"
+              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1729609174/lg-elevator_rxpnk6.jpg"
               alt="Partner 6"
             />
           </div>
-          <div className="w-60 mx-3 border-2 border-deep-sky rounded-full p-5">
+          <div className="w-60 mx-3 border-2 border-[#1A1D2B] rounded-full p-4">
             <img
-              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1728573104/hyundai-lift_yfwr7i.jpg"
+              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1729609176/hyundai-lift_aif17c.jpg"
               alt="Partner 7"
             />
           </div>
-          <div className="w-60 mx-3 border-2 border-deep-sky rounded-full p-5">
+          <div className="w-60 mx-3 border-2 border-[#1A1D2B] rounded-full p-4">
             <img
-              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1728573103/elevator-parts_pq688f.jpg"
+              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1729609175/elevator-parts_ziseqy.jpg"
               alt="Partner 8"
             />
           </div>
-          <div className="w-60 mx-3 border-2 border-deep-sky rounded-full p-5">
+          <div className="w-60 mx-3 border-2 border-[#1A1D2B] rounded-full p-4">
             <img
-              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1728573105/sb-elevator_pysiom.jpg"
+              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1729609175/sb-elevator_e9fjth.jpg"
               alt="Partner 9"
             />
           </div>
-          <div className="w-60 mx-3 border-2 border-deep-sky rounded-full p-5">
+          <div className="w-60 mx-3 border-2 border-[#1A1D2B] rounded-full p-4">
             <img
-              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1728573103/boinik-bangladesh_x549gw.jpg"
+              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1729609174/boinik-bangladesh_brdnpp.jpg"
               alt="Partner 10"
             />
           </div>
-          <div className="w-60 mx-3 border-2 border-deep-sky rounded-full p-5">
+          <div className="w-60 mx-3 border-2 border-[#1A1D2B] rounded-full p-4">
             <img
-              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1728573102/ajkaler-kontho_kqv27o.jpg"
+              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1729609174/ajkaler-kontho_x30ltc.jpg"
               alt="Partner 10"
             />
           </div>
-          <div className="w-60 mx-3 border-2 border-deep-sky rounded-full p-5">
+          <div className="w-60 mx-3 border-2 border-[#1A1D2B] rounded-full p-4">
             <img
-              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1728573103/doinik-sirajganj_rozfau.jpg"
+              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1729609174/doinik-sirajganj_gpm1wq.jpg"
               alt="Partner 10"
             />
           </div>
-          <div className="w-60 mx-3 border-2 border-deep-sky rounded-full p-5">
+          <div className="w-60 mx-3 border-2 border-[#1A1D2B] rounded-full p-4">
             <img
-              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1728573103/bangladesher-kontho_nl8dbh.jpg"
+              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1729609174/bangladesher-kontho_snvw6o.jpg"
               alt="Partner 10"
             />
           </div>
-          <div className="w-60 mx-3 border-2 border-deep-sky rounded-full p-5">
+          <div className="w-60 mx-3 border-2 border-[#1A1D2B] rounded-full p-4">
             <img
-              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1728573102/banglar-mukh_vjaknf.jpg"
+              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1729609174/banglar-mukh_xy19he.jpg"
               alt="Partner 10"
             />
           </div>
-          <div className="w-60 mx-3 border-2 border-deep-sky rounded-full p-5">
+          <div className="w-60 mx-3 border-2 border-[#1A1D2B] rounded-full p-4">
             <img
-              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1728573105/jago-songbad_veette.jpg"
+              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1729609175/jago-songbad_g3ztge.jpg"
               alt="Partner 10"
             />
           </div>
-          <div className="w-60 mx-3 border-2 border-deep-sky rounded-full p-5">
+          <div className="w-60 mx-3 border-2 border-[#1A1D2B] rounded-full p-4">
             <img
-              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1728573105/nogor-protidin_t0ccyq.jpg"
+              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1729609175/nogor-protidin_yrmsmj.jpg"
               alt="Partner 10"
             />
           </div>
-          {/* <div className="w-60">
-            <img src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1728573103/dnd_lyr9z5.jpg
-" alt="Partner 10" />
-          </div> */}
         </Marquee>
       </div>
     </div>
