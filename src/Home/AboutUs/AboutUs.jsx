@@ -1,5 +1,6 @@
-import { AiOutlineCheck, AiOutlinePhone } from "react-icons/ai";
+import { AiOutlineCheck } from "react-icons/ai";
 import { RiTeamFill } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 const AboutUs = () => {
   return (
@@ -8,72 +9,82 @@ const AboutUs = () => {
         <h1 className="text-3xl text-deep-sky font-extrabold">About Us</h1>
       </div>
       <div className="mt-7">
-        <div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
-            {/* Image Section */}
-            <div>
-              <img
-                src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1729540688/aboutImage_zgjt4y.png"
-                alt="Team working"
-                className="w-10/12 h-auto"
-              />
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-center text-center">
+          {/* Image Section */}
+          <div className="">
+            <img
+              src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1729540688/aboutImage_zgjt4y.png"
+              alt="Team working"
+              className="w-10/12 md:ml-20 ml-8"
+            />
+          </div>
+          {/* Text Section */}
+          <div>
+            <div className="px-9 mt-4">
+              <h2 className="text-2xl lg:text-4xl font-bold mb-4 text-[#1A1D2B]">
+                We Are Increasing Business <br /> Success With
+                <span className="text-deep-sky"> IT Solution</span>
+              </h2>
+              <p className="text-[#1A1D2B] font-normal">
+                Skylark IT is your trusted partner for complete IT solutions. We
+                focus on building lasting relationships while delivering results
+                that take your business to new heights. From web development to
+                digital marketing, we provide innovative, tailored services
+                designed to meet your unique needs. Our goal is simple: to help
+                you grow, enhance your online presence, and stay ahead of the
+                competition. With Skylark IT by your side, you can confidently
+                navigate the digital world and achieve sustainable success.
+              </p>
             </div>
-            {/* Text Section */}
-            <div>
-              <div className="text-center lg:text-left">
-                <h2 className="text-2xl lg:text-4xl font-bold text-black mb-4">
-                  We Are Increasing Business <br /> Success With
-                  <span className="text-deep-sky"> IT Solution</span>
-                </h2>
-                <p className="text-gray-600 mb-6">
-                  Skylark IT is your trusted partner for comprehensive IT
-                  solutions. We believe in building strong relationships and
-                  delivering results that help your business reach new heights
-                </p>
-              </div>
 
-              {/* Icons Section */}
-              <div className="grid grid-cols-2 gap-14 md:gap-0 mb-6">
-                <div className="flex items-center space-x-2">
-                  <span className="bg-deep-sky p-3 rounded-full text-white">
-                    <AiOutlineCheck className="h-6 w-6" />
-                  </span>
-                  <div>
-                    <h4 className="font-semibold text-gray-800 whitespace-nowrap">
-                      Certified Company
-                    </h4>
-                    <p className="text-sm text-gray-500 whitespace-nowrap">
-                      Best Provide Skills Services
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <span className="bg-deep-sky p-3 rounded-full text-white">
-                    <RiTeamFill className="h-6 w-6" />
-                  </span>
-                  <div>
-                    <h4 className="font-semibold text-gray-800">Expert Team</h4>
-                    <p className="text-sm text-gray-500">100% Expert Team</p>
-                  </div>
+            {/* Icons Section */}
+            <div className="flex items-center justify-evenly text-left mt-3">
+              <div className="flex items-center space-x-2">
+                <span className="bg-[#1A1D2B] p-3 rounded-full text-white">
+                  <AiOutlineCheck className="h-6 w-6" />
+                </span>
+                <div>
+                  <h4 className="font-semibold text-gray-800 whitespace-nowrap">
+                    Certified Company
+                  </h4>
+                  {/* <p className="text-sm text-gray-500 whitespace-nowrap">
+                    Best Provide Skills Services
+                  </p> */}
                 </div>
               </div>
-              {/* Button & Call Section */}
-              <div className="flex items-center ">
-                <a
-                  href="#discover-more"
-                  className="bg-deep-sky text-white py-2 px-6 rounded-lg text-sm hover:bg-normal-sky"
-                >
-                  Discover More
-                </a>
-                <div className="flex items-center space-x-1 text-deep-sky">
-                  <span>
-                    <AiOutlinePhone className="h-6 w-6" />
-                  </span>
-                  <p className="text-gray-800">
-                    Call Us On: <strong>+8801676047350</strong>
-                  </p>
+              <div className="flex items-center space-x-2">
+                <span className="bg-[#1A1D2B] p-3 rounded-full text-white">
+                  <RiTeamFill className="h-6 w-6" />
+                </span>
+                <div>
+                  <h4 className="font-semibold text-gray-800">Expert Team</h4>
+                  {/* <p className="text-sm text-gray-500">100% Expert Team</p> */}
                 </div>
               </div>
+            </div>
+            {/* Button & Call Section */}
+            <div className="flex items-center justify-evenly mt-5">
+              <button className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-[#1A1D2B] px-6 font-medium text-neutral-50">
+                <span className="absolute h-0 w-0 rounded-full bg-deep-sky transition-all duration-300 group-hover:h-56 group-hover:w-56"></span>
+                <span className="relative">DISCOVER MORE</span>
+              </button>
+              <button className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-[#1A1D2B] px-6 font-medium text-neutral-50">
+                <span className="absolute h-0 w-0 rounded-full bg-deep-sky transition-all duration-300 group-hover:h-56 group-hover:w-56"></span>
+                <span className="relative">
+                  <div className="flex space-x-1 items-center">
+                    <div>Call Us On </div>
+                    <Link
+                      to="https://www.facebook.com/SkyLarkITLtd"
+                      className="w-5"
+                    >
+                      <img
+                        src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1729435147/whatsapp_733585_liafzz.png"
+                        alt=""
+                      />
+                    </Link>
+                  </div>
+                </span>
+              </button>
             </div>
           </div>
         </div>

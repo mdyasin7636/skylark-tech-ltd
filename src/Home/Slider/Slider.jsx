@@ -2,7 +2,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import { FaArrowRightLong } from "react-icons/fa6";
 
 const slidesData = [
   {
@@ -64,13 +63,15 @@ const Slider = () => {
                 ))}
               </p>
               <div className="flex space-x-4 mt-6 justify-center md:justify-normal">
-                <button className="flex items-center space-x-2 bg-deep-sky text-white py-2 px-4 rounded hover:bg-normal-sky">
-                  <span>DISCOVER MORE</span> <FaArrowRightLong />
-                </button>
+              <button className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-[#1A1D2B] px-6 font-medium text-neutral-50 border border-deep-sky">
+                <span className="absolute h-0 w-0 rounded-full bg-deep-sky transition-all duration-300 group-hover:h-56 group-hover:w-56"></span>
+                <span className="relative">DISCOVER MORE</span>
+              </button>
 
-                <button className="flex items-center space-x-2 bg-transparent border border-white text-white py-2 px-4 rounded hover:bg-white hover:text-black">
-                  <span>CONTACT US</span> <FaArrowRightLong />
-                </button>
+              <button className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-[#1A1D2B] px-6 font-medium text-neutral-50 border border-deep-sky">
+                <span className="absolute h-0 w-0 rounded-full bg-deep-sky transition-all duration-300 group-hover:h-56 group-hover:w-56"></span>
+                <span className="relative">CONTACT US</span>
+              </button>
               </div>
             </div>
           </SwiperSlide>
