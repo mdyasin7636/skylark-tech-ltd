@@ -9,7 +9,6 @@ export default {
       colors: {
         'deep-sky': '#1C75BC',
         'normal-sky': '#2FB3E3',
-        'custom-purple': '#6f42c1',
       },
       backgroundImage: {
         'custom-radial': 'radial-gradient(125% 125% at 50% 10%, #000 40%, #63e 100%)',

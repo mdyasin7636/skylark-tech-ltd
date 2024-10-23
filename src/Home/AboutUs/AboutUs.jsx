@@ -39,7 +39,7 @@ const AboutUs = () => {
 
             {/* Icons Section */}
             <div className="flex items-center justify-evenly text-left mt-3">
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-1">
                 <span className="bg-[#1A1D2B] p-3 rounded-full text-white">
                   <AiOutlineCheck className="h-6 w-6" />
                 </span>
@@ -52,7 +52,7 @@ const AboutUs = () => {
                   </p> */}
                 </div>
               </div>
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-1">
                 <span className="bg-[#1A1D2B] p-3 rounded-full text-white">
                   <RiTeamFill className="h-6 w-6" />
                 </span>

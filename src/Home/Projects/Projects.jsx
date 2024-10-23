@@ -105,7 +105,7 @@ const Projects = () => {
       </div>
       <div className="mt-5">
         {/* Tab Navigation */}
-        <div className="flex justify-center space-x-4 flex-wrap">
+        {/* <div className="flex justify-center space-x-4 flex-wrap">
           {tabs.map((tab) => (
             <button
               key={tab.name}
@@ -119,7 +119,28 @@ const Projects = () => {
               {tab.name}
             </button>
           ))}
-        </div>
+        </div> */}
+
+<div className="flex justify-center space-x-4 flex-wrap">
+  {tabs.map((tab) => (
+    <button
+      key={tab.name}
+      onClick={() => setActiveTab(tab.name)}
+      className={`group relative inline-flex h-11 items-center justify-center overflow-hidden rounded-md px-4 font-medium text-neutral-50 ${
+        activeTab === tab.name ? "bg-[#1A1D2B]" : "bg-[#1A1D2B]"
+      }`}
+    >
+      {/* Background transition effect */}
+      <span
+        className={`absolute h-0 w-0 rounded-full bg-deep-sky transition-all duration-300 group-hover:h-56 group-hover:w-56 ${
+          activeTab === tab.name ? "h-56 w-56" : ""
+        }`}
+      ></span>
+      <span className="relative z-10">{tab.name}</span>
+    </button>
+  ))}
+</div>
+
 
         {/* Content for the Active Tab */}
         <div className="mt-5">
@@ -169,17 +190,24 @@ const Card = ({ card, handleSiteLink }) => {
           )}
         </div>
       </div>
-      <div className="flex justify-evenly">
+      <div className="flex justify-evenly items-center">
         <div>
-          <h3 className="text-lg font-bold mt-2">{card.title}</h3>
+        <div className="relative bg-[linear-gradient(#262626,#262626),linear-gradient(#1C75BC,#1C75BC)] bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat text-[#1A1D2B] transition-[background-size,color] duration-500 hover:bg-[0_2px,100%_2px] hover:text-[#1C75BC] font-semibold">{card.title}</div>
+       
         </div>
         <div>
-          <button
+          {/* <button
             onClick={() => handleSiteLink(card.link)}
             className="mt-2 bg-deep-sky text-white py-1 px-4 rounded-lg"
           >
             View Site
-          </button>
+          </button> */}
+
+          <button onClick={() => handleSiteLink(card.link)} className="group relative inline-flex h-9 items-center justify-center overflow-hidden rounded-md bg-[#1A1D2B] px-3 font-medium text-neutral-50 mt-2">
+                <span className="absolute h-0 w-0 rounded-full bg-deep-sky transition-all duration-300 group-hover:h-56 group-hover:w-56"></span>
+                <span className="relative">Explore</span>
+              </button>
+
         </div>
       </div>
     </div>
