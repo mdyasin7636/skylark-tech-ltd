@@ -105,45 +105,29 @@ const Projects = () => {
       </div>
       <div className="mt-5">
         {/* Tab Navigation */}
-        {/* <div className="flex justify-center space-x-4 flex-wrap">
+
+        <div className="flex justify-center flex-wrap">
           {tabs.map((tab) => (
             <button
               key={tab.name}
               onClick={() => setActiveTab(tab.name)}
-              className={`px-4 py-2 rounded-t-lg ${
-                activeTab === tab.name
-                  ? "bg-deep-sky text-white"
-                  : "bg-gray-200 text-gray-600"
-              } mb-2 sm:mb-0`}
+              className={`group relative inline-flex h-11 items-center justify-center overflow-hidden rounded-md px-[12px] font-medium text-neutral-50 mb-2 sm:mb-0 mx-[3px] md:mx-2 ${
+                activeTab === tab.name ? "bg-[#1A1D2B]" : "bg-[#1A1D2B]"
+              }`}
             >
-              {tab.name}
+              {/* Background transition effect */}
+              <span
+                className={`absolute h-0 w-0 rounded-full bg-deep-sky transition-all duration-300 group-hover:h-56 group-hover:w-56 ${
+                  activeTab === tab.name ? "h-56 w-56" : ""
+                }`}
+              ></span>
+              <span className="relative z-10">{tab.name}</span>
             </button>
           ))}
-        </div> */}
-
-<div className="flex justify-center space-x-4 flex-wrap">
-  {tabs.map((tab) => (
-    <button
-      key={tab.name}
-      onClick={() => setActiveTab(tab.name)}
-      className={`group relative inline-flex h-11 items-center justify-center overflow-hidden rounded-md px-4 font-medium text-neutral-50 ${
-        activeTab === tab.name ? "bg-[#1A1D2B]" : "bg-[#1A1D2B]"
-      }`}
-    >
-      {/* Background transition effect */}
-      <span
-        className={`absolute h-0 w-0 rounded-full bg-deep-sky transition-all duration-300 group-hover:h-56 group-hover:w-56 ${
-          activeTab === tab.name ? "h-56 w-56" : ""
-        }`}
-      ></span>
-      <span className="relative z-10">{tab.name}</span>
-    </button>
-  ))}
-</div>
-
+        </div>
 
         {/* Content for the Active Tab */}
-        <div className="mt-5">
+        <div className="mt-5 ">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-8">
             {cards[activeTab].map((card) => (
               <Card
@@ -169,7 +153,7 @@ const Card = ({ card, handleSiteLink }) => {
   }, [card.img]);
 
   return (
-    <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-black px-2">
+    <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-black px-2 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] ">
       <div className="relative max-w-full h-72 overflow-hidden rounded-lg border border-gray-400">
         {/* Maintain hover style while centering loading animation */}
         <div className="h-max w-full transition-transform duration-[3500ms] ease-linear transform translate-y-0 hover:-translate-y-[calc(100%-18rem)] rounded-lg">
@@ -191,23 +175,17 @@ const Card = ({ card, handleSiteLink }) => {
         </div>
       </div>
       <div className="flex justify-evenly items-center">
-        <div>
-        <div className="relative bg-[linear-gradient(#262626,#262626),linear-gradient(#1C75BC,#1C75BC)] bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat text-[#1A1D2B] transition-[background-size,color] duration-500 hover:bg-[0_2px,100%_2px] hover:text-[#1C75BC] font-semibold">{card.title}</div>
-       
+        <div className="relative bg-[linear-gradient(#262626,#262626),linear-gradient(#1C75BC,#1C75BC)] bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat text-[#1A1D2B] transition-[background-size,color] duration-500 hover:bg-[0_2px,100%_2px] hover:text-[#1C75BC] font-semibold">
+          {card.title}
         </div>
         <div>
-          {/* <button
+          <button
             onClick={() => handleSiteLink(card.link)}
-            className="mt-2 bg-deep-sky text-white py-1 px-4 rounded-lg"
+            className="group relative inline-flex h-9 items-center justify-center overflow-hidden rounded-md bg-[#1A1D2B] px-3 font-medium text-neutral-50 mt-2"
           >
-            View Site
-          </button> */}
-
-          <button onClick={() => handleSiteLink(card.link)} className="group relative inline-flex h-9 items-center justify-center overflow-hidden rounded-md bg-[#1A1D2B] px-3 font-medium text-neutral-50 mt-2">
-                <span className="absolute h-0 w-0 rounded-full bg-deep-sky transition-all duration-300 group-hover:h-56 group-hover:w-56"></span>
-                <span className="relative">Explore</span>
-              </button>
-
+            <span className="absolute h-0 w-0 rounded-full bg-deep-sky transition-all duration-300 group-hover:h-56 group-hover:w-56"></span>
+            <span className="relative">Explore</span>
+          </button>
         </div>
       </div>
     </div>

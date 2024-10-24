@@ -3,7 +3,7 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { FreeMode, Autoplay, Navigation } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import {
   FaCode,
   FaPaintBrush,
@@ -68,7 +68,7 @@ const Services = () => {
           slidesPerView={1}
           spaceBetween={1}
           freeMode={true}
-          modules={[FreeMode, Autoplay, Navigation]}
+          modules={[ Autoplay, Navigation]}
           autoplay={{
             delay: 4000,
             disableOnInteraction: false,
