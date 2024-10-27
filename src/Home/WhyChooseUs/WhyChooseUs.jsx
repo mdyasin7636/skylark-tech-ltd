@@ -10,14 +10,11 @@ const WhyChooseUs = () => {
         <div className="mx-auto px-6 md:px-12 lg:px-24 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           {/* Text Content */}
           <div className="order-last md:order-first">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6 text-center">
-              Reliable IT Services
-              <span>
-                <br />
-                Designed for <span className="text-deep-sky">Your Business Growth</span>
-              </span>
+            <h2 className="text-4xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">
+              Reliable IT Services Designed for{" "}
+              <span className="text-deep-sky">Your Business Growth</span>
             </h2>
-            <p className="text-gray-600 mb-8">
+            <p className="text-base sm:text-base md:text-lg text-gray-600 mb-8">
               Choosing Skylark IT means partnering with a trusted ally focused
               on your success. We deliver customized web solutions that drive
               growth, using the latest technology and innovative designs. Our
@@ -25,31 +22,34 @@ const WhyChooseUs = () => {
               lasting partnerships. Let us help you achieve your goals with
               expert support every step of the way.
             </p>
+
             <div className="grid grid-cols-2 gap-3">
-              {/* List of Services */}
-              <div className="flex items-center">
-                <IoIosCheckboxOutline className="text-[#1A1D2B] w-6 h-6 mr-1" />
-                Big Data Analysis
+              {/* Left Column */}
+              <div className="flex items-center whitespace-nowrap">
+                <IoIosCheckboxOutline className="text-[#1A1D2B] w-6 h-6" />
+                24/7 Support
               </div>
-              <div className="flex items-center">
-                <IoIosCheckboxOutline className="text-[#1A1D2B] w-6 h-6 mr-1" />
-                High Quality Security
+              <div className="flex items-center whitespace-nowrap">
+                <IoIosCheckboxOutline className="text-[#1A1D2B] w-6 h-6" />
+                Expert Team
               </div>
-              <div className="flex items-center">
-                <IoIosCheckboxOutline className="text-[#1A1D2B] w-6 h-6 mr-1" />
-                24/7 Online Support
+              <div className="flex items-center whitespace-nowrap">
+                <IoIosCheckboxOutline className="text-[#1A1D2B] w-6 h-6" />
+                Quality Assured
               </div>
-              <div className="flex items-center">
-                <IoIosCheckboxOutline className="text-[#1A1D2B] w-6 h-6 mr-1" />
-                24/7 Expert Team
+
+              {/* Right Column */}
+              <div className="flex items-center whitespace-nowrap">
+                <IoIosCheckboxOutline className="text-[#1A1D2B] w-6 h-6" />
+                Innovative Designs
               </div>
-              <div className="flex items-center">
-                <IoIosCheckboxOutline className="text-[#1A1D2B] w-6 h-6 mr-1" />
-                Business Improvement
+              <div className="flex items-center whitespace-nowrap">
+                <IoIosCheckboxOutline className="text-[#1A1D2B] w-6 h-6" />
+                Scalable Solutions
               </div>
-              <div className="flex items-center">
-                <IoIosCheckboxOutline className="text-[#1A1D2B] w-6 h-6 mr-1" />
-                Easy Solutions
+              <div className="flex items-center whitespace-nowrap">
+                <IoIosCheckboxOutline className="text-[#1A1D2B] w-6 h-6" />
+                Transparent Pricing
               </div>
             </div>
           </div>
