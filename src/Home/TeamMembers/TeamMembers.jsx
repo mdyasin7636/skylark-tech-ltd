@@ -2,39 +2,34 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
-import { FreeMode, Navigation, Autoplay } from "swiper/modules";
+import {Navigation, Autoplay } from "swiper/modules";
 
 const TeamMembers = () => {
   const members = [
     {
-      name: "Alex Furnandes",
-      role: "Project Manager",
+      name: "Alamin Poner",
+      role: "CEO & Founder",
       image: "https://i.ibb.co.com/Kr6tyHp/Julian-Myers.jpg",
     },
     {
-      name: "Mary Crispy",
-      role: "Chief Expert",
+      name: "Ashraful ALam",
+      role: "Director",
       image: "https://i.ibb.co.com/JdbsDP9/Oliver-Hayes.jpg",
     },
     {
-      name: "Henry Joshep",
-      role: "Product Manager",
+      name: "Yeasin Arafath",
+      role: "Developer",
       image: "https://i.ibb.co.com/QMtsyf1/Henry-Fletcher.jpg",
     },
     {
-      name: "Sanjida Carlose",
-      role: "IT Consultant",
-      image: "https://i.ibb.co.com/s9m41Tt/Isaac-Reynolds.jpg",
+      name: "Mizanur Rahman",
+      role: "Technical Manager",
+      image: "https://i.ibb.co.com/QMtsyf1/Henry-Fletcher.jpg",
     },
     {
-      name: "John Doe",
-      role: "Data Scientist",
-      image: "https://i.ibb.co.com/mJTNHMx/Alexander-Brooks.jpg",
-    },
-    {
-      name: "Jane Doe",
-      role: "Business Analyst",
-      image: "https://i.ibb.co.com/ZBCCG0D/Ethan-Mitchell.jpg",
+      name: "Tanvir Ahamed",
+      role: "Digital Marketer",
+      image: "https://i.ibb.co.com/QMtsyf1/Henry-Fletcher.jpg",
     },
   ];
 
@@ -50,8 +45,7 @@ const TeamMembers = () => {
           loop={true}
           slidesPerView={1}
           spaceBetween={30}
-          freeMode={true}
-          modules={[Navigation, Autoplay, FreeMode]}
+          modules={[Navigation, Autoplay]}
           autoplay={{
             delay: 4000,
             disableOnInteraction: false,
