@@ -12,7 +12,7 @@ const TeamMembers = () => {
       image: "https://i.ibb.co.com/Kr6tyHp/Julian-Myers.jpg",
     },
     {
-      name: "Ashraful ALam",
+      name: "Ashraful Alam",
       role: "Director",
       image: "https://i.ibb.co.com/JdbsDP9/Oliver-Hayes.jpg",
     },
