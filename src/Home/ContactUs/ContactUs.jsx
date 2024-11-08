@@ -10,9 +10,12 @@ import { Link } from "react-router-dom";
 
 const ContactUs = () => {
   return (
-    <section className="bg-white">
-      <div className="grid grid-cols-1 lg:grid-cols-2">
-        <div className="relative flex items-end px-4 pb-10 pt-60 sm:pb-16 md:justify-center lg:pb-24 bg-gray-50 sm:px-6 lg:px-8">
+    <div className="mt-7">
+      <div className="text-center">
+        <h1 className="text-3xl text-deep-sky font-extrabold">Get In Touch</h1>
+      </div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 mt-7">
+        <div className="relative flex items-end px-5 pb-16 pt-16 md:justify-center lg:pb-24 bg-gray-50">
           <div className="absolute inset-0">
             <img
               className="object-cover w-full h-full"
@@ -21,7 +24,6 @@ const ContactUs = () => {
             />
           </div>
           <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
-
           <div className="relative">
             <div className="w-full max-w-xl xl:w-full xl:mx-auto xl:pr-24 xl:max-w-xl">
               <h3 className="text-4xl font-bold text-white">
@@ -124,7 +126,7 @@ const ContactUs = () => {
           </div>
         </div>
 
-        <div className="flex items-center justify-center px-4 py-10 bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] sm:px-6 lg:px-8 sm:py-16 lg:py-24">
+        <div className="flex items-center justify-center py-6 bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]">
           <div className="xl:w-full xl:max-w-sm 2xl:max-w-md xl:mx-auto">
             <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl">
               Send Us A Message
@@ -228,7 +230,7 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
