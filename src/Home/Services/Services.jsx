@@ -12,6 +12,7 @@ import {
   FaCogs,
   FaImages,
 } from "react-icons/fa";
+import { TfiArrowCircleRight } from "react-icons/tfi";
 
 const Services = () => {
   const services = [
@@ -97,7 +98,7 @@ const Services = () => {
                   <div className="h-16 w-44 bg-blue-950 absolute left-full rounded-full -bottom-12 group-hover:scale-[200%] z-[-1] duration-700 easy-in-out"></div>
                   <div className="z-20 m-4 text-center">
                     {/* Icon */}
-                    <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-indigo-100 flex items-center justify-center">
+                    <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-indigo-200 flex items-center justify-center">
                       <div className="text-3xl text-indigo-600">
                         {service.icon}
                       </div>
@@ -115,8 +116,8 @@ const Services = () => {
 
                     {/* Button with arrow */}
                     <div className="flex justify-center mt-4">
-                      <button className="bg-blue-500 text-white p-3 w-12 h-12 flex items-center justify-center rounded-full transition hover:bg-white hover:text-blue-500 border border-transparent hover:border-blue-500 hover:shadow-glow">
-                        →
+                      <button className="bg-indigo-200 text-indigo-600 p-3 w-12 h-12 flex items-center justify-center rounded-full transition hover:bg-white border border-transparent hover:shadow-glow">
+                      <TfiArrowCircleRight className="w-14 h-14"  />
                       </button>
                     </div>
                   </div>

@@ -2,6 +2,7 @@ import AboutUs from "../AboutUs/AboutUs";
 import Achievements from "../Achievements/Achievements";
 import Clients from "../Clients/Clients";
 import ContactUs from "../ContactUs/ContactUs";
+import CustomerReviews from "../CustomerReviews/CustomerReviews";
 import Projects from "../Projects/Projects";
 import Services from "../Services/Services";
 import Slider from "../Slider/Slider";
@@ -18,6 +19,7 @@ const Home = () => {
       <Projects />
       <WhyChooseUs />
       <Achievements />
+      <CustomerReviews/>
       <TeamMembers />
       <Clients />
       {/* <SocialMediaPosts /> */}

@@ -1,5 +1,4 @@
-import { IoIosCheckboxOutline } from "react-icons/io";
-
+import { ImCheckboxChecked } from "react-icons/im";
 const WhyChooseUs = () => {
   return (
     <div className="mt-7">
@@ -14,7 +13,7 @@ const WhyChooseUs = () => {
               Reliable IT Services Designed for{" "}
               <span className="text-deep-sky">Your Business Growth</span>
             </h2>
-            <p className="text-base sm:text-base md:text-lg text-gray-600 mb-8">
+            <p className="text-base sm:text-base md:text-lg text-gray-600 mb-8 font">
               Choosing Skylark IT means partnering with a trusted ally focused
               on your success. We deliver customized web solutions that drive
               growth, using the latest technology and innovative designs. Our
@@ -25,31 +24,31 @@ const WhyChooseUs = () => {
 
             <div className="grid grid-cols-2 gap-3">
               {/* Left Column */}
-              <div className="flex items-center whitespace-nowrap">
-                <IoIosCheckboxOutline className="text-[#1A1D2B] w-6 h-6" />
-                24/7 Support
+              <div className="flex items-center whitespace-nowrap font-bold">
+                <ImCheckboxChecked className="text-deep-sky w-5 h-5" />
+                <p className="pl-1">24/7 Support</p>
               </div>
-              <div className="flex items-center whitespace-nowrap">
-                <IoIosCheckboxOutline className="text-[#1A1D2B] w-6 h-6" />
-                Expert Team
+              <div className="flex items-center whitespace-nowrap font-bold">
+                <ImCheckboxChecked className="text-deep-sky w-5 h-5" />
+                <p className="pl-1">Expert Team</p>
               </div>
-              <div className="flex items-center whitespace-nowrap">
-                <IoIosCheckboxOutline className="text-[#1A1D2B] w-6 h-6" />
-                Quality Assured
+              <div className="flex items-center whitespace-nowrap font-bold">
+                <ImCheckboxChecked className="text-deep-sky w-5 h-5" />
+                <p className="pl-1">Quality Assured</p>
               </div>
 
               {/* Right Column */}
-              <div className="flex items-center whitespace-nowrap">
-                <IoIosCheckboxOutline className="text-[#1A1D2B] w-6 h-6" />
-                Innovative Designs
+              <div className="flex items-center whitespace-nowrap font-bold">
+                <ImCheckboxChecked className="text-deep-sky w-5 h-5" />
+                <p className="pl-1">Innovative Designs</p>
               </div>
-              <div className="flex items-center whitespace-nowrap">
-                <IoIosCheckboxOutline className="text-[#1A1D2B] w-6 h-6" />
-                Scalable Solutions
+              <div className="flex items-center whitespace-nowrap font-bold">
+                <ImCheckboxChecked className="text-deep-sky w-5 h-5" />
+                <p className="pl-1">Scalable Solutions</p>
               </div>
-              <div className="flex items-center whitespace-nowrap">
-                <IoIosCheckboxOutline className="text-[#1A1D2B] w-6 h-6" />
-                Transparent Pricing
+              <div className="flex items-center whitespace-nowrap font-bold">
+                <ImCheckboxChecked className="text-deep-sky w-5 h-5" />
+                <p className="pl-1">Transparent Pricing</p>
               </div>
             </div>
           </div>
