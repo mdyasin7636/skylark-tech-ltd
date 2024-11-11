@@ -19,7 +19,7 @@ const Home = () => {
       <Projects />
       <WhyChooseUs />
       <Achievements />
-      <CustomerReviews/>
+      <CustomerReviews />
       <TeamMembers />
       <Clients />
       {/* <SocialMediaPosts /> */}
