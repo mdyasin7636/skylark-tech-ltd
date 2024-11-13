@@ -7,8 +7,29 @@ import { SiMaildotcom } from "react-icons/si";
 import { MdPhoneInTalk } from "react-icons/md";
 import { TbWorldSearch } from "react-icons/tb";
 import { Link } from "react-router-dom";
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
 
 const ContactUs = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_58nz7tr", "template_dkxwjte", form.current, {
+        publicKey: "6_oGBpY10MFeXYVul",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
+
   return (
     <div className="mt-7">
       <div className="text-center">
@@ -131,13 +152,10 @@ const ContactUs = () => {
             <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl">
               Send Us A Message
             </h2>
-            <form action="#" method="POST" className="mt-6">
+            <form ref={form} onSubmit={sendEmail} className="mt-6">
               <div className="space-y-5">
                 <div>
-                  <label
-                    htmlFor=""
-                    className="text-base font-medium text-gray-900"
-                  >
+                  <label className="text-base font-medium text-gray-900">
                     Name
                   </label>
                   <div className="mt-2.5 relative text-gray-400 focus-within:text-gray-600">
@@ -147,8 +165,7 @@ const ContactUs = () => {
 
                     <input
                       type="text"
-                      name=""
-                      id=""
+                      name="user_name"
                       placeholder="Enter your name"
                       className="block w-full py-4 pl-10 pr-4 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600"
                     />
@@ -156,10 +173,7 @@ const ContactUs = () => {
                 </div>
 
                 <div>
-                  <label
-                    htmlFor=""
-                    className="text-base font-medium text-gray-900"
-                  >
+                  <label className="text-base font-medium text-gray-900">
                     Email
                   </label>
                   <div className="mt-2.5 relative text-gray-400 focus-within:text-gray-600">
@@ -168,18 +182,14 @@ const ContactUs = () => {
                     </div>
                     <input
                       type="email"
-                      name=""
-                      id=""
+                      name="user_email"
                       placeholder="Enter your email"
                       className="block w-full py-4 pl-10 pr-4 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600"
                     />
                   </div>
                 </div>
                 <div>
-                  <label
-                    htmlFor=""
-                    className="text-base font-medium text-gray-900"
-                  >
+                  <label className="text-base font-medium text-gray-900">
                     Number
                   </label>
                   <div className="mt-2.5 relative text-gray-400 focus-within:text-gray-600">
@@ -190,17 +200,13 @@ const ContactUs = () => {
                     <input
                       type="text"
                       name=""
-                      id=""
                       placeholder="Enter your number"
                       className="block w-full py-4 pl-10 pr-4 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600"
                     />
                   </div>
                 </div>
                 <div>
-                  <label
-                    htmlFor=""
-                    className="text-base font-medium text-gray-900"
-                  >
+                  <label className="text-base font-medium text-gray-900">
                     How can we help?
                   </label>
                   <div className="mt-2.5 relative text-gray-400 focus-within:text-gray-600 flex items-start">
@@ -210,8 +216,7 @@ const ContactUs = () => {
 
                     <textarea
                       type="text"
-                      name=""
-                      id=""
+                      name="message"
                       cols="20"
                       rows="4"
                       placeholder="Enter your message"
@@ -220,9 +225,14 @@ const ContactUs = () => {
                   </div>
                 </div>
                 <div>
-                  <button className="group relative inline-flex w-full items-center justify-center overflow-hidden rounded-md bg-[#1A1D2B] py-4 font-medium text-neutral-50 mt-2">
+                  <button
+                    className="group relative inline-flex w-full items-center justify-center overflow-hidden rounded-md bg-[#1A1D2B] py-4 font-medium text-neutral-50 mt-2"
+                    type="submit"
+                  >
                     <span className="absolute h-0 w-0 rounded-full bg-deep-sky transition-all duration-300 group-hover:h-[390px] group-hover:w-[390px]"></span>
-                    <span className="relative">Send</span>
+                    <span className="relative" value="Send">
+                      Send
+                    </span>
                   </button>
                 </div>
               </div>

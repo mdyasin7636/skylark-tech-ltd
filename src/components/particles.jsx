@@ -9,7 +9,7 @@ const ParticlesComponent = (props) => {
   useEffect(() => {
     initParticlesEngine(async (engine) => {
       await loadSlim(engine);
-    
+
     }).then(() => {
       setInit(true);
     });
@@ -31,7 +31,7 @@ const ParticlesComponent = (props) => {
         events: {
           onClick: {
             enable: true,
-            mode: "repulse",
+            mode: "push",
           },
           onHover: {
             enable: true,
@@ -44,7 +44,7 @@ const ParticlesComponent = (props) => {
             duration: 15,
           },
           grab: {
-            distance: 150,
+            distance: 100,
           },
         },
       },
@@ -56,7 +56,7 @@ const ParticlesComponent = (props) => {
           color: "#FFFFFF",
           distance: 150,
           enable: true,
-          opacity: 0.3,
+          opacity: 1,
           width: 1,
         },
         move: {
@@ -66,7 +66,7 @@ const ParticlesComponent = (props) => {
             default: "bounce",
           },
           random: true,
-          speed: 1,
+          speed: 2,
           straight: false,
         },
         number: {
