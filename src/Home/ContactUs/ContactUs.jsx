@@ -9,6 +9,8 @@ import { TbWorldSearch } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const ContactUs = () => {
   const form = useRef();
@@ -22,7 +24,8 @@ const ContactUs = () => {
       })
       .then(
         () => {
-          console.log("SUCCESS!");
+          toast("Message delivered! We'll be in touch soon");
+          form.current.reset(); // Clear the form fields
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -164,6 +167,7 @@ const ContactUs = () => {
                     </div>
 
                     <input
+                      required
                       type="text"
                       name="user_name"
                       placeholder="Enter your name"
@@ -181,6 +185,7 @@ const ContactUs = () => {
                       <MdEmail />
                     </div>
                     <input
+                      required
                       type="email"
                       name="user_email"
                       placeholder="Enter your email"
@@ -198,8 +203,8 @@ const ContactUs = () => {
                     </div>
 
                     <input
-                      type="text"
-                      name=""
+                      type="number"
+                      name="mobile_number"
                       placeholder="Enter your number"
                       className="block w-full py-4 pl-10 pr-4 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600"
                     />
@@ -215,6 +220,7 @@ const ContactUs = () => {
                     </div>
 
                     <textarea
+                      required
                       type="text"
                       name="message"
                       cols="20"
@@ -234,6 +240,19 @@ const ContactUs = () => {
                       Send
                     </span>
                   </button>
+                  <ToastContainer
+                    position="bottom-center"
+                    autoClose={2000}
+                    hideProgressBar
+                    newestOnTop={false}
+                    closeOnClick
+                    rtl={false}
+                    pauseOnFocusLoss
+                    draggable
+                    pauseOnHover
+                    theme="dark"
+                    transition:Zoom
+                  />
                 </div>
               </div>
             </form>
