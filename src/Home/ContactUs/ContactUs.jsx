@@ -241,7 +241,7 @@ const ContactUs = () => {
                     </span>
                   </button>
                   <ToastContainer
-                    position="bottom-center"
+                    position="top-center"
                     autoClose={2000}
                     hideProgressBar
                     newestOnTop={false}
@@ -250,7 +250,7 @@ const ContactUs = () => {
                     pauseOnFocusLoss
                     draggable
                     pauseOnHover
-                    theme="dark"
+                    theme="light"
                     transition:Zoom
                   />
                 </div>
