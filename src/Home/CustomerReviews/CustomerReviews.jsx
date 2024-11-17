@@ -1,3 +1,11 @@
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Autoplay, Navigation } from "swiper/modules";
+import { BiSolidQuoteAltRight } from "react-icons/bi";
+
 const CustomerReviews = () => {
   const reviews = [
     {
@@ -52,78 +60,54 @@ const CustomerReviews = () => {
         </h1>
       </div>
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 mt-6">
-        {/* Limit to 3 reviews for small screens */}
-        <div className="grid grid-cols-1 gap-6 lg:gap-10 sm:grid-cols-2 md:grid-cols-3">
-          {reviews
-            .slice(0, 3) // Always show first 3 reviews
-            .map((review) => (
-              <div
-                key={review.id}
-                className="flex flex-col bg-white border border-black rounded-md"
-              >
-                <div className="flex flex-col justify-between flex-1 p-8">
-                  <div className="flex-1">
-                    <blockquote>
-                      <p className="text-lg text-gray-800">“{review.text}”</p>
-                    </blockquote>
-                  </div>
-                  <div className="mt-8">
-                    <div className="w-full h-0 mb-8 border-t-2 border-gray-400 border-dotted"></div>
-                    <div className="flex items-center">
-                      <img
-                        className="flex-shrink-0 object-cover w-10 h-10 rounded-full"
-                        src={review.img}
-                        alt={review.name}
-                      />
-                      <div className="min-w-0 ml-3">
-                        <p className="text-base font-semibold text-gray-800 truncate">
-                          {review.name}
-                        </p>
-                        <p className="text-base text-gray-500 truncate">
-                          {review.role}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          {/* Show additional 3 reviews only on larger screens */}
-          {reviews
-            .slice(3, 6) // Next 3 reviews for larger screens
-            .map((review) => (
-              <div
-                key={review.id}
-                className="hidden md:flex flex-col bg-white border border-black rounded-md"
-              >
-                <div className="flex flex-col justify-between flex-1 p-8">
-                  <div className="flex-1">
-                    <blockquote>
-                      <p className="text-lg text-gray-800">“{review.text}”</p>
-                    </blockquote>
-                  </div>
-                  <div className="mt-8">
-                    <div className="w-full h-0 mb-8 border-t-2 border-gray-400 border-dotted"></div>
-                    <div className="flex items-center">
-                      <img
-                        className="flex-shrink-0 object-cover w-10 h-10 rounded-full"
-                        src={review.img}
-                        alt={review.name}
-                      />
-                      <div className="min-w-0 ml-3">
-                        <p className="text-base font-semibold text-gray-800 truncate">
-                          {review.name}
-                        </p>
-                        <p className="text-base text-gray-500 truncate">
-                          {review.role}
-                        </p>
-                      </div>
-                    </div>
+        <Swiper
+          loop={true}
+          slidesPerView={1}
+          spaceBetween={20}
+          freeMode={true}
+          modules={[Autoplay, Navigation]}
+          autoplay={{
+            delay: 4000,
+            disableOnInteraction: false,
+          }}
+          className="mySwiper"
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          }}
+        >
+          {reviews.map((review) => (
+            <SwiperSlide key={review.id}>
+            <div className="overflow-hidden bg-white rounded-md shadow text-center border border-black h-96 flex flex-col justify-between">
+              <div className="px-6 py-8">
+                <div className="relative w-24 h-24 mx-auto">
+                  <img
+                    className="relative object-cover w-24 h-24 mx-auto rounded-full"
+                    src={review.img}
+                    alt={review.name}
+                  />
+                  <div className="absolute top-0 right-0 flex items-center justify-center bg-blue-600 rounded-full w-7 h-7">
+                    <BiSolidQuoteAltRight className="w-5 h-5 text-white" />
                   </div>
                 </div>
+                <blockquote className="mt-7 h-32 overflow-hidden text-ellipsis">
+                  <p className="text-lg text-black ">{review.text}</p>
+                </blockquote>
+                <div>
+                <p className="text-base font-semibold text-black">{review.name}</p>
+                <p className="mt-1 text-base text-gray-600">{review.role}</p>
               </div>
-            ))}
-        </div>
+              </div>
+              
+            </div>
+          </SwiperSlide>
+          
+          ))}
+        </Swiper>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
-import {Navigation, Autoplay } from "swiper/modules";
+import {Autoplay, Navigation } from "swiper/modules";
 
 const TeamMembers = () => {
   const members = [
@@ -31,6 +31,11 @@ const TeamMembers = () => {
       role: "Digital Marketer",
       image: "https://i.ibb.co.com/QMtsyf1/Henry-Fletcher.jpg",
     },
+    {
+      name: "Tanvir Ahamed",
+      role: "Digital Marketer",
+      image: "https://i.ibb.co.com/QMtsyf1/Henry-Fletcher.jpg",
+    },
   ];
 
   return (
@@ -44,8 +49,9 @@ const TeamMembers = () => {
         <Swiper
           loop={true}
           slidesPerView={1}
-          spaceBetween={30}
-          modules={[Navigation, Autoplay]}
+          spaceBetween={20}
+          freeMode={true}
+          modules={[Autoplay, Navigation ]}
           autoplay={{
             delay: 4000,
             disableOnInteraction: false,
