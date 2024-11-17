@@ -1,12 +1,12 @@
 import { FiMenu } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
-import { Link as ScrollLink } from "react-scroll"; // Import react-scroll Link as ScrollLink
+import { Link as ScrollLink } from "react-scroll";
 import skylarkLogo from "../assets/logo.png";
 
 const Navbar = () => {
   const Links = [
-    { name: "Home", link: "home" },         // Updated link names to match section IDs
+    { name: "Home", link: "home" },
     { name: "Services", link: "services" },
     { name: "Projects", link: "projects" },
     { name: "About Us", link: "about" },
@@ -18,9 +18,15 @@ const Navbar = () => {
     <div className="shadow-md w-full top-0 left-0">
       <div className="md:px-10 py-2 px-7 md:flex justify-between items-center bg-white">
         {/* logo here */}
-        <ScrollLink to="home" smooth={true} duration={500} offset={-70}>  {/* Smooth scroll to Home */}
+        <ScrollLink to="home" smooth={true} duration={500} offset={-70}>
+          {" "}
+          {/* Smooth scroll to Home */}
           <div>
-            <img src={skylarkLogo} className="w-40 h-16 cursor-pointer" alt="SKYLARK IT" />
+            <img
+              src={skylarkLogo}
+              className="w-40 h-16 cursor-pointer"
+              alt="SKYLARK IT"
+            />
           </div>
         </ScrollLink>
 
@@ -29,7 +35,11 @@ const Navbar = () => {
           onClick={() => setIsOpen(!isOpen)}
           className="absolute right-8 top-[84px] cursor-pointer md:hidden z-20"
         >
-          {isOpen ? <AiOutlineClose size={30} color="black" /> : <FiMenu size={30} color="black" />}
+          {isOpen ? (
+            <AiOutlineClose size={30} color="black" />
+          ) : (
+            <FiMenu size={30} color="black" />
+          )}
         </div>
 
         {/* nav links */}
@@ -41,11 +51,11 @@ const Navbar = () => {
           {Links.map((link, index) => (
             <li key={index} className="font-semibold my-7 md:my-0 md:ml-8">
               <ScrollLink
-                to={link.link}                   // Link to section ID
-                smooth={true}                    // Enable smooth scroll
-                duration={500}                   // Duration of scroll in ms
-                offset={-70}                     // Offset for fixed navbar
-                onClick={() => setIsOpen(false)} // Close menu on link click
+                to={link.link}
+                smooth={true}
+                duration={500}
+                offset={-70}
+                onClick={() => setIsOpen(false)}
                 className="cursor-pointer"
               >
                 {link.name}
@@ -53,7 +63,7 @@ const Navbar = () => {
             </li>
           ))}
           <ScrollLink
-            to="contact"                         // Link to Contact section
+            to="contact"
             smooth={true}
             duration={500}
             offset={-70}
