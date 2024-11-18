@@ -1,4 +1,5 @@
 .clip-diagonal {
-    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-    background: linear-gradient(to bottom, #6c63ff, #007bff); /* Gradient color */
+  clip-path: polygon(45% 0%, 83.5% 50%, 45% 100%, 0% 100%, 38.75% 50%, 0% 0%);
+    background: linear-gradient(to bottom, #6c63ff, #007bff);
+    margin-right: -3px;
   }
