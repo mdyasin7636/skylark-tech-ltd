@@ -117,7 +117,7 @@ const Projects = () => {
             >
               {/* Background transition effect */}
               <span
-                className={`absolute h-0 w-0 rounded-full bg-deep-sky transition-all duration-300 group-hover:h-56 group-hover:w-56 ${
+                className={`absolute h-0 w-0 rounded-full bg-deep-sky transition-all duration-700 group-hover:h-56 group-hover:w-56 ${
                   activeTab === tab.name ? "h-56 w-56" : ""
                 }`}
               ></span>
