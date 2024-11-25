@@ -20,19 +20,19 @@ const Projects = () => {
       {
         id: 1,
         title: "Sigma Lift Company",
-        img: "sigma-lift-company-ltd_g3bs9a",
+        img: "sigma-lift-company-ltd_g3bs9a_msuw4c.png",
         link: "https://sigmaliftcompany.com/",
       },
       {
         id: 2,
         title: "LG Elevator Ltd",
-        img: "LG-ELEVATOR_ojeenh",
+        img: "LG-ELEVATOR_ojeenh_brzsyl.png",
         link: "https://lgelevators.com/",
       },
       {
         id: 3,
         title: "Hyundai Lift Ltd",
-        img: "Hyundai-Lift_ucdtwp",
+        img: "Hyundai-Lift_ucdtwp_qmxujh.png",
         link: "https://hyundailiftltd.com/",
       },
     ],
@@ -40,19 +40,19 @@ const Projects = () => {
       {
         id: 1,
         title: "Newscricket24",
-        img: "newscricket24_lrvyan",
+        img: "newscricket24_lrvyan_ewfxwj.png",
         link: "https://newscricket24.com/",
       },
       {
         id: 2,
         title: "Bangladesher Kontha",
-        img: "Bangladesher-Kontha_makkox",
+        img: "Bangladesher-Kontha_makkox_antz4p.png",
         link: "https://bangladesherkontha.com/",
       },
       {
         id: 3,
         title: "Nogor Pratidin",
-        img: "Nogor-Pratidin_sd0jdf",
+        img: "Nogor-Pratidin_sd0jdf_bxfcp1.png",
         link: "https://nogorpratidin.com/",
       },
     ],
@@ -60,25 +60,37 @@ const Projects = () => {
       {
         id: 1,
         title: "Hyundai Elevator Ltd",
-        img: "Hyundai-Elevator-Ltd_tmukff",
+        img: "Hyundai-Elevator-Ltd_tmukff_too0ws.png",
         link: "https://hyundaielevatorltd.com/",
       },
       {
         id: 2,
         title: "SB Elevator Group",
-        img: "SB-Elevator-Group_xgef0j",
+        img: "SB-Elevator-Group_xgef0j_ylcely.png",
         link: "https://sbelevatorgroup.com/",
       },
       {
         id: 3,
         title: "Elevator Spare Parts",
-        img: "ELEVATOR-SPARE-PARTS_iyhima",
+        img: "ELEVATOR-SPARE-PARTS_iyhima_n6ilvn.png",
         link: "https://elevatorsparesparts.com/",
       },
     ],
     "Corporate Site": [
       {
         id: 1,
+        title: "D&D Experts",
+        img: "Denim-and-Design-Expert_u7rzoo_kfukgk.png",
+        link: "https://dndexperts.com/",
+      },
+      {
+        id: 2,
+        title: "Morning-Mirror",
+        img: "Morning-Mirror_vfhmjz.png",
+        link: "https://dailymorningmirror.com/",
+      },
+      {
+        id: 3,
         title: "D&D Experts",
         img: "Denim-and-Design-Expert_u7rzoo",
         link: "https://dndexperts.com/",
@@ -88,8 +100,20 @@ const Projects = () => {
       {
         id: 1,
         title: "Daily Bonik Bangladesh",
-        img: "Daily-Bonik-Bangladesh_vxbxlg",
+        img: "Daily-Bonik-Bangladesh_vxbxlg_sywekl.png",
         link: "https://dailybonikbangladesh.com/",
+      },
+      {
+        id: 2,
+        title: "Daily Banglar Mukh",
+        img: "Daily-Banglar-Mukh-Daily_kxzmgr.png",
+        link: "https://dailybanglarmukh.com/",
+      },
+      {
+        id: 3,
+        title: "Daily Jago Sangbad",
+        img: "Daily-Jago-Sangbad_pkrgfq.png",
+        link: "https://dailyjagosangbad.com/",
       },
     ],
   };
@@ -156,7 +180,7 @@ const Card = ({ card, handleSiteLink }) => {
     <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-black px-2 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] ">
       <div className="relative max-w-full h-72 overflow-hidden rounded-lg border border-gray-400">
         {/* Maintain hover style while centering loading animation */}
-        <div className="h-max w-full transition-transform duration-[3500ms] ease-linear transform translate-y-0 hover:-translate-y-[calc(100%-18rem)] rounded-lg">
+        <div>
           {loading ? (
             <div className="absolute inset-40 flex items-center justify-center bg-white">
               <div className="flex flex-row gap-2">

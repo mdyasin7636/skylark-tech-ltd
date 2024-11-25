@@ -3,7 +3,6 @@ import { AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import skylarkLogo from "../assets/logo.png";
-import "./Navbar.css";
 
 const Navbar = () => {
   const Links = [
@@ -16,44 +15,42 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="shadow-md w-full top-0 left-0 flex">
-      {/* Logo Section */}
-      <div className="bg-white w-full md:w-3/12 flex items-center justify-center relative py-3">
+    <div className="shadow-md w-full top-0 left-0 bg-white">
+      <div className="md:px-10 py-2 px-7 md:flex justify-between items-center ">
+        {/* logo here */}
         <ScrollLink to="home" smooth={true} duration={500} offset={-70}>
-          <img
-            src={skylarkLogo}
-            className="w-40 h-[68px] cursor-pointer"
-            alt="SKYLARK IT"
-          />
+          {" "}
+          {/* Smooth scroll to Home */}
+          <div>
+            <img
+              src={skylarkLogo}
+              className="w-40 h-16 cursor-pointer"
+              alt="SKYLARK IT"
+            />
+          </div>
         </ScrollLink>
-        {/* Diagonal Divider */}
-        <div className="absolute top-0 -right-5 h-full w-10 clip-diagonal"></div>
-      </div>
-      {/* Nav links Section */}
-      <div className="w-3/4 bg-[#0A0C23] flex items-center justify-end pr-20">
-        {/* Menu Icon */}
+        {/* menu icon */}
+
         <div
           onClick={() => setIsOpen(!isOpen)}
-          className="absolute right-8 top-[84px] cursor-pointer md:hidden z-20"
+          className="absolute right-8 top-[84px] cursor-pointer md:hidden z-20 border-2 border-black p-1 rounded-lg"
         >
           {isOpen ? (
-            <AiOutlineClose size={30} color="white" />
+            <AiOutlineClose size={30} color="black"  />
           ) : (
-            <FiMenu size={30} color="white" />
+            <FiMenu size={30} color="black" />
           )}
         </div>
 
-        {/* Nav Links */}
+        {/* nav links */}
+
         <ul
-          className={`md:flex md:items-center md:pb-0 pb-8 absolute md:static bg-[#0A0C23] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-300 ease-in ${
-            isOpen ? "top-[60px]" : "top-[-490px]"
+          className={`md:flex md:items-center md:pb-0 pb-8 absolute md:static bg-white left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-300 ease-in ${
+            isOpen ? "top-16" : "top-[-490px]"
           } z-10`}
         >
           {Links.map((link, index) => (
-            <li
-              key={index}
-              className="font-semibold my-7 md:my-0 md:ml-8 text-white text-xl"
-            >
+            <li key={index} className="font-semibold my-7 md:my-0 md:ml-8">
               <ScrollLink
                 to={link.link}
                 smooth={true}
@@ -73,9 +70,8 @@ const Navbar = () => {
             offset={-70}
             onClick={() => setIsOpen(false)}
           >
-            <button className="group relative inline-flex h-11 items-center justify-center overflow-hidden rounded-md bg-[#1A1D2B] md:mx-6 font-medium text-neutral-50 border border-deep-sky">
-              <span className="absolute h-0 w-0 rounded-full bg-deep-sky transition-all duration-500 group-hover:h-56 group-hover:w-56"></span>
-              <span className="relative px-3 text-xl ">Contact Us</span>
+            <button className="bg-deep-sky text-white py-1 px-3 md:ml-8 rounded-md">
+              Contact Us
             </button>
           </ScrollLink>
         </ul>
