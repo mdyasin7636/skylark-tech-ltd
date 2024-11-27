@@ -7,7 +7,7 @@ const Footer = () => {
 
   return (
     <div>
-      <footer className="bg-[#1A1D2B]">
+      <footer className="bg-[#1A1D2B] py-5">
           <div className="mx-auto max-w-7xl px-6">
             <div className="grid xl:grid-cols-3 xl:gap-8">
               <div>
@@ -170,7 +170,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="border-t border-gray-400/30 mt-5">
-              <div className="text-md text-center text-white py-2">
+              <div className="text-md text-center text-white py-4">
                 Copyright © {Year} SkyLark IT
               </div>
             </div>

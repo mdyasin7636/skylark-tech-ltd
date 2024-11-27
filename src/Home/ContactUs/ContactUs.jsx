@@ -25,7 +25,7 @@ const ContactUs = () => {
       .then(
         () => {
           toast("Message delivered! We'll be in touch soon");
-          form.current.reset(); // Clear the form fields
+          form.current.reset();
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -171,7 +171,7 @@ const ContactUs = () => {
                       type="text"
                       name="user_name"
                       placeholder="Enter your name"
-                      className="block w-full py-4 pl-10 pr-4 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600"
+                      className="block w-full py-4 pl-10 pr-4 text-black placeholder-gray-500 transition-all duration-200 border border-[#1A1D2B] rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600"
                     />
                   </div>
                 </div>
@@ -189,7 +189,7 @@ const ContactUs = () => {
                       type="email"
                       name="user_email"
                       placeholder="Enter your email"
-                      className="block w-full py-4 pl-10 pr-4 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600"
+                      className="block w-full py-4 pl-10 pr-4 text-black placeholder-gray-500 transition-all duration-200 border border-[#1A1D2B] rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600"
                     />
                   </div>
                 </div>
@@ -206,7 +206,7 @@ const ContactUs = () => {
                       type="number"
                       name="mobile_number"
                       placeholder="Enter your number"
-                      className="block w-full py-4 pl-10 pr-4 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600"
+                      className="block w-full py-4 pl-10 pr-4 text-black placeholder-gray-500 transition-all duration-200 border border-[#1A1D2B] rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600"
                     />
                   </div>
                 </div>
@@ -226,7 +226,7 @@ const ContactUs = () => {
                       cols="20"
                       rows="4"
                       placeholder="Enter your message"
-                      className="block w-full py-4 pl-10 pr-4 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600 resize"
+                      className="block w-full py-4 pl-10 pr-4 text-black placeholder-gray-500 transition-all duration-200 border border-[#1A1D2B] rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600 resize"
                     />
                   </div>
                 </div>
