@@ -36,6 +36,12 @@ const AllProjects = () => {
           img: "Hyundai-Lift-Ltd_aefwhe.png",
           link: "https://hyundailiftltd.com/",
         },
+        {
+          id: 4,
+          title: "OTIS Elevator Bangladesh",
+          img: "OTIS-Elevator-Bangladesh-Ltd_t3jpgf.png",
+          link: "https://otiselevatorltd.net/",
+        },
       ],
       "News Site": [
         {
@@ -56,6 +62,18 @@ const AllProjects = () => {
           img: "Nogor-Pratidin_pzrk4u.png",
           link: "https://nogorpratidin.com/",
         },
+        {
+          id: 4,
+          title: "Daink Sirajganj",
+          img: "Daink-Sirajganj_w9rof0.png",
+          link: "https://dainiksirajganj.com/",
+        },
+        {
+          id: 5,
+          title: "Daily Banglar Mukh",
+          img: "Daily-Banglar-Mukh_shdkup.png",
+          link: "https://dailybanglarmukh.com/",
+        },
       ],
       "SEO Optimized Site": [
         {
@@ -75,6 +93,12 @@ const AllProjects = () => {
           title: "Hyundai Elevator Ltd",
           img: "Hyundai-Elevator-Company-Ltd_hgru6p.png",
           link: "https://hyundaielevatorltd.com/",
+        },
+        {
+          id: 3,
+          title: "ELEVATOR-SPARE-PARTS",
+          img: "ELEVATOR-SPARE-PARTS_q4zjgg.png",
+          link: "https://elevatorsparesparts.com/",
         },
       ],
       "Corporate Site": [
@@ -125,10 +149,10 @@ const AllProjects = () => {
   
     return (
       <div className="mt-7 mb-14" id="projects">
-        <div className="text-center">
-          <h1 className="text-3xl text-deep-sky font-extrabold">All Projects</h1>
+        <div className="text-center mt-10">
+          <h1 className="text-3xl text-deep-sky font-extrabold">Take a Peek at Our Work</h1>
         </div>
-        <div className="mt-5">
+        <div className="mt-10">
           {/* Tab Navigation */}
   
           <div className="flex justify-center flex-wrap">
