@@ -4,6 +4,7 @@ import ErrorPage from "../ErrorPage/ErrorPage";
 import Home from "../Home/Home/Home";
 import PrivacyPolicy from "../PrivacyPolicy/PrivacyPolicy"
 import UserDataDeletion from "../UserDataDeletion/UserDataDeletion"
+import AllProjects from "../AllProjects/AllProjects";
 
 export const router = createBrowserRouter([
     {
@@ -14,6 +15,10 @@ export const router = createBrowserRouter([
         {
             path: "/",
             element: <Home/>
+        },
+        {
+            path: "/all-projects",
+            element: <AllProjects/>
         },
         {
             path: "/PrivacyPolicy",
