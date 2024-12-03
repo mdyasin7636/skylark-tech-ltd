@@ -200,6 +200,7 @@ const Card = ({ card, handleSiteLink }) => {
     const img = new Image();
     img.src = cloudinary.url(card.img, { secure: true });
     img.onload = () => setLoading(false);
+    window.scrollTo(0, 0);
   }, [card.img]);
 
   return (
