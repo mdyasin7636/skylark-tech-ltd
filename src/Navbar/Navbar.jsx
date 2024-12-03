@@ -1,9 +1,10 @@
+/* eslint-disable no-unused-vars */
 import { FiMenu } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
-import { Link as ScrollLink } from "react-scroll";
 import skylarkLogo from "../assets/logo.png";
-import { Link } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 const Navbar = () => {
   const Links = [
@@ -14,22 +15,35 @@ const Navbar = () => {
   ];
 
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  // Custom Scroll Logic
+  const handleNavigation = (link) => {
+    if (location.pathname !== "/") {
+      // Redirect to the homepage and scroll
+      navigate("/", { replace: true });
+      setTimeout(() => {
+        scroll.scrollTo(document.getElementById(link).offsetTop - 70, {
+          smooth: true,
+        });
+      }, 100); // Add a delay to ensure the page is fully loaded
+    } else {
+      // Scroll to the section if already on the homepage
+      scroll.scrollTo(document.getElementById(link).offsetTop - 70, {
+        smooth: true,
+      });
+    }
+    setIsOpen(false); // Close menu after clicking
+  };
 
   return (
     <div className="shadow-md w-full top-0 left-0 bg-white">
       <div className="md:px-10 py-2 px-7 md:flex justify-between items-center ">
         {/* logo here */}
-        <Link to="/" offset={-70}>
-          {" "}
-          {/* Smooth scroll to Home */}
-          <div>
-            <img
-              src={skylarkLogo}
-              className="w-40 h-16 cursor-pointer"
-              alt="SKYLARK IT"
-            />
-          </div>
-        </Link>
+        <div onClick={() => navigate("/")} className="cursor-pointer">
+          <img src={skylarkLogo} className="w-40 h-16" alt="SKYLARK IT" />
+        </div>
         {/* menu icon */}
 
         <div
@@ -37,7 +51,7 @@ const Navbar = () => {
           className="absolute right-8 top-[84px] cursor-pointer md:hidden z-20 border-2 border-black p-1 rounded-lg"
         >
           {isOpen ? (
-            <AiOutlineClose size={30} color="black"  />
+            <AiOutlineClose size={30} color="black" />
           ) : (
             <FiMenu size={30} color="black" />
           )}
@@ -52,29 +66,22 @@ const Navbar = () => {
         >
           {Links.map((link, index) => (
             <li key={index} className="font-semibold my-7 md:my-0 md:ml-8">
-              <ScrollLink
-                to={link.link}
-                smooth={true}
-                duration={500}
-                offset={-70}
-                onClick={() => setIsOpen(false)}
+              <button
+                onClick={() => handleNavigation(link.link)}
                 className="cursor-pointer"
               >
                 {link.name}
-              </ScrollLink>
+              </button>
             </li>
           ))}
-          <ScrollLink
-            to="contact"
-            smooth={true}
-            duration={500}
-            offset={-70}
-            onClick={() => setIsOpen(false)}
-          >
-            <button className="bg-deep-sky text-white py-1 px-3 md:ml-8 rounded-md">
+          <li>
+            <button
+              onClick={() => handleNavigation("contact")}
+              className="bg-deep-sky text-white py-1 px-3 md:ml-8 rounded-md"
+            >
               Contact Us
             </button>
-          </ScrollLink>
+          </li>
         </ul>
       </div>
     </div>
