@@ -3,6 +3,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import skylarkLogo from "../assets/logo.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const Links = [
@@ -18,7 +19,7 @@ const Navbar = () => {
     <div className="shadow-md w-full top-0 left-0 bg-white">
       <div className="md:px-10 py-2 px-7 md:flex justify-between items-center ">
         {/* logo here */}
-        <ScrollLink to="home" smooth={true} duration={500} offset={-70}>
+        <Link to="/" offset={-70}>
           {" "}
           {/* Smooth scroll to Home */}
           <div>
@@ -28,7 +29,7 @@ const Navbar = () => {
               alt="SKYLARK IT"
             />
           </div>
-        </ScrollLink>
+        </Link>
         {/* menu icon */}
 
         <div

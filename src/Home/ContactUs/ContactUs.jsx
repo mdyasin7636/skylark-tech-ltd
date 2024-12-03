@@ -34,7 +34,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="mt-7">
+    <div className="mt-7" id="contact">
       <div className="text-center">
         <h1 className="text-3xl text-deep-sky font-extrabold">Get In Touch</h1>
       </div>
