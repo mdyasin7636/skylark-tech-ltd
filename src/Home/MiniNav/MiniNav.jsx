@@ -52,16 +52,6 @@ const MiniNav = () => {
               />
             </Link>
             <Link
-              to="https://www.x.com/Skylarkitltd"
-              className="w-6"
-              target="_blank"
-            >
-              <img
-                src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1729504222/twitter-alt-circle_12107562_jbyxff.png"
-                alt="Twitter"
-              />
-            </Link>
-            <Link
               to="https://www.linkedin.com/in/skylarkitltd/"
               className="w-6"
               target="_blank"
@@ -72,16 +62,6 @@ const MiniNav = () => {
               />
             </Link>
             <Link
-              to="https://www.instagram.com/skylarkitltd/"
-              className="w-6"
-              target="_blank"
-            >
-              <img
-                src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1729435146/instagram_2111463_jpyguo.png"
-                alt="Instagram"
-              />
-            </Link>
-            <Link
               to="https://www.youtube.com/@SkylarkITLtd"
               className="w-6"
               target="_blank"
@@ -89,6 +69,26 @@ const MiniNav = () => {
               <img
                 src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1729435147/youtube_3938026_w19clj.png"
                 alt="YouTube"
+              />
+            </Link>
+            <Link
+              to="https://www.x.com/Skylarkitltd"
+              className="w-6"
+              target="_blank"
+            >
+              <img
+                src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1729504222/twitter-alt-circle_12107562_jbyxff.png"
+                alt="Twitter"
+              />
+            </Link>
+            <Link
+              to="https://www.instagram.com/skylarkitltd/"
+              className="w-6"
+              target="_blank"
+            >
+              <img
+                src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1729435146/instagram_2111463_jpyguo.png"
+                alt="Instagram"
               />
             </Link>
           </div>
@@ -115,16 +115,6 @@ const MiniNav = () => {
                 />
               </Link>
               <Link
-                to="https://www.x.com/Skylarkitltd"
-                className="w-7"
-                target="_blank"
-              >
-                <img
-                  src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1729504222/twitter-alt-circle_12107562_jbyxff.png"
-                  alt="Twitter"
-                />
-              </Link>
-              <Link
                 to="https://www.linkedin.com/in/skylarkitltd/"
                 className="w-7"
                 target="_blank"
@@ -132,16 +122,6 @@ const MiniNav = () => {
                 <img
                   src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1729504222/linkedin_2504923_p74b0u.png"
                   alt="LinkedIn"
-                />
-              </Link>
-              <Link
-                to="https://www.instagram.com/skylarkitltd/"
-                className="w-7"
-                target="_blank"
-              >
-                <img
-                  src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1729435146/instagram_2111463_jpyguo.png"
-                  alt="Instagram"
                 />
               </Link>
               <Link
@@ -154,6 +134,27 @@ const MiniNav = () => {
                   alt="YouTube"
                 />
               </Link>
+              <Link
+                to="https://www.x.com/Skylarkitltd"
+                className="w-7"
+                target="_blank"
+              >
+                <img
+                  src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1729504222/twitter-alt-circle_12107562_jbyxff.png"
+                  alt="Twitter"
+                />
+              </Link>
+              <Link
+                to="https://www.instagram.com/skylarkitltd/"
+                className="w-7"
+                target="_blank"
+              >
+                <img
+                  src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1729435146/instagram_2111463_jpyguo.png"
+                  alt="Instagram"
+                />
+              </Link>
+              
             </div>
           </div>
         </div>

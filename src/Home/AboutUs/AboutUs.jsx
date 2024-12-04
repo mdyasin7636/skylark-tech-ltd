@@ -73,29 +73,29 @@ const AboutUs = () => {
               </div>
             </div>
             {/* Button & Call Section */}
-            <div className="flex items-center justify-evenly mt-5">
+            <Link to="/all-projects" className="flex items-center justify-evenly mt-5">
               <button className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-[#1A1D2B] px-6 font-medium text-neutral-50">
                 <span className="absolute h-0 w-0 rounded-full bg-deep-sky transition-all duration-300 group-hover:h-56 group-hover:w-56"></span>
                 <span className="relative">DISCOVER MORE</span>
               </button>
-              <button className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-[#1A1D2B] px-6 font-medium text-neutral-50">
+              <Link to="#" onClick={handleWhatsAppClick} className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-[#1A1D2B] px-6 font-medium text-neutral-50">
                 <span className="absolute h-0 w-0 rounded-full bg-deep-sky transition-all duration-300 group-hover:h-56 group-hover:w-56"></span>
                 <span className="relative">
                   <div className="flex space-x-1 items-center">
-                    <div>Call Us On </div>
-                    <Link
-                      to="#" onClick={handleWhatsAppClick}
+                    <p>Call Us On </p>
+                    <div
+                      
                       className="w-5"
                     >
                       <img
                         src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1729435147/whatsapp_733585_liafzz.png"
                         alt=""
                       />
-                    </Link>
+                    </div>
                   </div>
                 </span>
-              </button>
-            </div>
+              </Link>
+            </Link>
           </div>
         </div>
       </div>

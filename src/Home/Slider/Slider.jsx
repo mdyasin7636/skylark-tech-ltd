@@ -3,6 +3,8 @@ import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import ParticlesComponent from "../../components/particles";
+import { Link as ScrollLink } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const slidesData = [
   {
@@ -70,15 +72,24 @@ const Slider = () => {
               </p>
               <div className="flex space-x-4 mt-6 justify-center md:justify-normal">
                 {/* Buttons */}
-                <button className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-[#1A1D2B] px-6 font-medium text-neutral-50 border border-deep-sky">
-                  <span className="absolute h-0 w-0 rounded-full bg-deep-sky transition-all duration-300 group-hover:h-56 group-hover:w-56"></span>
-                  <span className="relative">DISCOVER MORE</span>
-                </button>
+                <Link to="/all-projects">
+                  <button className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-[#1A1D2B] px-6 font-medium text-neutral-50 border border-deep-sky">
+                    <span className="absolute h-0 w-0 rounded-full bg-deep-sky transition-all duration-300 group-hover:h-56 group-hover:w-56"></span>
+                    <span className="relative">DISCOVER MORE</span>
+                  </button>
+                </Link>
 
-                <button className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-[#1A1D2B] px-6 font-medium text-neutral-50 border border-deep-sky">
-                  <span className="absolute h-0 w-0 rounded-full bg-deep-sky transition-all duration-300 group-hover:h-56 group-hover:w-56"></span>
-                  <span className="relative">CONTACT US</span>
-                </button>
+                <ScrollLink
+                  to="contact" // ID of the Contact Us section
+                  smooth={true} // Enables smooth scrolling
+                  duration={500} // Scroll duration in milliseconds
+                  offset={-70} // Offset for adjustments if needed
+                >
+                  <button className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-[#1A1D2B] px-6 font-medium text-neutral-50 border border-deep-sky">
+                    <span className="absolute h-0 w-0 rounded-full bg-deep-sky transition-all duration-300 group-hover:h-56 group-hover:w-56"></span>
+                    <span className="relative">CONTACT US</span>
+                  </button>
+                </ScrollLink>
               </div>
             </div>
           </SwiperSlide>
