@@ -3,6 +3,16 @@ import { RiTeamFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
 
 const AboutUs = () => {
+
+  const handleWhatsAppClick = (e) => {
+    e.preventDefault(); // Prevent default navigation
+    const confirmed = window.confirm("Do you want to call via WhatsApp?");
+    if (confirmed) {
+      // Open WhatsApp link in a new tab
+      window.open("https://wa.me/8801676047350", "_blank");
+    }
+  };
+
   return (
     <div className="mt-7" id="about">
       <div className="text-center">
@@ -74,7 +84,7 @@ const AboutUs = () => {
                   <div className="flex space-x-1 items-center">
                     <div>Call Us On </div>
                     <Link
-                      to="https://www.facebook.com/SkyLarkITLtd"
+                      to="#" onClick={handleWhatsAppClick}
                       className="w-5"
                     >
                       <img

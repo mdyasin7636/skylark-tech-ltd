@@ -5,6 +5,15 @@ const Footer = () => {
 
   const Year = new Date().getFullYear();
 
+  const handleWhatsAppClick = (e) => {
+    e.preventDefault(); // Prevent default navigation
+    const confirmed = window.confirm("Do you want to call via WhatsApp?");
+    if (confirmed) {
+      // Open WhatsApp link in a new tab
+      window.open("https://wa.me/8801676047350", "_blank");
+    }
+  };
+
   return (
     <div>
       <footer className="bg-[#1A1D2B] py-5">
@@ -21,19 +30,19 @@ const Footer = () => {
                     <Link to='https://www.facebook.com/SkyLarkITLtd' className='cursor-pointer w-6'>
                         <img src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1729435146/facebook_5968764_ekshhw.png" alt="" />
                         </Link>
-                        <Link to='https://www.facebook.com/SkyLarkITLtd' className='w-6'>
+                        <Link to="#" onClick={handleWhatsAppClick} className='w-6'>
                         <img src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1729435147/whatsapp_733585_liafzz.png" alt="" />
                         </Link>
-                        <Link to='https://www.facebook.com/SkyLarkITLtd' className='w-6'>
+                        <Link to='https://www.x.com/Skylarkitltd' className='w-6'>
                         <img src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1729504222/twitter-alt-circle_12107562_jbyxff.png" alt="" />
                         </Link>
-                        <Link to='https://www.facebook.com/SkyLarkITLtd' className='w-6'>
+                        <Link to='https://www.linkedin.com/in/skylarkitltd/' className='w-6'>
                         <img src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1729504222/linkedin_2504923_p74b0u.png" alt="" />
                         </Link>
-                        <Link to='https://www.facebook.com/SkyLarkITLtd' className='w-6'>
+                        <Link to='https://www.instagram.com/skylarkitltd/' className='w-6'>
                         <img src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1729435146/instagram_2111463_jpyguo.png" alt="" />
                         </Link>
-                        <Link to='https://www.facebook.com/SkyLarkITLtd' className='w-6'>
+                        <Link to='https://www.youtube.com/@SkylarkITLtd' className='w-6'>
                         <img src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1729435147/youtube_3938026_w19clj.png" alt="" />
                         </Link>
                     </div>

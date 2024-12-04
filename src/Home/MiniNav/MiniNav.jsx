@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 const MiniNav = () => {
  
-  
   const handleWhatsAppClick = (e) => {
     e.preventDefault(); // Prevent default navigation
     const confirmed = window.confirm("Do you want to call via WhatsApp?");
@@ -53,7 +52,7 @@ const MiniNav = () => {
               />
             </Link>
             <Link
-              to="https://twitter.com/"
+              to="https://www.x.com/Skylarkitltd"
               className="w-6"
               target="_blank"
             >
@@ -63,7 +62,7 @@ const MiniNav = () => {
               />
             </Link>
             <Link
-              to="https://linkedin.com/"
+              to="https://www.linkedin.com/in/skylarkitltd/"
               className="w-6"
               target="_blank"
             >
@@ -73,7 +72,7 @@ const MiniNav = () => {
               />
             </Link>
             <Link
-              to="https://instagram.com/"
+              to="https://www.instagram.com/skylarkitltd/"
               className="w-6"
               target="_blank"
             >
@@ -83,7 +82,7 @@ const MiniNav = () => {
               />
             </Link>
             <Link
-              to="https://youtube.com/"
+              to="https://www.youtube.com/@SkylarkITLtd"
               className="w-6"
               target="_blank"
             >
@@ -116,7 +115,7 @@ const MiniNav = () => {
                 />
               </Link>
               <Link
-                to="https://twitter.com/"
+                to="https://www.x.com/Skylarkitltd"
                 className="w-7"
                 target="_blank"
               >
@@ -126,7 +125,7 @@ const MiniNav = () => {
                 />
               </Link>
               <Link
-                to="https://linkedin.com/"
+                to="https://www.linkedin.com/in/skylarkitltd/"
                 className="w-7"
                 target="_blank"
               >
@@ -136,7 +135,7 @@ const MiniNav = () => {
                 />
               </Link>
               <Link
-                to="https://instagram.com/"
+                to="https://www.instagram.com/skylarkitltd/"
                 className="w-7"
                 target="_blank"
               >
@@ -146,7 +145,7 @@ const MiniNav = () => {
                 />
               </Link>
               <Link
-                to="https://youtube.com/"
+                to="https://www.youtube.com/@SkylarkITLtd"
                 className="w-7"
                 target="_blank"
               >
