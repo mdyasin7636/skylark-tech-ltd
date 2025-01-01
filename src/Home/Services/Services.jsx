@@ -12,6 +12,7 @@ import {
   FaImages,
 } from "react-icons/fa";
 import { TfiArrowCircleRight } from "react-icons/tfi";
+import CustomTitle from "../../components/CustomTitle";
 
 const Services = () => {
   const services = [
@@ -56,8 +57,8 @@ const Services = () => {
   return (
     <div className="mt-7" id="services">
       <div className="text-center">
-        <h1 className="text-3xl text-deep-sky font-extrabold">Our Services</h1>
-        <p className="font-bold text-3xl sm:text-4xl mt-2">
+        <CustomTitle text="OUR SERVICES"/>
+        <p className="font-bold text-2xl sm:text-3xl mt-2">
           <span className="block">Exclusive Solutions</span>
           <span className="block">For Your Business</span>
         </p>

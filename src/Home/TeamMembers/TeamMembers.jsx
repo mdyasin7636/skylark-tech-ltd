@@ -3,6 +3,7 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import {Autoplay, Navigation } from "swiper/modules";
+import CustomTitle from "../../components/CustomTitle";
 
 const TeamMembers = () => {
   const members = [
@@ -40,9 +41,7 @@ const TeamMembers = () => {
 
   return (
     <div className="relative mt-7">
-      <div className="text-center">
-        <h1 className="text-3xl text-deep-sky font-extrabold">TEAM MEMBERS</h1>
-      </div>
+      <CustomTitle text="TEAM MEMBERS"/>
 
       <div className="relative max-w-6xl mx-auto mt-7">
         {/* Swiper container */}

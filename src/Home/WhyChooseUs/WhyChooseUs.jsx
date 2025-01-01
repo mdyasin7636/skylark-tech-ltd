@@ -1,10 +1,9 @@
 import { ImCheckboxChecked } from "react-icons/im";
+import CustomTitle from "../../components/CustomTitle";
 const WhyChooseUs = () => {
   return (
     <div className="mt-7">
-      <div className="text-center">
-        <h1 className="text-3xl text-deep-sky font-extrabold">WHY CHOOSE US</h1>
-      </div>
+      <CustomTitle text="WHY CHOOSE US"/>
       <div className="mt-6">
         <div className="mx-auto px-6 md:px-12 lg:px-24 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           {/* Text Content */}

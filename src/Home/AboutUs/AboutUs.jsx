@@ -1,6 +1,7 @@
 import { AiOutlineCheck } from "react-icons/ai";
 import { RiTeamFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
+import CustomTitle from "../../components/CustomTitle";
 
 const AboutUs = () => {
 
@@ -15,9 +16,7 @@ const AboutUs = () => {
 
   return (
     <div className="mt-7" id="about">
-      <div className="text-center">
-        <h1 className="text-3xl text-deep-sky font-extrabold">About Us</h1>
-      </div>
+      <CustomTitle text="ABOUT US"/>
       <div className="mt-7">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center text-center">
           {/* Image Section */}

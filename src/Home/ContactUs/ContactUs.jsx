@@ -11,6 +11,7 @@ import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import CustomTitle from "../../components/CustomTitle";
 
 const ContactUs = () => {
   const form = useRef();
@@ -35,9 +36,7 @@ const ContactUs = () => {
 
   return (
     <div className="mt-7" id="contact">
-      <div className="text-center">
-        <h1 className="text-3xl text-deep-sky font-extrabold">Get In Touch</h1>
-      </div>
+      <CustomTitle text="GET IN TOUCH"/>
       <div className="grid grid-cols-1 lg:grid-cols-2 mt-7">
         <div className="relative flex items-end px-5 pb-16 pt-16 md:justify-center lg:pb-24 bg-gray-50">
           <div className="absolute inset-0">

@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { Cloudinary } from "cloudinary-core";
 import { Link } from "react-router-dom";
+import CustomTitle from "../../components/CustomTitle";
 
 const cloudinary = new Cloudinary({ cloud_name: "dlaatmz5a" });
 
@@ -125,9 +126,7 @@ const Projects = () => {
 
   return (
     <div className="mt-7" id="projects">
-      <div className="text-center">
-        <h1 className="text-3xl text-deep-sky font-extrabold">Our Projects</h1>
-      </div>
+      <CustomTitle text="OUR PROJECTS" />
       <div className="mt-5">
         {/* Tab Navigation */}
 
@@ -165,7 +164,10 @@ const Projects = () => {
         </div>
       </div>
       <div className="text-center mt-7">
-        <Link to="/all-projects" className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-[#1A1D2B] px-6 font-medium text-neutral-50">
+        <Link
+          to="/all-projects"
+          className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-[#1A1D2B] px-6 font-medium text-neutral-50"
+        >
           <span className="absolute h-0 w-0 rounded-full bg-deep-sky transition-all duration-700 group-hover:h-56 group-hover:w-56"></span>
           <span className="relative">See All Projects</span>
         </Link>

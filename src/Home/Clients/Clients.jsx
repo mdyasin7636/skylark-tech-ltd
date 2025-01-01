@@ -1,11 +1,10 @@
 import Marquee from "react-fast-marquee";
+import CustomTitle from "../../components/CustomTitle";
 
 const Clients = () => {
   return (
     <div className="mt-7">
-      <div className="text-center">
-        <h1 className="text-3xl text-deep-sky font-extrabold">Our Clients</h1>
-      </div>
+      <CustomTitle text="CLIENTS"/>
       <div className="flex mt-5">
         <Marquee speed={120}>
           <div className="w-60 mx-3 border-2 border-[#1A1D2B] rounded-full p-3">

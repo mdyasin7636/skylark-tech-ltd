@@ -5,6 +5,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Navigation } from "swiper/modules";
 import { BiSolidQuoteAltRight } from "react-icons/bi";
+import CustomTitle from "../../components/CustomTitle";
 
 const CustomerReviews = () => {
   const reviews = [
@@ -54,11 +55,7 @@ const CustomerReviews = () => {
 
   return (
     <div className="mt-7">
-      <div className="text-center">
-        <h1 className="text-3xl text-deep-sky font-extrabold">
-          OUR HAPPY CLIENTS
-        </h1>
-      </div>
+      <CustomTitle text="OUR HAPPY CLIENTS"/>
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 mt-6">
         <Swiper
           loop={true}
