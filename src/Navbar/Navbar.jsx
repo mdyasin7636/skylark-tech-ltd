@@ -38,8 +38,8 @@ const Navbar = () => {
   };
 
   return (
-    <div className="shadow-md w-full top-0 left-0 bg-white">
-      <div className="md:px-10 py-2 px-7 md:flex justify-between items-center ">
+    <div className="shadow-md w-full bg-white sticky top-0 z-50">
+      <div className="md:px-10 py-2 px-7 md:flex justify-between items-center">
         {/* logo here */}
         <div onClick={() => navigate("/")} className="cursor-pointer">
           <img src={skylarkLogo} className="w-40 h-16" alt="SKYLARK IT" />
@@ -48,7 +48,7 @@ const Navbar = () => {
 
         <div
           onClick={() => setIsOpen(!isOpen)}
-          className="absolute right-8 top-[84px] cursor-pointer md:hidden z-20 border-2 border-black p-1 rounded-lg"
+          className="absolute right-8 top-[22px] cursor-pointer md:hidden z-20 border-2 border-black p-1 rounded-lg"
         >
           {isOpen ? (
             <AiOutlineClose size={30} color="black" />
@@ -58,31 +58,32 @@ const Navbar = () => {
         </div>
 
         {/* nav links */}
-
         <ul
-          className={`md:flex md:items-center md:pb-0 pb-8 absolute md:static bg-white left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-300 ease-in ${
-            isOpen ? "top-16" : "top-[-490px]"
-          } z-10`}
-        >
-          {Links.map((link, index) => (
-            <li key={index} className="font-semibold my-7 md:my-0 md:ml-8">
-              <button
-                onClick={() => handleNavigation(link.link)}
-                className="cursor-pointer"
-              >
-                {link.name}
-              </button>
-            </li>
-          ))}
-          <li>
-            <button
-              onClick={() => handleNavigation("contact")}
-              className="bg-deep-sky text-white py-1 px-3 md:ml-8 rounded-md"
-            >
-              Contact Us
-            </button>
-          </li>
-        </ul>
+  className={`md:flex md:items-center md:pb-0 pb-8 absolute md:static bg-white left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-300 ease-in ${
+    isOpen ? "top-[80px]" : "top-[-490px]"
+  } z-10`}
+>
+  {Links.map((link, index) => (
+    <li key={index} className="font-semibold my-7 md:my-0 md:ml-8 text-lg group">
+      <button
+        onClick={() => handleNavigation(link.link)}
+        className="cursor-pointer relative transition-all duration-300 text-black after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-deep-sky after:bottom-0 after:left-0 group-hover:after:w-full group-hover:text-deep-sky"
+      >
+        {link.name}
+      </button>
+    </li>
+  ))}
+  <li>
+    <button
+      onClick={() => handleNavigation("contact")}
+      className="group relative inline-flex h-10 items-center justify-center overflow-hidden rounded-md bg-[#1A1D2B] px-4 md:ml-6 font-medium text-neutral-50 border border-deep-sky"
+    >
+      <span className="absolute h-0 w-0 rounded-full bg-deep-sky transition-all duration-300 group-hover:h-56 group-hover:w-56"></span>
+      <span className="relative">CONTACT US</span>
+    </button>
+  </li>
+</ul>
+
       </div>
     </div>
   );

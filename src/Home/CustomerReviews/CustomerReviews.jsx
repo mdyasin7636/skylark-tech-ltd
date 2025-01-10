@@ -78,8 +78,8 @@ const CustomerReviews = () => {
           }}
         >
           {reviews.map((review) => (
-            <SwiperSlide key={review.id}>
-            <div className="overflow-hidden bg-white rounded-md shadow text-center border border-black h-96 flex flex-col justify-between">
+            <SwiperSlide key={review.id} className="px-1">
+            <div className="overflow-hidden bg-white rounded-full shadow text-center border border-black h-96 flex flex-col justify-between">
               <div className="px-6 py-8">
                 <div className="relative w-24 h-24 mx-auto">
                   <img
