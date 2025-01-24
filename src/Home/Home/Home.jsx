@@ -9,8 +9,16 @@ import Slider from "../Slider/Slider";
 // import SocialMediaPosts from "../SocialMediaPosts/SocialMediaPosts";
 import TeamMembers from "../TeamMembers/TeamMembers";
 import WhyChooseUs from "../WhyChooseUs/WhyChooseUs";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   return (
     <div>
       <Slider />

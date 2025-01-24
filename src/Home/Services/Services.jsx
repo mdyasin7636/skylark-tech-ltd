@@ -57,7 +57,7 @@ const Services = () => {
   return (
     <div className="mt-7" id="services">
       <div className="text-center">
-        <CustomTitle text="OUR SERVICES"/>
+        <CustomTitle text="OUR SERVICES" />
         <p className="font-bold text-2xl sm:text-3xl mt-2">
           <span className="block">Exclusive Solutions</span>
           <span className="block">For Your Business</span>
@@ -69,7 +69,7 @@ const Services = () => {
           slidesPerView={1}
           spaceBetween={1}
           freeMode={true}
-          modules={[ Autoplay, Navigation]}
+          modules={[Autoplay, Navigation]}
           autoplay={{
             delay: 4000,
             disableOnInteraction: false,
@@ -88,10 +88,10 @@ const Services = () => {
             <SwiperSlide key={index}>
               <div className="relative mx-14">
                 {/* Adjusted gray background */}
-                <div className="absolute top-12 bottom-12 left-1/2 -translate-x-1/2 w-[calc(100%+4rem)] bg-gray-300 opacity-70 rounded-lg"></div>
+                <div className="absolute top-12 bottom-12 left-1/2 -translate-x-1/2 w-[calc(100%+4rem)] bg-[#1A1D2B]  rounded-lg"></div>
 
                 {/* Card content */}
-                <div className="h-full w-full bg-white m-auto rounded-xl relative group p-2 z-0 overflow-hidden shadow border cursor-pointer hover:border-transparent">
+                <div className="h-full w-full bg-white m-auto rounded-xl relative group p-2 z-0 overflow-hidden shadow border border-blue-950 cursor-pointer">
                   <div className="h-28 w-64 bg-blue-950 absolute left-full rounded-full -bottom-12 group-hover:scale-[550%] z-[-1] duration-500 easy-in-out"></div>
                   <div className="h-24 w-52 bg-blue-700 absolute left-full rounded-full -bottom-12 group-hover:scale-[400%] z-[-1] duration-700 easy-in-out"></div>
                   <div className="h-20 w-48 bg-blue-500 absolute left-full rounded-full -bottom-12 group-hover:scale-[300%] z-[-1] duration-700 easy-in-out"></div>
@@ -117,7 +117,7 @@ const Services = () => {
                     {/* Button with arrow */}
                     <div className="flex justify-center mt-4">
                       <button className="bg-indigo-200 text-indigo-600 p-3 w-12 h-12 flex items-center justify-center rounded-full transition hover:bg-white border border-transparent hover:shadow-glow">
-                      <TfiArrowCircleRight className="w-14 h-14"  />
+                        <TfiArrowCircleRight className="w-14 h-14" />
                       </button>
                     </div>
                   </div>

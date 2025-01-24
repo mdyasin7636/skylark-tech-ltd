@@ -17,9 +17,13 @@ const AboutUs = () => {
     <div className="mt-7" id="about">
       <CustomTitle text="ABOUT US" />
       <div className="mt-7">
-        <div className="grid grid-cols-1 lg:grid-cols-2 items-center text-center">
+        <div
+          className="grid grid-cols-1 lg:grid-cols-2 items-center text-center"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+        >
           {/* Image Section */}
-          <div className="">
+          <div>
             <img
               src="https://res.cloudinary.com/dlaatmz5a/image/upload/v1729540688/aboutImage_zgjt4y.png"
               alt="Team working"

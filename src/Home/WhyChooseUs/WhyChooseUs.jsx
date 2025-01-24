@@ -1,11 +1,16 @@
 import { ImCheckboxChecked } from "react-icons/im";
 import CustomTitle from "../../components/CustomTitle";
+
 const WhyChooseUs = () => {
   return (
     <div className="mt-7">
-      <CustomTitle text="WHY CHOOSE US"/>
+      <CustomTitle text="WHY CHOOSE US" />
       <div className="mt-6">
-        <div className="mx-auto px-6 md:px-12 lg:px-24 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div
+          className="mx-auto px-6 md:px-12 lg:px-24 grid grid-cols-1 md:grid-cols-2 gap-10 items-center"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+        >
           {/* Text Content */}
           <div className="order-last md:order-first">
             <h2 className="text-4xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">

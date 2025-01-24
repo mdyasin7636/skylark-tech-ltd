@@ -59,31 +59,37 @@ const Navbar = () => {
 
         {/* nav links */}
         <ul
-  className={`md:flex md:items-center md:pb-0 pb-8 absolute md:static bg-white left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-300 ease-in ${
-    isOpen ? "top-[80px]" : "top-[-490px]"
-  } z-10`}
->
-  {Links.map((link, index) => (
-    <li key={index} className="font-semibold my-7 md:my-0 md:ml-8 text-lg group">
-      <button
-        onClick={() => handleNavigation(link.link)}
-        className="cursor-pointer relative transition-all duration-300 text-black after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-deep-sky after:bottom-0 after:left-0 group-hover:after:w-full group-hover:text-deep-sky"
-      >
-        {link.name}
-      </button>
-    </li>
-  ))}
-  <li>
-    <button
-      onClick={() => handleNavigation("contact")}
-      className="group relative inline-flex h-10 items-center justify-center overflow-hidden rounded-md bg-[#1A1D2B] px-4 md:ml-6 font-medium text-neutral-50 border border-deep-sky"
-    >
-      <span className="absolute h-0 w-0 rounded-full bg-deep-sky transition-all duration-300 group-hover:h-56 group-hover:w-56"></span>
-      <span className="relative">CONTACT US</span>
-    </button>
-  </li>
-</ul>
-
+          className={`md:flex md:items-center md:pb-0 pb-8 absolute md:static bg-white left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-300 ease-in ${
+            isOpen ? "top-[80px]" : "top-[-490px]"
+          } z-10`}
+        >
+          {Links.map((link, index) => (
+            <li
+              key={index}
+              className="font-semibold my-7 md:my-0 md:ml-8 text-lg group"
+            >
+              <button
+                onClick={() => handleNavigation(link.link)}
+                className="relative inline-block text-black transition-all duration-300"
+              >
+                {link.name}
+                {/* Top Line */}
+                <span className="absolute top-0 right-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full group-hover:right-0"></span>
+                {/* Bottom Line */}
+                <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+              </button>
+            </li>
+          ))}
+          <li>
+            <button
+              onClick={() => handleNavigation("contact")}
+              className="group relative inline-flex h-10 items-center justify-center overflow-hidden rounded-md bg-[#1A1D2B] px-4 md:ml-6 font-medium text-neutral-50 border border-deep-sky"
+            >
+              <span className="absolute h-0 w-0 rounded-full bg-deep-sky transition-all duration-300 group-hover:h-56 group-hover:w-56"></span>
+              <span className="relative">CONTACT US</span>
+            </button>
+          </li>
+        </ul>
       </div>
     </div>
   );
