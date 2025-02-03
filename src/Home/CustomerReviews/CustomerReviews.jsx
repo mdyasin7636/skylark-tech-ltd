@@ -11,44 +11,44 @@ const CustomerReviews = () => {
   const reviews = [
     {
       id: 1,
-      text: "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change and click save.",
-      name: "Devon Lane",
-      role: "President of Sales",
+      text: "Working with Skylark IT was a fantastic experience. They took the time to understand our needs, and the result was a website that exceeded our expectations.",
+      name: "Emily R.",
+      role: "Marketing Manager",
       img: "https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/8/avatar-1.jpg",
     },
     {
       id: 2,
-      text: "Simply the best. Better than all the rest. I’d recommend this product to beginners and advanced users.",
-      name: "Ronald Richards",
-      role: "Marketing Coordinator",
+      text: "The professionalism and expertise of the Skylark IT team truly set them apart. They delivered our project on time, and the quality is outstanding.",
+      name: " Michael S.",
+      role: "Project Administrator",
       img: "https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/8/avatar-2.jpg",
     },
     {
       id: 3,
-      text: "This is a top quality product. No need to think twice before making it live on web.",
-      name: "Jane Cooper",
-      role: "Dog Trainer",
+      text: "I was impressed with the creative solutions and attention to detail provided by Skylark IT. Their support has been invaluable to our online growth.",
+      name: "Sarah K.",
+      role: "Business Owner",
       img: "https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/8/avatar-3.jpg",
     },
     {
       id: 4,
-      text: "Finally, I’ve found a template that covers all bases for a bootstrapped startup. We were able to launch in days, not months.",
-      name: "Theresa Webb",
-      role: "Web Designer",
+      text: "Skylark IT transformed our outdated website into a modern, user-friendly platform. Their commitment to excellence is evident in every aspect of their work.",
+      name: "David L.",
+      role: "Product Manager",
       img: "https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/8/avatar-4.jpg",
     },
     {
       id: 5,
-      text: "My new site is so much faster and easier to work with than my old site. I just choose the page, make the change and click save.",
-      name: "Darlene Robertson",
-      role: "Medical Assistant",
+      text: "From the initial consultation to the final delivery, Skylark IT was a pleasure to work with. They truly understand how to merge functionality with design.",
+      name: " Jessica P.",
+      role: "Entrepreneur",
       img: "https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/8/avatar-5.jpg",
     },
     {
       id: 6,
-      text: "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change and click save.",
-      name: "Floyd Miles",
-      role: "Nursing Assistant",
+      text: "We saw immediate improvements in user engagement after our website revamp by Skylark IT. Their continuous support have been second to none.",
+      name: "Mark A.",
+      role: "Director of Operations",
       img: "https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/8/avatar-6.jpg",
     },
   ];
@@ -87,14 +87,14 @@ const CustomerReviews = () => {
                     src={review.img}
                     alt={review.name}
                   />
-                  <div className="absolute top-0 right-0 flex items-center justify-center bg-blue-600 rounded-full w-7 h-7">
+                  <div className="absolute top-0 right-0 flex items-center justify-center bg-blue-600 rounded-full w-6 h-6">
                     <BiSolidQuoteAltRight className="w-5 h-5 text-white" />
                   </div>
                 </div>
-                <blockquote className="mt-7 h-32 overflow-hidden text-ellipsis">
+                <blockquote className="pt-4 h-32 overflow-hidden text-ellipsis">
                   <p className="text-lg text-black ">{review.text}</p>
                 </blockquote>
-                <div>
+                <div className="mt-6">
                 <p className="text-base font-semibold text-black">{review.name}</p>
                 <p className="mt-1 text-base text-gray-600">{review.role}</p>
               </div>

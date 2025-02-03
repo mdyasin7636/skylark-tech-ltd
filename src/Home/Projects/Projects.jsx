@@ -191,11 +191,13 @@ const Card = ({ card, handleSiteLink }) => {
         {/* Maintain hover style while centering loading animation */}
         <div>
           {loading ? (
-            <div className="absolute inset-40 flex items-center justify-center bg-white">
-              <div className="flex flex-row gap-2">
-                <div className="w-4 h-4 rounded-full bg-blue-700 animate-bounce"></div>
-                <div className="w-4 h-4 rounded-full bg-blue-700 animate-bounce [animation-delay:-.3s]"></div>
-                <div className="w-4 h-4 rounded-full bg-blue-700 animate-bounce [animation-delay:-.5s]"></div>
+            <div className="w-full h-full flex justify-center items-center pt-[88px]">
+              <div className="absolute animate-spin h-[12rem] w-[12rem] rounded-full  border-tr-4 border-b-4 border-gray-900"></div>
+              <div className="absolute animate-spin h-[10rem] w-[10rem] rounded-full border-tl-4 border-b-4 border-blue-900"></div>
+              <div className="absolute animate-spin h-[8rem] w-[8rem] rounded-full border-tr-4 border-b-4 border-deep-sky"></div>
+              <div className="absolute animate-spin h-[6rem] w-[6rem] rounded-full border-tl-4 border-b-4 border-normal-sky"></div>
+              <div className="rounded-full h-28 w-28 animate-bounce flex items-center justify-center text-gray-900 font-semibold text-xl dark:text-black">
+                Loading...
               </div>
             </div>
           ) : (

@@ -28,7 +28,7 @@ const TeamMembers = () => {
       image: "https://i.ibb.co.com/QMtsyf1/Henry-Fletcher.jpg",
     },
     {
-      name: "Tanvir Ahamed",
+      name: "Asad Jaman",
       role: "Digital Marketer",
       image: "https://i.ibb.co.com/QMtsyf1/Henry-Fletcher.jpg",
     },
