@@ -74,9 +74,9 @@ const Navbar = () => {
               >
                 {link.name}
                 {/* Top Line */}
-                <span className="absolute top-0 right-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full group-hover:right-0"></span>
+                <span className="absolute top-0 right-0 h-[2px] w-0 bg-deep-sky transition-all duration-300 group-hover:w-full group-hover:right-0"></span>
                 {/* Bottom Line */}
-                <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-deep-sky transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
               </button>
             </li>
           ))}

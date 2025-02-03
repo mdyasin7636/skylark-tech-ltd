@@ -2,7 +2,7 @@
 
 const CustomTitle = ({
   text,
-  borderColor = "bg-purple-600",
+  borderColor = "bg-deep-sky",
   className = "",
 }) => {
   return (

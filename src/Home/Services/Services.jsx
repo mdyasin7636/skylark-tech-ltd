@@ -58,7 +58,7 @@ const Services = () => {
     <div className="mt-7" id="services">
       <div className="text-center">
         <CustomTitle text="OUR SERVICES" />
-        <p className="font-bold text-2xl sm:text-3xl mt-2">
+        <p className="font-bold text-2xl sm:text-3xl mt-3 text-deep-sky">
           <span className="block">Exclusive Solutions</span>
           <span className="block">For Your Business</span>
         </p>
@@ -88,7 +88,7 @@ const Services = () => {
             <SwiperSlide key={index}>
               <div className="relative mx-14">
                 {/* Adjusted gray background */}
-                <div className="absolute top-12 bottom-12 left-1/2 -translate-x-1/2 w-[calc(100%+4rem)] bg-[#1A1D2B]  rounded-lg"></div>
+                <div className="absolute top-12 bottom-12 left-1/2 -translate-x-1/2 w-[calc(100%+4rem)] bg-[#1A1D2B] rounded-lg"></div>
 
                 {/* Card content */}
                 <div className="h-full w-full bg-white m-auto rounded-xl relative group p-2 z-0 overflow-hidden shadow border border-blue-950 cursor-pointer">
@@ -99,18 +99,18 @@ const Services = () => {
                   <div className="z-20 m-4 text-center">
                     {/* Icon */}
                     <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-indigo-200 flex items-center justify-center">
-                      <div className="text-3xl text-indigo-600">
+                      <div className="text-3xl text-gray-900">
                         {service.icon}
                       </div>
                     </div>
 
                     {/* Title */}
-                    <h3 className="text-lg font-semibold text-blue-950 group-hover:text-white duration-300">
+                    <h3 className="text-lg font-bold text-gray-900 group-hover:text-white duration-300">
                       {service.title}
                     </h3>
 
                     {/* Description */}
-                    <p className="text-base text-gray-500 mt-3 group-hover:text-white duration-300 text-pretty">
+                    <p className="text-base text-gray-900 mt-3 group-hover:text-white duration-300 text-pretty">
                       {service.description}
                     </p>
 
