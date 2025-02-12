@@ -12,44 +12,44 @@ const CustomerReviews = () => {
     {
       id: 1,
       text: "Working with Skylark IT was a fantastic experience. They took the time to understand our needs, and the result was a website that exceeded our expectations.",
-      name: "Emily R.",
+      name: "Michael S.",
       role: "Marketing Manager",
-      img: "https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/8/avatar-1.jpg",
+      img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1739373835/review1_n1qsho.jpg",
     },
     {
       id: 2,
       text: "The professionalism and expertise of the Skylark IT team truly set them apart. They delivered our project on time, and the quality is outstanding.",
-      name: " Michael S.",
+      name: "Emily R.",
       role: "Project Administrator",
-      img: "https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/8/avatar-2.jpg",
+      img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1739373835/review2_bgrepb.jpg",
     },
     {
       id: 3,
       text: "I was impressed with the creative solutions and attention to detail provided by Skylark IT. Their support has been invaluable to our online growth.",
-      name: "Sarah K.",
+      name: "Henry K.",
       role: "Business Owner",
-      img: "https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/8/avatar-3.jpg",
+      img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1739373835/review3_x76bdw.jpg",
     },
     {
       id: 4,
       text: "Skylark IT transformed our outdated website into a modern, user-friendly platform. Their commitment to excellence is evident in every aspect of their work.",
       name: "David L.",
-      role: "Product Manager",
-      img: "https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/8/avatar-4.jpg",
+      role: "Neurologist",
+      img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1739373835/review4_soztu6.jpg",
     },
     {
       id: 5,
       text: "From the initial consultation to the final delivery, Skylark IT was a pleasure to work with. They truly understand how to merge functionality with design.",
       name: " Jessica P.",
       role: "Entrepreneur",
-      img: "https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/8/avatar-5.jpg",
+      img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1739373835/review5_p5stsy.jpg",
     },
     {
       id: 6,
       text: "We saw immediate improvements in user engagement after our website revamp by Skylark IT. Their continuous support have been second to none.",
       name: "Mark A.",
       role: "Director of Operations",
-      img: "https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/8/avatar-6.jpg",
+      img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1739373835/review6_u6zffi.jpg",
     },
   ];
 
@@ -87,7 +87,7 @@ const CustomerReviews = () => {
                     src={review.img}
                     alt={review.name}
                   />
-                  <div className="absolute top-0 right-0 flex items-center justify-center bg-blue-600 rounded-full w-6 h-6">
+                  <div className="absolute top-0 right-0 flex items-center justify-center bg-deep-sky rounded-full w-6 h-6">
                     <BiSolidQuoteAltRight className="w-5 h-5 text-white" />
                   </div>
                 </div>
