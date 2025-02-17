@@ -29,7 +29,7 @@ const TeamMembers = () => {
     },
     {
       name: "Asad Jaman",
-      role: "Digital Marketer",
+      role: "Product Strategist",
       image: "https://i.ibb.co.com/QMtsyf1/Henry-Fletcher.jpg",
     },
     {
@@ -67,7 +67,7 @@ const TeamMembers = () => {
         >
           {members.map((member, index) => (
             <SwiperSlide key={index}>
-              <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-500 hover:shadow-xl border border-black">
+              <div className="group relative overflow-hidden rounded-lg shadow-lg border border-black">
                 <img
                   src={member.image}
                   alt={member.name}
@@ -75,11 +75,11 @@ const TeamMembers = () => {
                 />
 
                 {/* Name and Role (Visible at all times) */}
-                <div className="absolute bottom-0 left-0 w-full p-4 bg-white text-center">
+                <div className="absolute bottom-0 left-0 w-full p-3 bg-white text-center">
                   <h3 className="text-lg font-bold text-gray-800">
                     {member.name}
                   </h3>
-                  <p className="text-sm text-indigo-600">{member.role}</p>
+                  <p className="text-sm text-deep-sky">{member.role}</p>
                 </div>
               </div>
             </SwiperSlide>

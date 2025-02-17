@@ -59,7 +59,7 @@ const MiniNav = () => {
   );
 
   return (
-    <div className="bg-[#1A1D2B] text-white md:p-4 p-2">
+    <div className="bg-[#1A1D2B] text-white md:p-3 p-2">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         {/* Contact Info for Desktop */}
         <div className="hidden md:flex space-x-8 items-center font-semibold">
