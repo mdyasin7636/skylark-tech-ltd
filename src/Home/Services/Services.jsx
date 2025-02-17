@@ -58,10 +58,7 @@ const Services = () => {
     <div className="mt-7" id="services">
       <div className="text-center">
         <CustomTitle text="OUR SERVICES" />
-        <p className="font-bold text-2xl sm:text-3xl mt-3 text-deep-sky">
-          <span className="block">Exclusive Solutions</span>
-          <span className="block">For Your Business</span>
-        </p>
+        
       </div>
       <div className="mt-7">
         <Swiper
@@ -91,12 +88,12 @@ const Services = () => {
                 <div className="absolute top-12 bottom-12 left-1/2 -translate-x-1/2 w-[calc(100%+4rem)] bg-[#1A1D2B] rounded-lg"></div>
 
                 {/* Card content */}
-                <div className="h-full w-full bg-white m-auto rounded-xl relative group p-2 z-0 overflow-hidden shadow border border-blue-950 cursor-pointer">
+                <div className="h-[280px] w-[320px] bg-white m-auto rounded-xl relative group p-auto z-0 overflow-hidden shadow border border-blue-950 cursor-pointer">
                   <div className="h-28 w-64 bg-blue-950 absolute left-full rounded-full -bottom-12 group-hover:scale-[550%] z-[-1] duration-500 easy-in-out"></div>
                   <div className="h-24 w-52 bg-blue-700 absolute left-full rounded-full -bottom-12 group-hover:scale-[400%] z-[-1] duration-700 easy-in-out"></div>
                   <div className="h-20 w-48 bg-blue-500 absolute left-full rounded-full -bottom-12 group-hover:scale-[300%] z-[-1] duration-700 easy-in-out"></div>
                   <div className="h-16 w-44 bg-blue-950 absolute left-full rounded-full -bottom-12 group-hover:scale-[200%] z-[-1] duration-700 easy-in-out"></div>
-                  <div className="z-20 m-4 text-center">
+                  <div className="z-20 mt-6 mx-2 text-center">
                     {/* Icon */}
                     <div className="w-[60px] h-[60px] mx-auto mb-4 rounded-full bg-[#1A1D2B] group-hover:bg-white duration-300 flex items-center justify-center">
                       <div className="text-3xl text-white group-hover:text-black duration-300">
@@ -110,7 +107,7 @@ const Services = () => {
                     </h3>
 
                     {/* Description */}
-                    <p className="text-base text-gray-900 mt-3 group-hover:text-white duration-300 text-pretty">
+                    <p className="text-base text-gray-900 mt-3 group-hover:text-white duration-300">
                       {service.description}
                     </p>
 
