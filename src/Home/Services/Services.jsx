@@ -58,7 +58,6 @@ const Services = () => {
     <div className="mt-7" id="services">
       <div className="text-center">
         <CustomTitle text="OUR SERVICES" />
-        
       </div>
       <div className="mt-7">
         <Swiper
@@ -88,7 +87,7 @@ const Services = () => {
                 <div className="absolute top-12 bottom-12 left-1/2 -translate-x-1/2 w-[calc(100%+4rem)] bg-[#1A1D2B] rounded-lg"></div>
 
                 {/* Card content */}
-                <div className="h-[280px] w-[320px] bg-white m-auto rounded-xl relative group p-auto z-0 overflow-hidden shadow border border-blue-950 cursor-pointer">
+                <div className="h-[280px] w-[280px] md:h-[280px] md:w-[320px] bg-white m-auto rounded-xl relative group p-auto z-0 overflow-hidden shadow border border-blue-950 cursor-pointer">
                   <div className="h-28 w-64 bg-blue-950 absolute left-full rounded-full -bottom-12 group-hover:scale-[550%] z-[-1] duration-500 easy-in-out"></div>
                   <div className="h-24 w-52 bg-blue-700 absolute left-full rounded-full -bottom-12 group-hover:scale-[400%] z-[-1] duration-700 easy-in-out"></div>
                   <div className="h-20 w-48 bg-blue-500 absolute left-full rounded-full -bottom-12 group-hover:scale-[300%] z-[-1] duration-700 easy-in-out"></div>

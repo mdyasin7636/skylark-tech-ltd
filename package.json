@@ -11,8 +11,6 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
-    "@tsparticles/all": "^3.5.0",
-    "@tsparticles/react": "^3.0.0",
     "aos": "^2.3.4",
     "axios": "^1.7.7",
     "cloudinary-react": "^1.8.1",
