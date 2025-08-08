@@ -8,8 +8,6 @@ const WhyChooseUs = () => {
       <div className="mt-6">
         <div
           className="mx-auto px-6 md:px-12 lg:px-24 grid grid-cols-1 md:grid-cols-2 gap-10 items-center"
-          data-aos="fade-up"
-          data-aos-easing="linear"
         >
           {/* Text Content */}
           <div className="order-last md:order-first">

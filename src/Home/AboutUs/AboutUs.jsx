@@ -19,8 +19,7 @@ const AboutUs = () => {
       <div className="mt-7">
         <div
           className="grid grid-cols-1 lg:grid-cols-2 items-center text-center"
-          data-aos="fade-down"
-          data-aos-easing="linear"
+         
         >
           {/* Image Section */}
           <div>

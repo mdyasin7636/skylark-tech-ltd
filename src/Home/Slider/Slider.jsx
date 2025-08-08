@@ -1,7 +1,7 @@
 import { Link as ScrollLink } from "react-scroll";
 import { Link } from "react-router-dom";
 
-const slide = {
+const bannerData = {
   img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1729540688/banner1_fmzljr.jpg",
   heading: "Perfect IT Solution\nFor Your Business",
   text: "At Skylark IT, we innovate cutting-edge IT solutions designed to\nelevate your business for tomorrow's challenges and opportunities.",
@@ -15,7 +15,7 @@ const Banner = () => {
 
       {/* Banner image */}
       <img
-        src={slide.img}
+        src={bannerData.img}
         className="w-full h-[60vh] md:h-[70vh] lg:h-[100vh] object-cover"
         alt="Banner"
         loading="lazy"
@@ -25,7 +25,7 @@ const Banner = () => {
       <div className="absolute bottom-28 md:bottom-36 md:left-10 z-20 text-white text-center md:text-left">
         <p className="font-semibold">SECURE & IT SERVICES</p>
         <h2 className="md:text-6xl text-4xl font-bold mt-2">
-          {slide.heading.split("\n").map((line, i) => (
+          {bannerData.heading.split("\n").map((line, i) => (
             <span key={i}>
               {line}
               <br />
@@ -33,7 +33,7 @@ const Banner = () => {
           ))}
         </h2>
         <p className="text-lg mt-4 mx-4 md:mx-0">
-          {slide.text.split("\n").map((line, i) => (
+          {bannerData.text.split("\n").map((line, i) => (
             <span key={i}>
               {line}
               <br />
