@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion"; // ✅ Framer Motion import
 
 const bannerData = {
-  img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1729540688/banner1_fmzljr.jpg",
+  img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1754747572/photo-1451187580459-43490279c0fa_fvwod3.jpg",
   heading: "Perfect IT Solution\nFor Your Business",
   text: "At Skylark IT, we innovate cutting-edge IT solutions designed to\nelevate your business for tomorrow's challenges and opportunities.",
 };
