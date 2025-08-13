@@ -1,97 +1,118 @@
-import { Link as ScrollLink } from "react-scroll";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion"; // ✅ Framer Motion import
-
-const bannerData = {
-  img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1754747572/photo-1451187580459-43490279c0fa_fvwod3.jpg",
-  heading: "Perfect IT Solution\nFor Your Business",
-  text: "At Skylark IT, we innovate cutting-edge IT solutions designed to\nelevate your business for tomorrow's challenges and opportunities.",
-};
-
 const Banner = () => {
   return (
-    <div id="home" className="relative overflow-hidden">
-      {/* Background overlay */}
-      <motion.div
-        className="absolute inset-0 bg-black opacity-50 z-10"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 0.5 }}
-        transition={{ duration: 1 }}
-      ></motion.div>
+    <section className="relative bg-gradient-to-br from-blue-900 to-indigo-800 text-white overflow-hidden">
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black opacity-50"></div>
 
-      {/* Banner image with zoom-in effect */}
-      <motion.img
-        src={bannerData.img}
-        className="w-full h-[60vh] md:h-[70vh] lg:h-[100vh] object-cover"
-        alt="Banner"
-        loading="lazy"
-        initial={{ scale: 1.1 }}
-        animate={{ scale: 1 }}
-        transition={{ duration: 2, ease: "easeOut" }}
-      />
+      {/* Background image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage:
+            "url('https://res.cloudinary.com/dlaatmz5a/image/upload/v1754747572/photo-1451187580459-43490279c0fa_fvwod3.jpg')",
+        }}
+      ></div>
 
-      {/* Banner content */}
-      <div className="absolute bottom-28 md:bottom-36 md:left-10 z-20 text-white text-center md:text-left">
-        <motion.p
-          className="font-semibold"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-        >
-          SECURE & IT SERVICES
-        </motion.p>
-
-        <motion.h2
-          className="md:text-6xl text-4xl font-bold mt-2"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-        >
-          {bannerData.heading.split("\n").map((line, i) => (
-            <span key={i}>
-              {line}
+      <div className="container mx-auto px-4 mt-16 mb-32 relative z-10">
+        <div className="flex flex-col md:flex-row items-center justify-between">
+          {/* Left Side */}
+          <div className="w-full md:w-1/2 mb-12 md:mb-0">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+              Innovate.
               <br />
-            </span>
-          ))}
-        </motion.h2>
-
-        <motion.p
-          className="text-lg mt-4 mx-4 md:mx-0"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
-        >
-          {bannerData.text.split("\n").map((line, i) => (
-            <span key={i}>
-              {line}
+              Transform.
               <br />
-            </span>
-          ))}
-        </motion.p>
+              Succeed.
+            </h1>
+            <p className="text-xl mb-8 text-gray-300">
+              Empowering businesses with cutting-edge solutions for a digital
+              future.
+            </p>
+            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+              <a
+                href="#"
+                className="bg-white text-blue-900 font-semibold px-8 py-3 rounded-full hover:bg-blue-100 transition duration-300 text-center"
+              >
+                Get Started
+              </a>
+              <a
+                href="#"
+                className="border-2 border-white text-white font-semibold px-8 py-3 rounded-full hover:bg-white hover:text-blue-900 transition duration-300 text-center"
+              >
+                Learn More
+              </a>
+            </div>
+          </div>
 
-        {/* Action buttons */}
-        <motion.div
-          className="flex space-x-4 mt-6 justify-center md:justify-normal"
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6, delay: 1.1 }}
-        >
-          <Link to="/all-projects">
-            <button className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-[#1A1D2B] px-6 font-medium text-neutral-50 border border-deep-sky">
-              <span className="absolute h-0 w-0 rounded-full bg-deep-sky transition-all duration-300 group-hover:h-56 group-hover:w-56"></span>
-              <span className="relative">DISCOVER MORE</span>
-            </button>
-          </Link>
-
-          <ScrollLink to="contact" smooth={true} duration={500} offset={-70}>
-            <button className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-[#1A1D2B] px-6 font-medium text-neutral-50 border border-deep-sky">
-              <span className="absolute h-0 w-0 rounded-full bg-deep-sky transition-all duration-300 group-hover:h-56 group-hover:w-56"></span>
-              <span className="relative">CONTACT US</span>
-            </button>
-          </ScrollLink>
-        </motion.div>
+          {/* Right Side */}
+          <div className="w-full md:w-1/2 md:pl-12">
+            <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-8 shadow-2xl">
+              <h2 className="text-2xl font-semibold mb-6">Why Skylark IT?</h2>
+              <ul className="space-y-4">
+                <li className="flex items-center">
+                  <svg
+                    className="w-6 h-6 mr-3 text-yellow-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M13 10V3L4 14h7v7l9-11h-7z"
+                    ></path>
+                  </svg>
+                  <span>Innovative Web Experiences</span>
+                </li>
+                <li className="flex items-center">
+                  <svg
+                    className="w-6 h-6 mr-3 text-green-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                    ></path>
+                  </svg>
+                  <span>Targeted Marketing Strategies</span>
+                </li>
+                <li className="flex items-center">
+                  <svg
+                    className="w-6 h-6 mr-3 text-purple-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
+                    ></path>
+                  </svg>
+                  <span>Seamless IT Management</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+
+      {/* Decorative Wave */}
+      <div className="absolute bottom-0 left-0 right-0 -mb-[1px]">
+        <svg viewBox="0 0 1440 122" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M0 122L60 107C120 92 240 62 360 47C480 32 600 32 720 39.5C840 47 960 62 1080 69.5C1200 77 1320 77 1380 77L1440 77V122H0Z"
+            fill="white"
+          />
+        </svg>
+      </div>
+    </section>
   );
 };
 
