@@ -1,3 +1,9 @@
+import { FaBolt, FaNetworkWired } from "react-icons/fa";
+import { HiOutlineShieldCheck } from "react-icons/hi";
+import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
+import { motion } from "framer-motion";
+
 const Banner = () => {
   return (
     <section className="relative bg-gradient-to-br from-blue-900 to-indigo-800 text-white overflow-hidden">
@@ -28,20 +34,31 @@ const Banner = () => {
               Empowering businesses with cutting-edge solutions for a digital
               future.
             </p>
-            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-              <a
-                href="#"
-                className="bg-white text-blue-900 font-semibold px-8 py-3 rounded-full hover:bg-blue-100 transition duration-300 text-center"
+            <motion.div
+              className="flex space-x-4 mt-6 justify-center md:justify-normal"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+            >
+              <Link to="/all-projects">
+                <button className="group relative inline-flex h-12 w-44 items-center justify-center overflow-hidden rounded-full bg-[#1A1D2B] font-medium text-neutral-50 border border-deep-sky">
+                  <span className="absolute h-0 w-0 rounded-full bg-deep-sky transition-all duration-300 group-hover:h-56 group-hover:w-56"></span>
+                  <span className="relative">DISCOVER MORE</span>
+                </button>
+              </Link>
+
+              <ScrollLink
+                to="contact"
+                smooth={true}
+                duration={500}
+                offset={-70}
               >
-                Get Started
-              </a>
-              <a
-                href="#"
-                className="border-2 border-white text-white font-semibold px-8 py-3 rounded-full hover:bg-white hover:text-blue-900 transition duration-300 text-center"
-              >
-                Learn More
-              </a>
-            </div>
+                <button className="group relative inline-flex h-12 w-44 items-center justify-center overflow-hidden rounded-full bg-[#1A1D2B] font-medium text-neutral-50 border border-deep-sky">
+                  <span className="absolute h-0 w-0 rounded-full bg-deep-sky transition-all duration-300 group-hover:h-56 group-hover:w-56"></span>
+                  <span className="relative">CONTACT US</span>
+                </button>
+              </ScrollLink>
+            </motion.div>
           </div>
 
           {/* Right Side */}
@@ -50,51 +67,15 @@ const Banner = () => {
               <h2 className="text-2xl font-semibold mb-6">Why Skylark IT?</h2>
               <ul className="space-y-4">
                 <li className="flex items-center">
-                  <svg
-                    className="w-6 h-6 mr-3 text-yellow-400"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M13 10V3L4 14h7v7l9-11h-7z"
-                    ></path>
-                  </svg>
+                  <FaBolt className="w-6 h-6 mr-3 text-yellow-400" />
                   <span>Innovative Web Experiences</span>
                 </li>
                 <li className="flex items-center">
-                  <svg
-                    className="w-6 h-6 mr-3 text-green-400"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                    ></path>
-                  </svg>
+                  <HiOutlineShieldCheck className="w-6 h-6 mr-3 text-green-400" />
                   <span>Targeted Marketing Strategies</span>
                 </li>
                 <li className="flex items-center">
-                  <svg
-                    className="w-6 h-6 mr-3 text-purple-400"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
-                    ></path>
-                  </svg>
+                  <FaNetworkWired className="w-6 h-6 mr-3 text-purple-400" />
                   <span>Seamless IT Management</span>
                 </li>
               </ul>

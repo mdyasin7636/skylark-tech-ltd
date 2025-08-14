@@ -83,7 +83,7 @@ const Navbar = () => {
           <li>
             <button
               onClick={() => handleNavigation("contact")}
-              className="group relative inline-flex h-10 items-center justify-center overflow-hidden rounded-md bg-[#1A1D2B] px-4 md:ml-6 font-medium text-neutral-50 border border-deep-sky"
+              className="group relative inline-flex h-10 items-center justify-center overflow-hidden rounded-full bg-[#1A1D2B] px-4 md:ml-6 font-medium text-neutral-50 border border-deep-sky"
             >
               <span className="absolute h-0 w-0 rounded-full bg-deep-sky transition-all duration-300 group-hover:h-56 group-hover:w-56"></span>
               <span className="relative">CONTACT US</span>
