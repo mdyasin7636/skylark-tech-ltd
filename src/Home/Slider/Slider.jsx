@@ -22,23 +22,40 @@ const Banner = () => {
       <div className="container mx-auto px-4 mt-16 mb-32 relative z-10">
         <div className="flex flex-col md:flex-row items-center justify-between">
           {/* Left Side */}
-          <div className="w-full md:w-1/2 mb-12 md:mb-0">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+          <motion.div
+            className="w-full md:w-1/2 mb-12 md:mb-0"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
+          >
+            <motion.h1
+              className="text-5xl md:text-6xl font-bold mb-6 leading-tight"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
               Innovate.
               <br />
               Transform.
               <br />
               Succeed.
-            </h1>
-            <p className="text-xl mb-8 text-gray-300">
+            </motion.h1>
+
+            <motion.p
+              className="text-xl mb-8 text-gray-300"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+            >
               Empowering businesses with cutting-edge solutions for a digital
               future.
-            </p>
+            </motion.p>
+
             <motion.div
               className="flex space-x-4 mt-6 justify-center md:justify-normal"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
             >
               <Link to="/all-projects">
                 <button className="group relative inline-flex h-12 w-44 items-center justify-center overflow-hidden rounded-full bg-[#1A1D2B] font-medium text-neutral-50 border border-deep-sky">
@@ -59,11 +76,25 @@ const Banner = () => {
                 </button>
               </ScrollLink>
             </motion.div>
-          </div>
+          </motion.div>
 
           {/* Right Side */}
-          <div className="w-full md:w-1/2 md:pl-12">
-            <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-8 shadow-2xl">
+
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7, delay: 0.8 }}
+            className="w-full md:w-1/2 md:pl-12"
+          >
+            <div className="relative bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-8 shadow-2xl overflow-hidden">
+              {/* Fade-out overlay */}
+              <motion.div
+                initial={{ opacity: 1 }}
+                animate={{ opacity: 0 }}
+                transition={{ duration: 0.7, delay: 0.8 }}
+                className="absolute inset-0 bg-white bg-opacity-30 pointer-events-none"
+              />
+
               <h2 className="text-2xl font-semibold mb-6">Why Skylark IT?</h2>
               <ul className="space-y-4">
                 <li className="flex items-center">
@@ -80,7 +111,7 @@ const Banner = () => {
                 </li>
               </ul>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
 
