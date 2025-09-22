@@ -9,7 +9,7 @@ import Slider from "../Slider/Slider";
 // import SocialMediaPosts from "../SocialMediaPosts/SocialMediaPosts";
 import TeamMembers from "../TeamMembers/TeamMembers";
 import WhyChooseUs from "../WhyChooseUs/WhyChooseUs";
-import { useEffect } from "react";
+
 
 const Home = () => {
 
