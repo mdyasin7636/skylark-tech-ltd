@@ -54,7 +54,7 @@ const CustomerReviews = () => {
   ];
 
   return (
-    <div className="mt-7">
+    <div className="bg-white">
       <CustomTitle text="OUR HAPPY CLIENTS"/>
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 mt-6">
         <Swiper

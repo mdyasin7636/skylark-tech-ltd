@@ -3,9 +3,9 @@ import CustomTitle from "../../components/CustomTitle";
 
 const WhyChooseUs = () => {
   return (
-    <div className="mt-7">
+    <div className="bg-white">
       <CustomTitle text="WHY CHOOSE US" />
-      <div className="mt-6">
+      <div className="">
         <div
           className="mx-auto px-6 md:px-12 lg:px-24 grid grid-cols-1 md:grid-cols-2 gap-10 items-center"
         >

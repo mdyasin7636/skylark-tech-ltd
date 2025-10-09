@@ -38,7 +38,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="shadow-md w-full sticky top-0 z-50">
+    <div className="shadow-md w-full sticky top-0 z-50 bg-white">
       <div className="md:px-10 py-2 px-7 md:flex justify-between items-center">
         {/* logo here */}
         <div onClick={() => navigate("/")} className="cursor-pointer">
@@ -59,7 +59,7 @@ const Navbar = () => {
 
         {/* nav links */}
         <ul
-          className={`md:flex md:items-center md:pb-0 pb-8 absolute md:static left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-300 ease-in ${
+          className={`md:flex md:items-center md:pb-0 pb-8 absolute md:static left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-300 ease-in bg-white ${
             isOpen ? "top-[80px]" : "top-[-490px]"
           } z-10`}
         >
@@ -70,7 +70,7 @@ const Navbar = () => {
             >
               <button
                 onClick={() => handleNavigation(link.link)}
-                className="relative inline-block text-white transition-all duration-300"
+                className="relative inline-block text-black transition-all duration-300"
               >
                 {link.name}
                 {/* Top Line */}

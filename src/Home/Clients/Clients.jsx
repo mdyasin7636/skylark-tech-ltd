@@ -3,7 +3,7 @@ import CustomTitle from "../../components/CustomTitle";
 
 const Clients = () => {
   return (
-    <div className="mt-7">
+    <div className="bg-white">
       <CustomTitle text="CLIENTS"/>
       <div className="flex mt-5">
         <Marquee speed={120}>

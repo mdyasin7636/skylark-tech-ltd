@@ -14,7 +14,7 @@ const AboutUs = () => {
   };
 
   return (
-    <div className="mt-7" id="about">
+    <div className="bg-white" id="about">
       <CustomTitle text="ABOUT US" />
       <div className="mt-7">
         <div

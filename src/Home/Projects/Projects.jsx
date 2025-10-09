@@ -125,7 +125,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="mt-7" id="projects">
+    <div className="bg-white" id="projects">
       <CustomTitle text="OUR PROJECTS" />
       <div className="mt-5">
         {/* Tab Navigation */}

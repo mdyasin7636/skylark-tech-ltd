@@ -55,11 +55,11 @@ const Services = () => {
   ];
 
   return (
-    <div className="mt-7" id="services">
+    <div className="py bg-white" id="services">
       <div className="text-center">
         <CustomTitle text="OUR SERVICES" />
       </div>
-      <div className="mt-7">
+      <div className="">
         <Swiper
           loop={true}
           slidesPerView={1}

@@ -46,7 +46,7 @@ const TeamMembers = () => {
   ];
 
   return (
-    <div className="relative mt-7">
+    <div className="relative bg-white">
       <CustomTitle text="TEAM MEMBERS" />
 
       <div className="relative max-w-6xl mx-auto mt-7">
