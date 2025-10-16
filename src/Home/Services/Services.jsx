@@ -55,7 +55,7 @@ const Services = () => {
   ];
 
   return (
-    <div className="py bg-white" id="services">
+    <div className="bg-white" id="services">
       <div className="text-center">
         <CustomTitle text="OUR SERVICES" />
       </div>
