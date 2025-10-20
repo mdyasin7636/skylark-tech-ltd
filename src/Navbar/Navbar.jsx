@@ -63,15 +63,24 @@ const Navbar = () => {
           {Links.map((link, index) => (
             <li
               key={index}
-              className="font-semibold my-7 md:my-0 text-[20px] group text-center"
+              className="font-semibold my-4 md:my-0 text-[18px] text-center"
             >
+              {/* Desktop style */}
               <button
                 onClick={() => handleNavigation(link.link)}
-                className="relative inline-block text-black transition-all duration-300"
+                className="hidden md:inline-block relative text-black group transition-all duration-300"
               >
                 {link.name}
                 <span className="absolute top-0 right-0 h-[2px] w-0 bg-deep-sky transition-all duration-300 group-hover:w-full group-hover:right-0"></span>
                 <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-deep-sky transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+              </button>
+
+              {/* Mobile style */}
+              <button
+                onClick={() => handleNavigation(link.link)}
+                className="md:hidden w-[80%] mx-auto block rounded-md border border-gray-300 bg-white py-2 text-black shadow-sm transition-all duration-200 hover:bg-gray-200"
+              >
+                {link.name}
               </button>
             </li>
           ))}
