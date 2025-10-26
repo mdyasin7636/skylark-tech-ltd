@@ -36,21 +36,25 @@ const Navbar = () => {
 
   return (
     <div className="shadow-md w-full sticky top-0 z-50 bg-white">
-      <div className="md:px-10 py-2 px-7 flex justify-between items-center relative">
+      <div className="md:px-10 px-7 flex justify-between items-center relative h-[80px]">
         {/* Logo (Left) */}
         <div onClick={() => navigate("/")} className="cursor-pointer">
-          <img src={skylarkLogo} className="w-40 h-16" alt="SKYLARK IT" />
+          <img
+            src={skylarkLogo}
+            className="w-32 h-12 object-contain"
+            alt="SKYLARK IT"
+          />
         </div>
 
         {/* Menu Icon (Mobile) */}
         <div
           onClick={() => setIsOpen(!isOpen)}
-          className="absolute right-8 top-[22px] cursor-pointer md:hidden z-20 border-2 border-black p-1 rounded-lg"
+          className="md:hidden flex items-center justify-center absolute right-8 top-1/2 -translate-y-1/2 cursor-pointer z-20 border-2 border-black p-1 rounded-lg"
         >
           {isOpen ? (
-            <AiOutlineClose size={30} color="black" />
+            <AiOutlineClose size={26} color="black" />
           ) : (
-            <FiMenu size={30} color="black" />
+            <FiMenu size={26} color="black" />
           )}
         </div>
 
