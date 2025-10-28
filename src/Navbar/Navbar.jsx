@@ -5,6 +5,7 @@ import { useState } from "react";
 import skylarkLogo from "../assets/logo.png";
 import { useNavigate, useLocation } from "react-router-dom";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const Links = [
@@ -49,13 +50,47 @@ const Navbar = () => {
         {/* Menu Icon (Mobile) */}
         <div
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden flex items-center justify-center absolute right-8 top-1/2 -translate-y-1/2 cursor-pointer z-20 border-2 border-black p-1 rounded-lg"
+          className="
+    md:hidden flex items-center justify-center
+    absolute right-8 top-1/2 -translate-y-1/2
+    cursor-pointer z-2 border-transparent
+    p-2 rounded-xl w-11 h-11
+    bg-gradient-to-br from-[#1C75BC] to-[#2FB3E3]
+    shadow-[0_0_15px_rgba(47,179,227,0.45)]
+    active:scale-90
+    transition-all duration-300 ease-in-out
+  "
         >
-          {isOpen ? (
-            <AiOutlineClose size={26} color="black" />
-          ) : (
-            <FiMenu size={26} color="black" />
-          )}
+          <motion.svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            className="w-6 h-6"
+          >
+            <motion.path
+              d="M3 6h18"
+              stroke="white"
+              strokeWidth="2"
+              strokeLinecap="round"
+              animate={isOpen ? { rotate: 45, y: 6 } : { rotate: 0, y: 0 }}
+              transition={{ duration: 0.35, ease: "easeInOut" }}
+            />
+            <motion.path
+              d="M3 12h18"
+              stroke="white"
+              strokeWidth="2"
+              strokeLinecap="round"
+              animate={isOpen ? { opacity: 0 } : { opacity: 1 }}
+              transition={{ duration: 0.2 }}
+            />
+            <motion.path
+              d="M3 18h18"
+              stroke="white"
+              strokeWidth="2"
+              strokeLinecap="round"
+              animate={isOpen ? { rotate: -45, y: -6 } : { rotate: 0, y: 0 }}
+              transition={{ duration: 0.35, ease: "easeInOut" }}
+            />
+          </motion.svg>
         </div>
 
         {/* Centered Navigation Links */}
@@ -67,7 +102,7 @@ const Navbar = () => {
           {Links.map((link, index) => (
             <li
               key={index}
-              className="font-semibold my-4 md:my-0 text-[18px] text-center"
+              className="font-semibold my-4 md:my-0 text-[20px] text-center"
             >
               {/* Desktop style */}
               <button
