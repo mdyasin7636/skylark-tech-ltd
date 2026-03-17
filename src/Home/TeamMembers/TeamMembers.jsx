@@ -95,3 +95,73 @@ const TeamMembers = () => {
 };
 
 export default TeamMembers;
+
+
+
+
+// const teamData = [
+//   {
+//     id: 1,
+//     name: "YOUR NAME HERE",
+//     role: "TAG LINE HERE",
+//     img: "https://i.pravatar.cc/150?img=1",
+//   },
+//   {
+//     id: 2,
+//     name: "YOUR NAME HERE",
+//     role: "TAG LINE HERE",
+//     img: "https://i.pravatar.cc/150?img=2",
+//   },
+//   {
+//     id: 3,
+//     name: "YOUR NAME HERE",
+//     role: "TAG LINE HERE",
+//     img: "https://i.pravatar.cc/150?img=3",
+//   },
+// ];
+
+// const TeamMembers = () => {
+//   return (
+//     <div className="min-h-screen bg-gray-200 flex items-center justify-center">
+//       <div className="flex gap-10 flex-wrap justify-center">
+//         {teamData.map((member) => (
+//           <div
+//             key={member.id}
+//             className="relative w-[260px] h-[240px] bg-[#08142b] text-white flex flex-col items-center pt-16 px-6"
+//             style={{
+//               borderBottomLeftRadius: "80px",
+//             }}
+//           >
+//             {/* Image Circle */}
+//             <div className="absolute -top-14 w-28 h-28 rounded-full border-4 border-[#08142b] overflow-hidden bg-white">
+//               <img
+//                 src={member.img}
+//                 alt=""
+//                 className="w-full h-full object-cover"
+//               />
+//             </div>
+
+//             {/* Content */}
+//             <h3 className="mt-4 text-sm font-bold tracking-wide text-center">
+//               {member.name}
+//             </h3>
+//             <p className="text-xs text-gray-300 mt-1 mb-4 text-center">
+//               {member.role}
+//             </p>
+// {/* 
+//             <p className="text-[11px] text-gray-300 text-center leading-relaxed mb-6">
+           
+//             </p> */}
+
+//             {/* Button */}
+//             <button className="text-[10px] px-4 py-1 border border-gray-300 rounded-full hover:bg-white hover:text-black transition">
+//               READ MORE
+//             </button>
+//           </div>
+//         ))}
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default TeamMembers;
