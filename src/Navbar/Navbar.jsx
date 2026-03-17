@@ -95,9 +95,8 @@ const Navbar = () => {
 
         {/* Centered Navigation Links */}
         <ul
-          className={`md:flex md:items-center md:justify-center md:space-x-10 absolute md:static left-0 w-full md:w-auto transition-all duration-300 ease-in bg-white ${
-            isOpen ? "top-[80px]" : "top-[-490px]"
-          } z-10`}
+          className={`md:flex md:items-center md:justify-center md:space-x-10 absolute md:static left-0 w-full md:w-auto transition-all duration-300 ease-in bg-white ${isOpen ? "top-[80px]" : "top-[-490px]"
+            } z-10`}
         >
           {Links.map((link, index) => (
             <li
@@ -107,11 +106,18 @@ const Navbar = () => {
               {/* Desktop style */}
               <button
                 onClick={() => handleNavigation(link.link)}
-                className="hidden md:inline-block relative text-black group transition-all duration-300"
+                className="
+    hidden md:inline-block relative text-black group
+    transition-all duration-300 ease-out
+    hover:text-deep-sky
+    hover:-translate-y-1 hover:scale-105
+  "
               >
                 {link.name}
-                <span className="absolute top-0 right-0 h-[2px] w-0 bg-deep-sky transition-all duration-300 group-hover:w-full group-hover:right-0"></span>
-                <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-deep-sky transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+
+                {/* KEEP THESE EXACTLY SAME */}
+                <span className="absolute -top-0.5 right-0 h-[2px] w-0 bg-black transition-all duration-300 group-hover:w-full group-hover:right-0"></span>
+                <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-black transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
               </button>
 
               {/* Mobile style */}
@@ -126,36 +132,36 @@ const Navbar = () => {
         </ul>
 
         {/* Contact Us Button (Right) */}
-<div className="hidden md:block">
-  <div
-    onClick={() => handleNavigation("contact")}
-    className="relative group cursor-pointer select-none"
-  >
-    {/* Main Button */}
-    <div
-      className="relative px-6 py-2 border-2 border-blue-500 text-blue-500 font-bold text-lg rounded-lg 
+        <div className="hidden md:block">
+          <div
+            onClick={() => handleNavigation("contact")}
+            className="relative group cursor-pointer select-none"
+          >
+            {/* Main Button */}
+            <div
+              className="relative px-6 py-2 border-2 border-blue-500 text-blue-500 font-bold text-lg rounded-lg 
       transform transition-all duration-300 
       group-hover:translate-y-1 group-hover:translate-x-1 
       shadow-[6px_6px_10px_rgba(0,0,0,0.6),-6px_-6px_10px_rgba(255,255,255,0.1)] 
       group-hover:shadow-[8px_8px_15px_rgba(0,0,0,0.8),-8px_-8px_15px_rgba(255,255,255,0.15)] 
       bg-white"
-    >
-      Contact Us
-    </div>
+            >
+              Contact Us
+            </div>
 
-    {/* Dashed Border Outline */}
-    <div
-      className="absolute inset-0 border-2 border-dashed border-blue-500 rounded-lg 
+            {/* Dashed Border Outline */}
+            <div
+              className="absolute inset-0 border-2 border-dashed border-blue-500 rounded-lg 
       opacity-50 group-hover:opacity-100 transition-opacity duration-300"
-    ></div>
+            ></div>
 
-    {/* Animated Ping Dots */}
-    <div className="absolute -top-2 -right-2 w-4 h-4 bg-blue-500 rounded-full animate-ping shadow-lg"></div>
-    <div className="absolute -bottom-2 -left-2 w-4 h-4 bg-blue-500 rounded-full animate-ping shadow-lg"></div>
-    <div className="absolute top-1/3 left-3 w-3 h-3 bg-blue-400 rounded-full animate-ping opacity-70"></div>
-    <div className="absolute top-2/3 right-3 w-3 h-3 bg-blue-400 rounded-full animate-ping opacity-70"></div>
-  </div>
-</div>
+            {/* Animated Ping Dots */}
+            <div className="absolute -top-2 -right-2 w-4 h-4 bg-blue-500 rounded-full animate-ping shadow-lg"></div>
+            <div className="absolute -bottom-2 -left-2 w-4 h-4 bg-blue-500 rounded-full animate-ping shadow-lg"></div>
+            <div className="absolute top-1/3 left-3 w-3 h-3 bg-blue-400 rounded-full animate-ping opacity-70"></div>
+            <div className="absolute top-2/3 right-3 w-3 h-3 bg-blue-400 rounded-full animate-ping opacity-70"></div>
+          </div>
+        </div>
 
       </div>
     </div>
