@@ -23,20 +23,30 @@ const Navbar = () => {
     if (location.pathname !== "/") {
       navigate("/", { replace: true });
       setTimeout(() => {
-        scroll.scrollTo(document.getElementById(link).offsetTop - 70, {
-          smooth: true,
-        });
+        const element = document.getElementById(link);
+        if (element) {
+          scroll.scrollTo(element.offsetTop - 70, {
+            smooth: true,
+          });
+        } else {
+          console.warn(`Element with id "${link}" not found`);
+        }
       }, 100);
     } else {
-      scroll.scrollTo(document.getElementById(link).offsetTop - 70, {
-        smooth: true,
-      });
+      const element = document.getElementById(link);
+      if (element) {
+        scroll.scrollTo(element.offsetTop - 70, {
+          smooth: true,
+        });
+      } else {
+        console.warn(`Element with id "${link}" not found`);
+      }
     }
     setIsOpen(false);
   };
 
   return (
-    <div className="shadow-md w-full sticky top-0 z-50 bg-white">
+   <div className="w-full sticky top-0 z-50 bg-white border-b border-black/10 shadow-[0_10px_30px_rgba(0,0,0,0.4)]">
       <div className="md:px-10 px-7 flex justify-between items-center relative h-[80px]">
         {/* Logo (Left) */}
         <div onClick={() => navigate("/")} className="cursor-pointer">
@@ -106,27 +116,23 @@ const Navbar = () => {
               {/* Desktop style */}
               <button
                 onClick={() => handleNavigation(link.link)}
-                className="
-    hidden md:inline-block relative text-black group
-    transition-all duration-300 ease-out
-    hover:text-deep-sky
-    hover:-translate-y-1 hover:scale-105
-  "
+                className=" hidden md:inline-block relative text-black group transition-all duration-300 ease-out hover:text-deep-sky hover:-translate-y-1 hover:scale-105"
               >
                 {link.name}
 
-                {/* KEEP THESE EXACTLY SAME */}
                 <span className="absolute -top-0.5 right-0 h-[2px] w-0 bg-black transition-all duration-300 group-hover:w-full group-hover:right-0"></span>
                 <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-black transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
               </button>
 
               {/* Mobile style */}
-              <button
-                onClick={() => handleNavigation(link.link)}
-                className="md:hidden w-[80%] mx-auto block rounded-md border border-gray-300 bg-white py-2 text-black shadow-sm transition-all duration-200 hover:bg-gray-200"
-              >
-                {link.name}
-              </button>
+              <div className="my-10 md:hidden">
+                <button
+                  onClick={() => handleNavigation(link.link)}
+                  className="md:hidden w-[80%] mx-auto block rounded-md border border-gray-300 bg-white py-2 my-6 text-black shadow-sm transition-all duration-200 hover:bg-normal-sky"
+                >
+                  {link.name}
+                </button>
+              </div>
             </li>
           ))}
         </ul>

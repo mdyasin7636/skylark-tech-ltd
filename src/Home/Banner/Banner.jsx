@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const Banner = () => {
   return (
-    <section className="relative bg-gradient-to-br from-blue-900 to-indigo-800 text-white overflow-hidden">
+    <section className="relative bg-gradient-to-br from-blue-900 to-indigo-800 text-white overflow-hidden" id="home">
       {/* Overlay */}
       <div className="absolute inset-0 bg-black opacity-50"></div>
 
@@ -19,7 +19,7 @@ const Banner = () => {
         }}
       ></div>
 
-      <div className="container mx-auto px-4 mt-16 mb-32 relative z-10">
+      <div className="container mx-auto px-4 mt-24 mb-44 relative z-10">
         <div className="flex flex-col md:flex-row items-center justify-between">
           {/* Left Side */}
           <motion.div
@@ -77,7 +77,6 @@ const Banner = () => {
               </ScrollLink>
             </motion.div>
           </motion.div>
-
           {/* Right Side */}
 
           <motion.div
