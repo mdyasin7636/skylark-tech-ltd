@@ -46,10 +46,10 @@ const TeamMembers = () => {
   ];
 
   return (
-    <div className="relative bg-white">
+    <div className="relative bg-white mt-12">
       <CustomTitle text="TEAM MEMBERS" />
 
-      <div className="relative max-w-6xl mx-auto mt-7">
+      <div className="relative max-w-6xl mx-auto mt-10">
         <Swiper
           loop={true}
           slidesPerView={1}

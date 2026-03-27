@@ -55,7 +55,7 @@ const Services = () => {
   ];
 
   return (
-    <div className="bg-white" id="services">
+    <div className="mt- bg-white" id="services">
       <div className="text-center">
         <CustomTitle text="OUR SERVICES" />
       </div>
@@ -82,7 +82,7 @@ const Services = () => {
         >
           {services.map((service, index) => (
             <SwiperSlide key={index}>
-              <div className="relative mx-14">
+              <div className="relative mx-14 mt-10">
                 {/* Adjusted gray background */}
                 <div className="absolute top-12 bottom-12 left-1/2 -translate-x-1/2 w-[calc(100%+4rem)] bg-[#1A1D2B] rounded-lg"></div>
 

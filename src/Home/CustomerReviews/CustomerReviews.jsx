@@ -54,9 +54,9 @@ const CustomerReviews = () => {
   ];
 
   return (
-    <div className="bg-white">
+    <div className="bg-white mt-12">
       <CustomTitle text="OUR HAPPY CLIENTS"/>
-      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 mt-6">
+      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 mt-10">
         <Swiper
           loop={true}
           slidesPerView={1}

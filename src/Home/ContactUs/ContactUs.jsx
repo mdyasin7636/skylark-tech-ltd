@@ -35,9 +35,9 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="bg-white" id="contact">
+    <div className="bg-white mt-12" id="contact">
       <CustomTitle text="GET IN TOUCH" />
-      <div className="grid grid-cols-1 lg:grid-cols-2">
+      <div className="grid grid-cols-1 lg:grid-cols-2 mt-10">
         <div className="relative flex items-end px-5 pb-16 pt-16 md:justify-center lg:pb-24 bg-gray-50">
           <div className="absolute inset-0">
             <img

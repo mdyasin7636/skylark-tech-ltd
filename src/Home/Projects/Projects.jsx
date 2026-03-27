@@ -125,9 +125,9 @@ const Projects = () => {
   };
 
   return (
-    <div className="bg-white" id="projects">
+    <div className="mt-12 bg-white" id="projects">
       <CustomTitle text="OUR PROJECTS" />
-      <div className="mt-5">
+      <div className="mt-10">
         {/* Tab Navigation */}
 
         <div className="flex justify-center flex-wrap">
@@ -151,7 +151,7 @@ const Projects = () => {
         </div>
 
         {/* Content for the Active Tab */}
-        <div className="mt-5 ">
+        <div className="mt-10">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-8">
             {cards[activeTab].map((card) => (
               <Card
@@ -163,7 +163,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <div className="text-center mt-7">
+      <div className="text-center mt-10">
         <Link
           to="/all-projects"
           className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-[#1A1D2B] px-6 font-medium text-neutral-50"

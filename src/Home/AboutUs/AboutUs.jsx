@@ -14,9 +14,9 @@ const AboutUs = () => {
   };
 
   return (
-    <div className="bg-white" id="about">
+    <div className="mt-12 bg-white" id="about">
       <CustomTitle text="ABOUT US" />
-      <div className="mt-7">
+      <div className="mt-10">
         <div
           className="grid grid-cols-1 lg:grid-cols-2 items-center text-center"
          

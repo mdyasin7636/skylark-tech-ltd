@@ -85,14 +85,7 @@ const Banner = () => {
             transition={{ duration: 0.7, delay: 0.8 }}
             className="w-full md:w-1/2 md:pl-12"
           >
-            <div className="relative bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-8 shadow-2xl overflow-hidden">
-              {/* Fade-out overlay */}
-              <motion.div
-                initial={{ opacity: 1 }}
-                animate={{ opacity: 0 }}
-                transition={{ duration: 0.7, delay: 0.8 }}
-                className="absolute inset-0 bg-white bg-opacity-30 pointer-events-none"
-              />
+            <div className="relative bg-white/10 bg-opacity-10  rounded-xl p-8 shadow-2xl overflow-hidden border border-white/20">
 
               <h2 className="text-2xl font-semibold mb-6">Why Skylark IT?</h2>
               <ul className="space-y-4">
