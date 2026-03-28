@@ -15,12 +15,12 @@ const Footer = () => {
 
   return (
     <div>
-      <footer className="bg-[#1A1D2B]">
+      <footer className="bg-[#1A1D2B] pt-6">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="grid xl:grid-cols-3 xl:gap-8 pb-6 pt-2">
+          <div className="grid xl:grid-cols-3 xl:gap-8 pb-10 pt-2">
             <div>
               <div className="mt-5">
-                <img src={logo} className="w-40" alt="" />
+                <img src={logo} className="w-40" alt="Skylark-IT" />
               </div>
               <div className="max-w-md text-md text-gray-200 mt-4">
                 Transforming Ideas into Effective <br /> Digital Solutions for
@@ -208,9 +208,9 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="border-t border-gray-400/30 py-3">
+          <div className="border-t border-gray-400/30 py-5">
             <div className="text-md text-center text-white">
-              Copyright © {Year} SkyLark IT
+              Copyright © {Year} SkyLark-IT
             </div>
           </div>
         </div>

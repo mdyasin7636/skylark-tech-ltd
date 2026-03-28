@@ -1,8 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "swiper/css/free-mode";
-import "swiper/css/navigation";
-import { Autoplay, Navigation } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import CustomTitle from "../../components/CustomTitle";
 
 const TeamMembers = () => {
@@ -10,81 +8,77 @@ const TeamMembers = () => {
     {
       name: "Alamin Poner",
       role: "CEO & Founder",
-      description: "Visionary leader driving innovation and excellence.",
-      image: "https://i.ibb.co.com/Kr6tyHp/Julian-Myers.jpg",
+      image: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1774702286/Alamin_kqe51j.jpg",
     },
     {
       name: "Ashraful Alam",
       role: "Director",
-      description: "Strategic planner and execution expert.",
-      image: "https://i.ibb.co.com/JdbsDP9/Oliver-Hayes.jpg",
+      image: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1774702287/Ashraful_knzk8o.jpg",
     },
     {
       name: "Yeasin Arafath",
       role: "Developer",
-      description: "Full-stack developer crafting seamless solutions.",
-      image: "https://i.ibb.co.com/QMtsyf1/Henry-Fletcher.jpg",
+      image: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1774702287/Yeasin_oamch6.jpg",
     },
     {
       name: "Mizanur Rahman",
       role: "Technical Manager",
-      description: "Ensuring tech robustness across platforms.",
-      image: "https://i.ibb.co.com/QMtsyf1/Henry-Fletcher.jpg",
+      image: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1774699159/Mizanur_uvkm5a.jpg",
     },
     {
       name: "Asad Jaman",
       role: "Product Strategist",
-      description: "Aligning user needs with market success.",
-      image: "https://i.ibb.co.com/QMtsyf1/Henry-Fletcher.jpg",
+      image: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1774702286/Asad_w5tlpg.jpg",
     },
     {
       name: "Tanvir Ahamed",
       role: "Digital Marketer",
-      description: "Scaling brand reach and engagement.",
-      image: "https://i.ibb.co.com/QMtsyf1/Henry-Fletcher.jpg",
+      image: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1774702287/Tanvir_s2aa83.jpg",
     },
   ];
 
   return (
-    <div className="relative bg-white mt-12">
+    <div className="bg-white mt-12">
       <CustomTitle text="TEAM MEMBERS" />
 
-      <div className="relative max-w-6xl mx-auto mt-10">
+      <div className="max-w-sm md:max-w-5xl mx-auto mt-10">
         <Swiper
           loop={true}
-          slidesPerView={1}
-          spaceBetween={20}
-          freeMode={true}
-          modules={[Autoplay, Navigation]}
+          spaceBetween={30}
+          modules={[Autoplay]}
           autoplay={{
-            delay: 4000,
+            delay: 3000,
             disableOnInteraction: false,
           }}
-          className="mySwiper"
           breakpoints={{
-            640: { slidesPerView: 2 },
+            640: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
           }}
         >
           {members.map((member, index) => (
             <SwiperSlide key={index}>
-              <div className="group relative rounded-xl overflow-hidden bg-black border border-neutral-800 hover:shadow-xl transition-shadow duration-500">
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className="w-full h-72 object-cover opacity-90 group-hover:opacity-60 transition-opacity duration-500"
-                />
+              <div className="bg-gray-200 rounded-2xl py-6 text-center shadow-sm hover:shadow-xl transition duration-500">
 
-                {/* Overlay bottom box */}
-                <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black via-black/70 to-transparent text-white transition-all duration-500 transform translate-y-24 group-hover:translate-y-0">
-                  <div className="border-l-4 border-purple-500 pl-3">
-                    <h3 className="text-lg font-bold">{member.name}</h3>
-                    <p className="text-sm text-purple-400">{member.role}</p>
-                    <p className="text-xs mt-2 text-gray-300 leading-snug">
-                      {member.description}
-                    </p>
-                  </div>
+                {/* Circle Image */}
+                <div className="flex justify-center mb-6">
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="h-56 object-cover rounded-full border-4 border-gray-200"
+                  />
                 </div>
+
+                {/* Name */}
+                <h3 className="text-lg font-bold text-black tracking-wide">
+                  {member.name}
+                </h3>
+
+                {/* Role */}
+                <p className="text-sm text-deep-sky font-semibold mt-1">
+                  {member.role}
+                </p>
+
               </div>
             </SwiperSlide>
           ))}
