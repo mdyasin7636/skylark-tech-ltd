@@ -2,6 +2,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
 import CustomTitle from "../../components/CustomTitle";
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
 
 const TeamMembers = () => {
   const members = [
@@ -17,7 +19,7 @@ const TeamMembers = () => {
     },
     {
       name: "Yeasin Arafath",
-      role: "Developer",
+      role: "Senior Developer",
       image: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1774702287/Yeasin_oamch6.jpg",
     },
     {
@@ -43,13 +45,10 @@ const TeamMembers = () => {
 
       <div className="max-w-sm md:max-w-5xl mx-auto mt-10">
         <Swiper
-          loop={true}
-          spaceBetween={30}
+          loop
+          spaceBetween={28}
           modules={[Autoplay]}
-          autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
-          }}
+          autoplay={{ delay: 3000, disableOnInteraction: false }}
           breakpoints={{
             640: { slidesPerView: 1 },
             768: { slidesPerView: 2 },
@@ -58,26 +57,57 @@ const TeamMembers = () => {
         >
           {members.map((member, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-gray-200 rounded-2xl py-6 text-center shadow-sm hover:shadow-xl transition duration-500">
+              <div className="relative bg-[#f5f6f7] rounded-[18px] pt-[38px] pb-[78px] text-center overflow-hidden">
 
-                {/* Circle Image */}
-                <div className="flex justify-center mb-6">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="h-56 object-cover rounded-full border-4 border-gray-200"
-                  />
+                {/* top right corner */}
+                <div className="absolute top-0 right-0 w-[26px] h-[26px] border-t-[3px] border-r-[3px] border-deep-sky rounded-tr-[18px]" />
+
+                {/* top left corner */}
+                <div className="absolute top-0 left-0 w-[26px] h-[26px] border-t-[3px] border-l-[3px] border-deep-sky rounded-tl-[18px]" />
+
+                {/* subtle dots */}
+                <div className="absolute inset-0 opacity-[0.05] bg-[radial-gradient(circle,_#000_1px,_transparent_1px)] bg-[size:24px_24px]" />
+
+                {/* IMAGE STACK (3 layers EXACT) */}
+                <div className="relative flex justify-center">
+                  {/* outer faint ring */}
+                  <div className="w-[192px] h-[192px] rounded-full flex items-center justify-center">
+
+                    {/* actual image */}
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="w-[192px] h-[192px] rounded-full object-cover border-2 border-deep-sky"
+                    />
+
+                  </div>
                 </div>
 
-                {/* Name */}
-                <h3 className="text-lg font-bold text-black tracking-wide">
+                {/* name */}
+                <h3 className="mt-[14px] text-[16px] font-bold text-black">
                   {member.name}
                 </h3>
 
-                {/* Role */}
-                <p className="text-sm text-deep-sky font-semibold mt-1">
+                {/* role */}
+                <p className="text-[12.5px] text-gray-500 font-semibold mt-[4px]">
                   {member.role}
                 </p>
+
+                {/* bottom bar */}
+                <div className="absolute bottom-0 left-0 w-full bg-deep-sky pt-[10px] pb-[10px] flex justify-center gap-[20px] rounded-full">
+
+                  {[FaFacebookF, FaInstagram, FaLinkedinIn, HiOutlineMail].map(
+                    (Icon, i) => (
+                      <div
+                        key={i}
+                        className="w-[34px] h-[34px] flex items-center justify-center border border-white rounded-full text-white hover:bg-white hover:text-[#2d8cf0] transition cursor-pointer"
+                      >
+                        <Icon size={13} />
+                      </div>
+                    )
+                  )}
+
+                </div>
 
               </div>
             </SwiperSlide>
@@ -89,73 +119,3 @@ const TeamMembers = () => {
 };
 
 export default TeamMembers;
-
-
-
-
-// const teamData = [
-//   {
-//     id: 1,
-//     name: "YOUR NAME HERE",
-//     role: "TAG LINE HERE",
-//     img: "https://i.pravatar.cc/150?img=1",
-//   },
-//   {
-//     id: 2,
-//     name: "YOUR NAME HERE",
-//     role: "TAG LINE HERE",
-//     img: "https://i.pravatar.cc/150?img=2",
-//   },
-//   {
-//     id: 3,
-//     name: "YOUR NAME HERE",
-//     role: "TAG LINE HERE",
-//     img: "https://i.pravatar.cc/150?img=3",
-//   },
-// ];
-
-// const TeamMembers = () => {
-//   return (
-//     <div className="min-h-screen bg-gray-200 flex items-center justify-center">
-//       <div className="flex gap-10 flex-wrap justify-center">
-//         {teamData.map((member) => (
-//           <div
-//             key={member.id}
-//             className="relative w-[260px] h-[240px] bg-[#08142b] text-white flex flex-col items-center pt-16 px-6"
-//             style={{
-//               borderBottomLeftRadius: "80px",
-//             }}
-//           >
-//             {/* Image Circle */}
-//             <div className="absolute -top-14 w-28 h-28 rounded-full border-4 border-[#08142b] overflow-hidden bg-white">
-//               <img
-//                 src={member.img}
-//                 alt=""
-//                 className="w-full h-full object-cover"
-//               />
-//             </div>
-
-//             {/* Content */}
-//             <h3 className="mt-4 text-sm font-bold tracking-wide text-center">
-//               {member.name}
-//             </h3>
-//             <p className="text-xs text-gray-300 mt-1 mb-4 text-center">
-//               {member.role}
-//             </p>
-// {/* 
-//             <p className="text-[11px] text-gray-300 text-center leading-relaxed mb-6">
-           
-//             </p> */}
-
-//             {/* Button */}
-//             <button className="text-[10px] px-4 py-1 border border-gray-300 rounded-full hover:bg-white hover:text-black transition">
-//               READ MORE
-//             </button>
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default TeamMembers;

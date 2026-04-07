@@ -14,6 +14,7 @@ const Footer = () => {
   };
 
   return (
+
     <div>
       <footer className="bg-[#1A1D2B] pt-6">
         <div className="mx-auto max-w-7xl px-6">
