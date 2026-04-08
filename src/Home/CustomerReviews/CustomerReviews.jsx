@@ -1,112 +1,156 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/free-mode";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import { Autoplay, Navigation } from "swiper/modules";
-import { BiSolidQuoteAltRight } from "react-icons/bi";
-import CustomTitle from "../../components/CustomTitle";
+/* eslint-disable react/prop-types */
+const testimonials = [
+  {
+    name: "Kanye West",
+    role: "Rapper & Entrepreneur",
+    image:
+      "https://pbs.twimg.com/profile_images/1276461929934942210/cqNhNk6v_400x400.jpg",
+    text: "Find Godaaaaaaaaaaa.",
+    link: "https://twitter.com/kanyewest",
+  },
+  {
+    name: "Tim Cook",
+    role: "CEO of Apple",
+    image:
+      "https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg",
+    text: "Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.",
+    link: "https://twitter.com/tim_cook",
+  },
+  {
+    name: "Parag Agrawal",
+    role: "CEO of Twitter",
+    image:
+      "https://pbs.twimg.com/profile_images/1375285353146327052/y6jeByyD_400x400.jpg",
+    text: "Enim neque volutpat ac tincidunt vitae semper.",
+    link: "https://twitter.com/paraga",
+  },
+  {
+    name: "Satya Nadella",
+    role: "CEO of Microsoft",
+    image:
+      "https://pbs.twimg.com/profile_images/1221837516816306177/_Ld4un5A_400x400.jpg",
+    text: "Tortor dignissim convallis aenean et tortor at.",
+    link: "https://twitter.com/satyanadella",
+  },
+  {
+    name: "Dan Schulman",
+    role: "CEO of PayPal",
+    image:
+      "https://pbs.twimg.com/profile_images/516916920482672641/3jCeLgFb_400x400.jpeg",
+    text: "Quam pellentesque nec nam aliquam sem et tortor consequat.",
+    link: "https://twitter.com/dan_schulman",
+  },
+  {
+    name: "Dan Schulman",
+    role: "CEO of PayPal",
+    image:
+      "https://pbs.twimg.com/profile_images/516916920482672641/3jCeLgFb_400x400.jpeg",
+    text: "Quam pellentesque nec nam aliquam sem et tortor consequat.",
+    link: "https://twitter.com/dan_schulman",
+  },
+  {
+    name: "Dan Schulman",
+    role: "CEO of PayPal",
+    image:
+      "https://pbs.twimg.com/profile_images/516916920482672641/3jCeLgFb_400x400.jpeg",
+    text: "Quam pellentesque nec nam aliquam sem et tortor consequat.",
+    link: "https://twitter.com/dan_schulman",
+  },
+  {
+    name: "Dan Schulman",
+    role: "CEO of PayPal",
+    image:
+      "https://pbs.twimg.com/profile_images/516916920482672641/3jCeLgFb_400x400.jpeg",
+    text: "Quam pellentesque nec nam aliquam sem et tortor consequat.",
+    link: "https://twitter.com/dan_schulman",
+  },
+  {
+    name: "Dan Schulman",
+    role: "CEO of PayPal",
+    image:
+      "https://pbs.twimg.com/profile_images/516916920482672641/3jCeLgFb_400x400.jpeg",
+    text: "Quam pellentesque nec nam aliquam sem et tortor consequat.",
+    link: "https://twitter.com/dan_schulman",
+  },
+];
+
+const Card = ({ item }) => {
+  return (
+    <li className="text-sm leading-6">
+      <div className="relative group">
+        {/* Glow effect */}
+        <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-purple-600 to-pink-600 opacity-25 blur transition duration-400 group-hover:opacity-100 group-hover:duration-200"></div>
+
+        <a href={item.link} target="_blank" rel="noopener noreferrer">
+          <div className="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
+            <div className="flex items-center space-x-4">
+              <img
+                src={item.image}
+                alt={item.name}
+                className="w-12 h-12 rounded-full border object-cover"
+              />
+              <div>
+                <h3 className="text-lg font-semibold text-white">
+                  {item.name}
+                </h3>
+                <p className="text-gray-500 text-md">{item.role}</p>
+              </div>
+            </div>
+
+            <p className="text-gray-300 text-md leading-normal">
+              {item.text}
+            </p>
+          </div>
+        </a>
+      </div>
+    </li>
+  );
+};
 
 const CustomerReviews = () => {
-  const reviews = [
-    {
-      id: 1,
-      text: "Working with Skylark IT was a fantastic experience. They took the time to understand our needs, and the result was a website that exceeded our expectations.",
-      name: "Michael S.",
-      role: "Marketing Manager",
-      img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1739373835/review1_n1qsho.jpg",
-    },
-    {
-      id: 2,
-      text: "The professionalism and expertise of the Skylark IT team truly set them apart. They delivered our project on time, and the quality is outstanding.",
-      name: "Emily R.",
-      role: "Project Administrator",
-      img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1739373835/review2_bgrepb.jpg",
-    },
-    {
-      id: 3,
-      text: "I was impressed with the creative solutions and attention to detail provided by Skylark IT. Their support has been invaluable to our online growth.",
-      name: "Henry K.",
-      role: "Business Owner",
-      img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1739373835/review3_x76bdw.jpg",
-    },
-    {
-      id: 4,
-      text: "Skylark IT transformed our outdated website into a modern, user-friendly platform. Their commitment to excellence is evident in every aspect of their work.",
-      name: "David L.",
-      role: "Neurologist",
-      img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1739373835/review4_soztu6.jpg",
-    },
-    {
-      id: 5,
-      text: "From the initial consultation to the final delivery, Skylark IT was a pleasure to work with. They truly understand how to merge functionality with design.",
-      name: " Jessica P.",
-      role: "Entrepreneur",
-      img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1739373835/review5_p5stsy.jpg",
-    },
-    {
-      id: 6,
-      text: "We saw immediate improvements in user engagement after our website revamp by Skylark IT. Their continuous support have been second to none.",
-      name: "Mark A.",
-      role: "Director of Operations",
-      img: "https://res.cloudinary.com/dlaatmz5a/image/upload/v1739373835/review6_u6zffi.jpg",
-    },
-  ];
-
   return (
-    <div className="bg-white mt-12">
-      <CustomTitle text="OUR HAPPY CLIENTS"/>
-      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 mt-10">
-        <Swiper
-          loop={true}
-          slidesPerView={1}
-          spaceBetween={20}
-          freeMode={true}
-          modules={[Autoplay, Navigation]}
-          autoplay={{
-            delay: 4000,
-            disableOnInteraction: false,
-          }}
-          className="mySwiper"
-          breakpoints={{
-            640: {
-              slidesPerView: 2,
-            },
-            1024: {
-              slidesPerView: 3,
-            },
-          }}
-        >
-          {reviews.map((review) => (
-            <SwiperSlide key={review.id} className="px-1">
-            <div className="overflow-hidden bg-white rounded-full shadow text-center border border-black h-96 flex flex-col justify-between">
-              <div className="px-6 py-8">
-                <div className="relative w-24 h-24 mx-auto">
-                  <img
-                    className="relative object-cover w-24 h-24 mx-auto rounded-full"
-                    src={review.img}
-                    alt={review.name}
-                  />
-                  <div className="absolute top-0 right-0 flex items-center justify-center bg-deep-sky rounded-full w-6 h-6">
-                    <BiSolidQuoteAltRight className="w-5 h-5 text-white" />
-                  </div>
-                </div>
-                <blockquote className="pt-4 h-32 overflow-hidden text-ellipsis">
-                  <p className="text-lg text-black ">{review.text}</p>
-                </blockquote>
-                <div className="mt-6">
-                <p className="text-base font-semibold text-black">{review.name}</p>
-                <p className="mt-1 text-base text-gray-600">{review.role}</p>
-              </div>
-              </div>
-              
-            </div>
-          </SwiperSlide>
+    <section id="reviews" className="py-20 bg-slate-900">
+      <div className="max-w-6xl mx-8 md:mx-10 lg:mx-20 xl:mx-auto">
+        
+        {/* Heading */}
+        <div className="mb-12 space-y-5 md:mb-16 md:text-center">
+          <div className="inline-block px-3 py-1 text-sm font-semibold text-indigo-100 rounded-lg bg-[#202c47] bg-opacity-60 hover:bg-opacity-40">
+            Customer Reviews
+          </div>
+
+          <h1 className="text-3xl font-semibold text-white md:text-5xl">
+            It&apos;s not just us.
+          </h1>
+
+          <p className="text-xl text-gray-100 md:text-2xl">
+            Here&apos;s what our clients say about Skylark.
+          </p>
+        </div>
+
+        {/* Grid */}
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
           
-          ))}
-        </Swiper>
+          <ul className="space-y-8">
+            {testimonials.slice(0, 3).map((item, i) => (
+              <Card key={i} item={item} />
+            ))}
+          </ul>
+
+          <ul className="hidden sm:block space-y-8">
+            {testimonials.slice(2, 5).map((item, i) => (
+              <Card key={i} item={item} />
+            ))}
+          </ul>
+
+          <ul className="hidden lg:block space-y-8">
+            {testimonials.slice(1, 4).map((item, i) => (
+              <Card key={i} item={item} />
+            ))}
+          </ul>
+
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

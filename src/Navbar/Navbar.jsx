@@ -1,13 +1,25 @@
 /* eslint-disable no-unused-vars */
 import { FiMenu } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
-import { useState } from "react";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { useState, useEffect } from "react";
 import skylarkLogo from "../assets/logo.png";
 import { useNavigate, useLocation } from "react-router-dom";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setIsOpen(false);
+      }
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const Links = [
     { name: "Home", link: "home" },
     { name: "Services", link: "services" },
@@ -46,7 +58,7 @@ const Navbar = () => {
   };
 
   return (
-   <div className="w-full sticky top-0 z-50 bg-white border-b border-black/10 shadow-[0_10px_30px_rgba(0,0,0,0.4)]">
+    <div className="w-full sticky top-0 z-50 bg-white border-b border-black/10 shadow-[0_10px_30px_rgba(0,0,0,0.4)]">
       <div className="md:px-10 px-7 flex justify-between items-center relative h-[80px]">
         {/* Logo (Left) */}
         <div onClick={() => navigate("/")} className="cursor-pointer">
@@ -105,13 +117,24 @@ const Navbar = () => {
 
         {/* Centered Navigation Links */}
         <ul
-          className={`md:flex md:items-center md:justify-center md:space-x-10 absolute md:static left-0 w-full md:w-auto transition-all duration-300 ease-in bg-white ${isOpen ? "top-[80px]" : "top-[-490px]"
-            } z-10`}
+          className={`flex flex-col md:flex md:flex-row md:items-center md:justify-center md:space-x-10 
+  absolute md:static 
+  top-[81px] md:top-0 
+  left-0 
+  h-[calc(100vh-80px)] md:h-auto 
+  w-[75%] md:w-auto 
+  bg-white 
+  transition-all duration-300 ease-in-out md:transition-none
+  z-10
+  ${isOpen
+              ? "translate-x-0 opacity-100 md:translate-x-0 md:opacity-100"
+              : "-translate-x-full opacity-0 md:translate-x-0 md:opacity-100"}
+`}
         >
           {Links.map((link, index) => (
             <li
               key={index}
-              className="font-semibold my-4 md:my-0 text-[20px] text-center"
+              className="font-semibold my-2 md:my-0 text-[20px] text-center md:pt-0 pt-4"
             >
               {/* Desktop style */}
               <button
@@ -125,16 +148,62 @@ const Navbar = () => {
               </button>
 
               {/* Mobile style */}
-              <div className="my-10 md:hidden">
+              <div className="md:hidden">
                 <button
                   onClick={() => handleNavigation(link.link)}
-                  className="md:hidden w-[80%] mx-auto block rounded-md border border-gray-300 bg-white py-2 my-6 text-black shadow-sm transition-all duration-200 hover:bg-normal-sky"
+                  className="md:hidden w-[80%] mx-auto block rounded-md border border-gray-300 bg-white py-2 my-2 text-black shadow-sm transition-all duration-200 hover:bg-normal-sky"
                 >
                   {link.name}
                 </button>
+
               </div>
             </li>
           ))}
+
+          <li className="md:hidden mt-auto px-6 pb-8">
+            <div className="flex flex-col items-center gap-5 text-center">
+              <img
+                src={skylarkLogo}
+                alt="SKYLARK IT"
+                className="w-28 h-auto mx-auto"
+              />
+
+              <div className="flex items-center justify-center gap-4 text-gray-500">
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="transition-colors duration-200 hover:text-blue-600"
+                >
+                  <FaFacebookF className="w-5 h-5" />
+                </a>
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="transition-colors duration-200 hover:text-pink-500"
+                >
+                  <FaInstagram className="w-5 h-5" />
+                </a>
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="transition-colors duration-200 hover:text-blue-700"
+                >
+                  <FaLinkedinIn className="w-5 h-5" />
+                </a>
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="transition-colors duration-200 hover:text-sky-500"
+                >
+                  <FaTwitter className="w-5 h-5" />
+                </a>
+              </div>
+            </div>
+          </li>
         </ul>
 
         {/* Contact Us Button (Right) */}
