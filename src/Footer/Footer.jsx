@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 
+
 const Footer = () => {
   const Year = new Date().getFullYear();
 
@@ -16,17 +17,19 @@ const Footer = () => {
   return (
 
     <div>
-      <footer className="bg-[#1A1D2B] pt-6">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="grid xl:grid-cols-3 xl:gap-8 pb-10 pt-2">
+
+      <footer className="bg-[#1A1D2B] ">
+        <div className="mx-auto max-w-7xl px-4 pt-16 pb-6 sm:px-6 lg:px-8 lg:pt-24">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div>
-              <div className="mt-5">
+              <div className="flex justify-center sm:justify-start">
                 <img src={logo} className="w-40" alt="Skylark-IT" />
               </div>
-              <div className="max-w-md text-md text-gray-200 mt-4">
-                Transforming Ideas into Effective <br /> Digital Solutions for
-                Your Needs
-              </div>
+
+              <p className="mt-6 max-w-md text-center leading-relaxed text-gray-500 sm:max-w-xs sm:text-left dark:text-gray-400">
+                Transforming Ideas into Effective <br /> Digital Solutions for Your Needs
+              </p>
+
               <div className="flex space-x-1 mt-4">
                 <Link
                   to="https://www.facebook.com/SkyLarkITLtd"
@@ -78,144 +81,144 @@ const Footer = () => {
                 </Link>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
-              <div className="md:grid md:grid-cols-2 md:gap-8">
-                <div className="mt-6">
-                  <h3 className="text-md font-semibold leading-6 text-white">
-                    Our Solutions
-                  </h3>
-                  <ul role="list" className="mt-6 space-y-4">
-                    <li>
-                      <a
-                        href="/aiplatform"
-                        className="text-md leading-6 text-gray-300 hover:text-gray-50"
-                      >
-                        Web Development
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="/aialgorithms"
-                        className="text-md leading-6 text-gray-300 hover:text-gray-50"
-                      >
-                        Website Design
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="/industryapplications"
-                        className="text-md leading-6 text-gray-300 hover:text-gray-50"
-                      >
-                        Digital Marketing
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div className="mt-6">
-                  <h3 className="text-md font-semibold leading-6 text-white">
-                    Use Cases
-                  </h3>
-                  <ul role="list" className="mt-6 space-y-4">
-                    <li>
-                      <a
-                        href="/predictiveanalysis"
-                        className="text-md leading-6 text-gray-300 hover:text-gray-50"
-                      >
-                        Predictive Analysis
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="/customerexperience"
-                        className="text-md leading-6 text-gray-300 hover:text-gray-50"
-                      >
-                        Customer Experience
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="/automation"
-                        className="text-md leading-6 text-gray-300 hover:text-gray-50"
-                      >
-                        Automation
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+
+            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2">
+              <div className="text-center sm:text-left">
+                <p className="text-lg font-medium text-white">About Us</p>
+
+                <ul className="mt-8 space-y-4 text-sm">
+                  <li>
+                    <a className="text-gray-300 transition hover:text-gray-50" href="#">
+                      Company History
+                    </a>
+                  </li>
+
+                  <li>
+                    <a className="text-gray-300 transition hover:text-gray-50" href="#">
+                      Meet the Team
+                    </a>
+                  </li>
+
+                  <li>
+                    <a className="text-gray-300 transition hover:text-gray-50" href="#">
+                      Employee Handbook
+                    </a>
+                  </li>
+
+                  <li>
+                    <a className="text-gray-300 transition hover:text-gray-50" href="#">
+                      Careers
+                    </a>
+                  </li>
+                </ul>
               </div>
-              <div className="md:grid md:grid-cols-2 md:gap-8">
-                <div className="mt-6">
-                  <h3 className="text-md font-semibold leading-6 text-white">
-                    Resources
-                  </h3>
-                  <ul role="list" className="mt-6 space-y-4">
-                    <li>
-                      <a
-                        href="/pricing"
-                        className="text-md leading-6 text-gray-300 hover:text-gray-50"
-                      >
-                        Pricing
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="/UserDataDeletion"
-                        className="text-md leading-6 text-gray-300 hover:text-gray-50"
-                      >
-                        User Data Deletion
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="/PrivacyPolicy"
-                        className="text-md leading-6 text-gray-300 hover:text-gray-50"
-                      >
-                        Privacy Policy
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div className="mt-6">
-                  <h3 className="text-md font-semibold leading-6 text-white">
-                    Company
-                  </h3>
-                  <ul role="list" className="mt-6 space-y-4">
-                    <li>
-                      <a
-                        href="/aboutus"
-                        className="text-md leading-6 text-gray-300 hover:text-gray-50"
-                      >
-                        About Us
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="/careers"
-                        className="text-md leading-6 text-gray-300 hover:text-gray-50"
-                      >
-                        Careers
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="/contactus"
-                        className="text-md leading-6 text-gray-300 hover:text-gray-50"
-                      >
-                        Contact Us
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+
+              <div className="text-center sm:text-left">
+                <p className="text-lg font-medium text-white">Our Services</p>
+
+                <ul className="mt-8 space-y-4 text-sm">
+                  <li>
+                    <a className="text-gray-300 transition hover:text-gray-50" href="#">
+                      Web Development
+                    </a>
+                  </li>
+
+                  <li>
+                    <a className="text-gray-300 transition hover:text-gray-50" href="#">
+                      Web Design
+                    </a>
+                  </li>
+
+                  <li>
+                    <a className="text-gray-300 transition hover:text-gray-50" href="#">
+                      Marketing
+                    </a>
+                  </li>
+
+                  <li>
+                    <a className="text-gray-300 transition hover:text-gray-50" href="#">
+                      Google Ads
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="text-center sm:text-left">
+                <p className="text-lg font-medium text-white">Helpful Links</p>
+
+                <ul className="mt-8 space-y-4 text-sm">
+                  <li>
+                    <a className="text-gray-300 transition hover:text-gray-50" href="#">
+                      FAQs
+                    </a>
+                  </li>
+
+                  <li>
+                    <a className="text-gray-300 transition hover:text-gray-50" href="#">
+                      Support
+                    </a>
+                  </li>
+
+                  <li>
+                    <a className="text-gray-300 transition hover:text-gray-50" href="#">
+                      Live Chat
+                    </a>
+                  </li>
+                  <li>
+                    <a className="text-gray-300 transition hover:text-gray-50" href="#">
+                      Live Chat
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="text-center sm:text-left">
+                <p className="text-lg font-medium text-white">Helpful Links</p>
+
+                <ul className="mt-8 space-y-4 text-sm">
+                  <li>
+                    <a className="text-gray-300 transition hover:text-gray-50" href="#">
+                      FAQs
+                    </a>
+                  </li>
+
+                  <li>
+                    <a className="text-gray-300 transition hover:text-gray-50" href="#">
+                      Support
+                    </a>
+                  </li>
+
+                  <li>
+                    <a className="text-gray-300 transition hover:text-gray-50" href="#">
+                      Live Chat
+                    </a>
+                  </li>
+                  <li>
+                    <a className="text-gray-300 transition hover:text-gray-50" href="#">
+                      Live Chat
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-          <div className="border-t border-gray-400/30 py-5">
-            <div className="text-md text-center text-white">
-              Copyright © {Year} SkyLark-IT
+
+          <div className="mt-12 border-t border-gray-100 pt-6 dark:border-gray-800">
+            <div className="text-center sm:flex sm:justify-between sm:text-left">
+              <p className="text-sm text-gray-500 dark:text-gray-400">
+                <span className="block sm:inline">All rights reserved</span>
+              </p>
+
+              <p className="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0 dark:text-gray-400">
+                © {Year} SkyLark-IT
+              </p>
             </div>
           </div>
         </div>
       </footer>
+
+
+
     </div>
   );
 };
