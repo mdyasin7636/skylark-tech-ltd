@@ -26,7 +26,7 @@ const Footer = () => {
                 <img src={logo} className="w-40" alt="Skylark-IT" />
               </div>
 
-              <p className="mt-6 max-w-md text-center leading-relaxed text-gray-500 sm:max-w-xs sm:text-left dark:text-gray-400">
+              <p className="mt-6 max-w-md text-center leading-relaxed text-white sm:max-w-xs sm:text-left dark:text-gray-400">
                 Transforming Ideas into Effective <br /> Digital Solutions for Your Needs
               </p>
 
@@ -205,11 +205,11 @@ const Footer = () => {
 
           <div className="mt-12 border-t border-gray-100 pt-6 dark:border-gray-800">
             <div className="text-center sm:flex sm:justify-between sm:text-left">
-              <p className="text-sm text-gray-500 dark:text-gray-400">
+              <p className="text-sm text-white dark:text-gray-400">
                 <span className="block sm:inline">All rights reserved</span>
               </p>
 
-              <p className="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0 dark:text-gray-400">
+              <p className="mt-4 text-sm text-white sm:order-first sm:mt-0 dark:text-gray-400">
                 © {Year} SkyLark-IT
               </p>
             </div>

@@ -101,12 +101,12 @@ const Services = () => {
                     </div>
 
                     {/* Title */}
-                    <h3 className="text-lg font-bold text-gray-900 group-hover:text-white duration-300">
+                    <h3 className="text-lg font-serif font-semibold text-gray-900 group-hover:text-white duration-300">
                       {service.title}
                     </h3>
 
                     {/* Description */}
-                    <p className="text-base text-gray-900 mt-3 group-hover:text-white duration-300">
+                    <p className="font-serif text-gray-900 mt-3 group-hover:text-white duration-300">
                       {service.description}
                     </p>
 

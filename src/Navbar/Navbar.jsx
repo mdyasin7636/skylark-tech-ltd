@@ -134,7 +134,7 @@ const Navbar = () => {
           {Links.map((link, index) => (
             <li
               key={index}
-              className="font-semibold my-2 md:my-0 text-[20px] text-center md:pt-0 pt-4"
+              className="font-serif my-2 md:my-0 text-[20px] text-center md:pt-0 pt-4"
             >
               {/* Desktop style */}
               <button

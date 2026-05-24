@@ -32,23 +32,17 @@ const Banner = () => {
               className="text-5xl md:text-6xl font-bold mb-6 leading-tight"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-            >
-              Innovate.
-              <br />
-              Transform.
-              <br />
-              Succeed.
+              transition={{ duration: 0.6, delay: 0.2 }}>
+              Transform Your Business <br /> With Digital Excellence
             </motion.h1>
 
             <motion.p
-              className="text-xl mb-8 text-gray-300"
+              className="text-xl mb-8 text-white font-sans"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              Empowering businesses with cutting-edge solutions for a digital
-              future.
+              We build high-performing websites, custom software, and result-driven marketing systems that bring you more customers and increase your revenue.
             </motion.p>
 
             <motion.div
@@ -60,7 +54,7 @@ const Banner = () => {
               <Link to="/all-projects">
                 <button className="group relative inline-flex h-12 w-44 items-center justify-center overflow-hidden rounded-full bg-[#1A1D2B] font-medium text-neutral-50 border border-deep-sky">
                   <span className="absolute h-0 w-0 rounded-full bg-deep-sky transition-all duration-300 group-hover:h-56 group-hover:w-56"></span>
-                  <span className="relative">DISCOVER MORE</span>
+                  <span className="relative">Start Exploring</span>
                 </button>
               </Link>
 
@@ -72,7 +66,7 @@ const Banner = () => {
               >
                 <button className="group relative inline-flex h-12 w-44 items-center justify-center overflow-hidden rounded-full bg-[#1A1D2B] font-medium text-neutral-50 border border-deep-sky">
                   <span className="absolute h-0 w-0 rounded-full bg-deep-sky transition-all duration-300 group-hover:h-56 group-hover:w-56"></span>
-                  <span className="relative">CONTACT US</span>
+                  <span className="relative">Let’s Talk</span>
                 </button>
               </ScrollLink>
             </motion.div>
@@ -85,7 +79,7 @@ const Banner = () => {
             transition={{ duration: 0.7, delay: 0.8 }}
             className="w-full md:w-1/2 md:pl-12"
           >
-            <div className="relative bg-white/10 bg-opacity-10  rounded-xl p-8 shadow-2xl overflow-hidden border border-white/20">
+            <div className="relative bg-white/10 bg-opacity-10 rounded-xl p-8 shadow-2xl overflow-hidden border border-white/20">
 
               <h2 className="text-2xl font-semibold mb-6">Why Skylark IT?</h2>
               <ul className="space-y-4">
