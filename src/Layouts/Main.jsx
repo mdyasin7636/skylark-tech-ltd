@@ -12,7 +12,6 @@ const Main = () => {
       <Footer />
       <WhatsAppButton />
     </div >
-
   );
 };
 

@@ -18,19 +18,19 @@ const Footer = () => {
 
     <div>
 
-      <footer className="bg-[#1A1D2B] ">
-        <div className="mx-auto max-w-7xl px-4 pt-16 pb-6 sm:px-6 lg:px-8 lg:pt-24">
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
-            <div>
-              <div className="flex justify-center sm:justify-start">
+      <footer className="bg-[#1A1D2B]">
+        <div className="mx-auto max-w-7xl px-5 pt-10 pb-6 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 gap-x-6 gap-y-10 md:grid-cols-12 md:gap-x-10 lg:gap-x-16">
+            <div className="col-span-2 text-center md:col-span-4 md:text-left">
+              <div className="flex justify-center md:justify-start">
                 <img src={logo} className="w-40" alt="Skylark-IT" />
               </div>
 
-              <p className="mt-6 max-w-md text-center leading-relaxed text-white sm:max-w-xs sm:text-left dark:text-gray-400">
+              <p className="mt-6 max-w-md leading-relaxed text-white dark:text-gray-400 md:max-w-xs">
                 Transforming Ideas into Effective <br /> Digital Solutions for Your Needs
               </p>
 
-              <div className="flex space-x-1 mt-4">
+              <div className="mt-4 flex justify-center space-x-1 md:justify-start">
                 <Link
                   to="https://www.facebook.com/SkyLarkITLtd"
                   className="cursor-pointer w-6"
@@ -82,134 +82,109 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2">
-              <div className="text-center sm:text-left">
-                <p className="text-lg font-medium text-white">About Us</p>
+            <div className="col-span-2 grid grid-cols-2 gap-x-6 gap-y-10 md:col-span-8 md:grid-cols-3 md:gap-x-8">
+              <div className="text-center md:text-left">
+                <p className="text-lg font-medium text-white">Quick Links</p>
 
-                <ul className="mt-8 space-y-4 text-sm">
+                <ul className="mt-6 space-y-4 text-sm">
+
                   <li>
-                    <a className="text-gray-300 transition hover:text-gray-50" href="#">
-                      Company History
-                    </a>
+                    <Link className="text-gray-300 transition hover:text-gray-50" to="/about-us">
+                      About Us
+                    </Link>
                   </li>
-
                   <li>
-                    <a className="text-gray-300 transition hover:text-gray-50" href="#">
-                      Meet the Team
-                    </a>
+                    <Link className="text-gray-300 transition hover:text-gray-50" to="/contact-us">
+                      Contact Us
+                    </Link>
                   </li>
-
                   <li>
-                    <a className="text-gray-300 transition hover:text-gray-50" href="#">
-                      Employee Handbook
-                    </a>
+                    <Link className="text-gray-300 transition hover:text-gray-50" to="/live-chat">
+                      Live Chat
+                    </Link>
                   </li>
-
                   <li>
-                    <a className="text-gray-300 transition hover:text-gray-50" href="#">
-                      Careers
-                    </a>
+                    <Link className="text-gray-300 transition hover:text-gray-50" to="/PrivacyPolicy">
+                      Privacy Policy
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="text-gray-300 transition hover:text-gray-50" to="/terms">
+                      Terms of Service
+                    </Link>
                   </li>
                 </ul>
               </div>
 
-              <div className="text-center sm:text-left">
+              <div className="text-center md:text-left">
                 <p className="text-lg font-medium text-white">Our Services</p>
 
-                <ul className="mt-8 space-y-4 text-sm">
+                <ul className="mt-6 space-y-4 text-sm">
                   <li>
-                    <a className="text-gray-300 transition hover:text-gray-50" href="#">
+                    <Link className="text-gray-300 transition hover:text-gray-50" to="/web-development">
                       Web Development
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a className="text-gray-300 transition hover:text-gray-50" href="#">
-                      Web Design
-                    </a>
+                    <Link className="text-gray-300 transition hover:text-gray-50" to="/digital-marketing">
+                      Digital Marketing
+                    </Link>
                   </li>
 
                   <li>
-                    <a className="text-gray-300 transition hover:text-gray-50" href="#">
-                      Marketing
-                    </a>
+                    <Link className="text-gray-300 transition hover:text-gray-50" to="/graphic-design">
+                      Graphic Design
+                    </Link>
                   </li>
 
                   <li>
-                    <a className="text-gray-300 transition hover:text-gray-50" href="#">
-                      Google Ads
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="text-center sm:text-left">
-                <p className="text-lg font-medium text-white">Helpful Links</p>
-
-                <ul className="mt-8 space-y-4 text-sm">
-                  <li>
-                    <a className="text-gray-300 transition hover:text-gray-50" href="#">
-                      FAQs
-                    </a>
-                  </li>
-
-                  <li>
-                    <a className="text-gray-300 transition hover:text-gray-50" href="#">
-                      Support
-                    </a>
-                  </li>
-
-                  <li>
-                    <a className="text-gray-300 transition hover:text-gray-50" href="#">
-                      Live Chat
-                    </a>
+                    <Link className="text-gray-300 transition hover:text-gray-50" to="/app-development">
+                      App Development
+                    </Link>
                   </li>
                   <li>
-                    <a className="text-gray-300 transition hover:text-gray-50" href="#">
-                      Live Chat
-                    </a>
+                    <Link className="text-gray-300 transition hover:text-gray-50" to="/cloud-services">
+                      Cloud Services
+                    </Link>
                   </li>
                 </ul>
               </div>
 
-              <div className="text-center sm:text-left">
-                <p className="text-lg font-medium text-white">Helpful Links</p>
+              <div className="col-span-2 text-center md:col-span-1 md:text-left">
+                <p className="text-lg font-medium text-white">Contact Us</p>
 
-                <ul className="mt-8 space-y-4 text-sm">
+                <ul className="mt-6 space-y-4 text-sm">
                   <li>
-                    <a className="text-gray-300 transition hover:text-gray-50" href="#">
-                      FAQs
-                    </a>
+                    <span className="text-gray-300">
+                      93, Kazi Nazrul Islam Avenue, Kawran Bazar, Dhaka-1215
+                    </span>
                   </li>
 
                   <li>
-                    <a className="text-gray-300 transition hover:text-gray-50" href="#">
-                      Support
-                    </a>
+                    <span className="text-gray-300">
+                      <span className="block">+8801676047350</span>
+                      <span className="block">+8801976369111</span>
+                    </span>
                   </li>
 
                   <li>
-                    <a className="text-gray-300 transition hover:text-gray-50" href="#">
-                      Live Chat
-                    </a>
-                  </li>
-                  <li>
-                    <a className="text-gray-300 transition hover:text-gray-50" href="#">
-                      Live Chat
-                    </a>
+                    <span className="text-gray-300">
+                      skylarkitltd@gmail.com
+                    </span>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
 
-          <div className="mt-12 border-t border-gray-100 pt-6 dark:border-gray-800">
-            <div className="text-center sm:flex sm:justify-between sm:text-left">
+          <div className="mt-10 border-t border-gray-100 pt-6 dark:border-gray-800">
+            <div className="flex flex-col gap-2 text-center sm:flex-row sm:justify-between sm:text-left">
               <p className="text-sm text-white dark:text-gray-400">
                 <span className="block sm:inline">All rights reserved</span>
               </p>
 
-              <p className="mt-4 text-sm text-white sm:order-first sm:mt-0 dark:text-gray-400">
+              <p className="text-sm text-white sm:order-first dark:text-gray-400">
                 © {Year} SkyLark-IT
               </p>
             </div>

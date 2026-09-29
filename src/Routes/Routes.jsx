@@ -3,8 +3,10 @@ import Main from "../Layouts/Main";
 import ErrorPage from "../ErrorPage/ErrorPage";
 import Home from "../Home/Home/Home";
 import PrivacyPolicy from "../PrivacyPolicy/PrivacyPolicy"
-import UserDataDeletion from "../UserDataDeletion/UserDataDeletion"
 import AllProjects from "../AllProjects/AllProjects";
+import AboutUs from "../Home/AboutUs/AboutUs";
+import ContactUs from "../Home/ContactUs/ContactUs";
+import InformationPage from "../InformationPage/InformationPage";
 
 export const router = createBrowserRouter([
     {
@@ -25,8 +27,16 @@ export const router = createBrowserRouter([
             element: <PrivacyPolicy/>
         },
         {
-            path: "/UserDataDeletion",
-            element: <UserDataDeletion/>
+          path: "/about-us",
+          element: <AboutUs/>
+        },
+        {
+          path: "/contact-us",
+          element: <ContactUs/>
+        },
+        {
+          path: "/:page",
+          element: <InformationPage/>
         },
         
       ]
