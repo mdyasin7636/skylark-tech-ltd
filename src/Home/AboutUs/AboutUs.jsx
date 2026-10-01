@@ -1,6 +1,6 @@
 const AboutUs = () => {
   return (
-    <section className="bg-[#f3f4f6] py-16 px-6 flex justify-center">
+    <section id="about" className="bg-[#f3f4f6] py-16 px-6 flex justify-center">
       <div className="max-w-6xl w-full grid md:grid-cols-2 gap-6">
 
         {/* LEFT CARD */}
