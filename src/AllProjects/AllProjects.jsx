@@ -5,16 +5,6 @@ import { Cloudinary } from "cloudinary-core";
 const cloudinary = new Cloudinary({ cloud_name: "dlaatmz5a" });
 
 const AllProjects = () => {
-  const [activeTab, setActiveTab] = useState("Elevator Site");
-
-  const tabs = [
-    { name: "Elevator Site" },
-    { name: "News Site" },
-    { name: "SEO Optimized Site" },
-    { name: "Corporate Site" },
-    { name: "Graphics Solution" },
-  ];
-
   const cards = {
     "Elevator Site": [
       {
@@ -154,38 +144,17 @@ const AllProjects = () => {
         </h1>
       </div>
       <div className="mt-10">
-        {/* Tab Navigation */}
-
-        <div className="flex justify-center flex-wrap">
-          {tabs.map((tab) => (
-            <button
-              key={tab.name}
-              onClick={() => setActiveTab(tab.name)}
-              className={`group relative inline-flex h-11 items-center justify-center overflow-hidden rounded-md px-[12px] font-medium text-neutral-50 mb-2 sm:mb-0 mx-[3px] md:mx-2 ${
-                activeTab === tab.name ? "bg-[#1A1D2B]" : "bg-[#1A1D2B]"
-              }`}
-            >
-              {/* Background transition effect */}
-              <span
-                className={`absolute h-0 w-0 rounded-full bg-deep-sky transition-all duration-500 group-hover:h-56 group-hover:w-56 ${
-                  activeTab === tab.name ? "h-56 w-56" : ""
-                }`}
-              ></span>
-              <span className="relative z-10">{tab.name}</span>
-            </button>
-          ))}
-        </div>
-
-        {/* Content for the Active Tab */}
         <div className="mt-5 ">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-8">
-            {cards[activeTab].map((card) => (
+            {Object.entries(cards).flatMap(([category, categoryCards]) =>
+              categoryCards.map((card) => (
               <Card
-                key={`${activeTab}-${card.id}`}
+                key={`${category}-${card.id}`}
                 card={card}
                 handleSiteLink={handleSiteLink}
               />
-            ))}
+              )),
+            )}
           </div>
         </div>
       </div>

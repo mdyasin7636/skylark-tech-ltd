@@ -7,16 +7,6 @@ import CustomTitle from "../../components/CustomTitle";
 const cloudinary = new Cloudinary({ cloud_name: "dlaatmz5a" });
 
 const Projects = () => {
-  const [activeTab, setActiveTab] = useState("Elevator Site");
-
-  const tabs = [
-    { name: "Elevator Site" },
-    { name: "News Site" },
-    { name: "SEO Optimized Site" },
-    { name: "Corporate Site" },
-    { name: "Graphics Solution" },
-  ];
-
   const cards = {
     "Elevator Site": [
       {
@@ -128,39 +118,17 @@ const Projects = () => {
     <div className="mt-12 bg-white" id="projects">
       <CustomTitle text="OUR PROJECTS" />
       <div className="mt-10">
-        {/* Tab Navigation */}
-
-        <div className="flex justify-center flex-wrap">
-          {tabs.map((tab) => (
-            <button
-              key={tab.name}
-              onClick={() => setActiveTab(tab.name)}
-              className={`group relative inline-flex h-11 items-center justify-center overflow-hidden rounded-md px-[12px] font-medium text-neutral-50 mb-2 sm:mb-0 mx-[3px] md:mx-2 ${
-                activeTab === tab.name ? "bg-[#1A1D2B]" : "bg-[#1A1D2B]"
-              }`}
-            >
-              {/* Background transition effect */}
-              <span
-                className={`absolute h-0 w-0 rounded-full bg-deep-sky transition-all duration-700 group-hover:h-56 group-hover:w-56 ${
-                  activeTab === tab.name ? "h-56 w-56" : ""
-                }`}
-              ></span>
-              <span className="relative z-10">{tab.name}</span>
-            </button>
-          ))}
-        </div>
-
-        {/* Content for the Active Tab */}
-        <div className="mt-10">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-8">
-            {cards[activeTab].map((card) => (
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mx-8">
+          {Object.entries(cards).flatMap(([category, categoryCards]) =>
+            categoryCards.map((card) => ({ category, card })),
+          ).slice(0, 6).map(({ category, card }, index) => (
               <Card
-                key={`${activeTab}-${card.id}`}
+                key={`${category}-${card.id}`}
                 card={card}
                 handleSiteLink={handleSiteLink}
+                className={index >= 3 ? "hidden sm:block" : ""}
               />
             ))}
-          </div>
         </div>
       </div>
       <div className="text-center mt-10">
@@ -176,7 +144,7 @@ const Projects = () => {
   );
 };
 
-const Card = ({ card, handleSiteLink }) => {
+const Card = ({ card, handleSiteLink, className = "" }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -186,7 +154,9 @@ const Card = ({ card, handleSiteLink }) => {
   }, [card.img]);
 
   return (
-    <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-black px-2 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] ">
+    <div
+      className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-black px-2 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] ${className}`}
+    >
       <div className="relative max-w-full h-72 overflow-hidden rounded-lg border border-gray-400">
         {/* Maintain hover style while centering loading animation */}
         <div>
