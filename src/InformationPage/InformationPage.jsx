@@ -30,7 +30,7 @@ const pageContent = {
     "web-development": {
         kind: "service",
         eyebrow: "Digital products · Web development",
-        title: "Websites that work as hard as your business.",
+        title: "Web Development",
         intro: "From a clear company website to a connected web application, we plan and build digital experiences around your customers and goals.",
         heroFeatures: [
             { icon: FiLayers, title: "User-first structure", description: "Clear journeys that help visitors find information and take action." },
@@ -60,7 +60,7 @@ const pageContent = {
     "digital-marketing": {
         kind: "service",
         eyebrow: "Digital growth · Marketing",
-        title: "Make every digital touchpoint more purposeful.",
+        title: "Digital Marketing",
         intro: "A considered digital marketing plan connects useful content, the right channels, and clear measures of progress.",
         heroFeatures: [
             { icon: FiCompass, title: "Audience-led strategy", description: "Priorities grounded in your customers, offer, and business goals." },
@@ -91,7 +91,7 @@ const pageContent = {
     "graphic-design": {
         kind: "service",
         eyebrow: "Brand experience · Graphic design",
-        title: "Give your brand a clear, consistent visual voice.",
+        title: "Graphic Design",
         intro: "Thoughtful visual design helps people recognize your business and understand your message wherever they meet it.",
         heroFeatures: [
             { icon: FiPenTool, title: "Distinctive identity", description: "Visual decisions that make your brand recognizable and coherent." },
@@ -122,7 +122,7 @@ const pageContent = {
     "app-development": {
         kind: "service",
         eyebrow: "Digital products · App development",
-        title: "Turn a useful idea into an application people can use.",
+        title: "App Development",
         intro: "We help shape and build web and mobile applications with a focus on clear user journeys, reliable behavior, and maintainable foundations.",
         heroFeatures: [
             { icon: FiCompass, title: "Product discovery", description: "Clarify the user need and define a valuable, achievable first release." },
@@ -155,7 +155,7 @@ const pageContent = {
     "cloud-services": {
         kind: "service",
         eyebrow: "Technology foundations · Cloud services",
-        title: "A dependable foundation for your digital services.",
+        title: "Cloud Services",
         intro: "Plan hosting, deployment, and cloud operations around the needs of your application and the people who rely on it.",
         heroFeatures: [
             { icon: FiCloud, title: "Right-sized hosting", description: "Infrastructure selected for your application and operating requirements." },
@@ -185,7 +185,7 @@ const pageContent = {
     },
     "about-us": {
         eyebrow: "About Skylark IT",
-        title: "Technology built around your business.",
+        title: "About Us",
         intro: "Skylark IT brings design, development, and digital services together to help organizations move forward with confidence.",
         overview: {
             title: "A connected team for digital work",
@@ -204,7 +204,7 @@ const pageContent = {
     },
     "live-chat": {
         eyebrow: "Support · Skylark IT",
-        title: "Get in touch with our team.",
+        title: "Live Chat",
         intro: "We’re ready to discuss a project, answer questions about our services, or help you find the right way to reach us.",
         overview: {
             title: "A clear way to start a conversation",
