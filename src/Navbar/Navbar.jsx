@@ -123,6 +123,7 @@ const Navbar = () => {
   left-0 
   h-[calc(100vh-80px)] md:h-auto 
   w-[75%] md:w-auto 
+  overflow-y-auto overscroll-contain md:overflow-visible
   bg-white 
   transition-all duration-300 ease-in-out md:transition-none
   z-10
@@ -134,7 +135,7 @@ const Navbar = () => {
           {Links.map((link, index) => (
             <li
               key={index}
-              className="font-serif my-2 md:my-0 text-[20px] text-center md:pt-0 pt-4"
+              className="shrink-0 font-serif my-2 md:my-0 text-[20px] text-center md:pt-0 pt-4"
             >
               {/* Desktop style */}
               <button
@@ -160,7 +161,16 @@ const Navbar = () => {
             </li>
           ))}
 
-          <li className="md:hidden mt-auto px-6 pb-8">
+          <li className="shrink-0 font-serif my-2 text-[20px] text-center pt-4 md:hidden">
+            <button
+              onClick={() => handleNavigation("contact")}
+              className="mx-auto my-2 block w-[80%] rounded-md border border-gray-300 bg-white py-2 text-black shadow-sm transition-all duration-200 hover:bg-normal-sky"
+            >
+              Contact Us
+            </button>
+          </li>
+
+          <li className="md:hidden mt-auto shrink-0 px-6 pb-8">
             <div className="flex flex-col items-center gap-5 text-center">
               <img
                 src={skylarkLogo}

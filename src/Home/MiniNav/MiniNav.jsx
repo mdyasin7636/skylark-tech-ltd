@@ -1,4 +1,5 @@
-import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import { MdLanguage } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 const socialMediaLinks = [
@@ -63,10 +64,7 @@ const MiniNav = () => {
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         {/* Contact Info for Desktop */}
         <div className="hidden md:flex space-x-8 items-center font-semibold">
-          <div className="flex items-center space-x-1">
-            <FaMapMarkerAlt />
-            <span>Kawran Bazar, Dhaka</span>
-          </div>
+          
           <div className="flex items-center space-x-1">
             <FaPhoneAlt />
             <span>+8801676047350</span>
@@ -75,18 +73,20 @@ const MiniNav = () => {
             <FaEnvelope />
             <span>skylarkitltd@gmail.com</span>
           </div>
+          <div className="flex items-center space-x-1">
+            <MdLanguage  className="text-xl" />
+            <span>Bangla</span>
+          </div>
         </div>
 
         {/* Follow Us Section */}
         <div className="hidden md:flex md:ml-auto items-center space-x-2">
-          <span className="text-base font-semibold">Find Us On</span>
           {renderSocialLinks("w-6")}
         </div>
 
         {/* Mobile View */}
         <div className="md:hidden flex flex-row justify-evenly items-center w-full my-2">
           <div className="flex items-center space-x-2">
-            <span className="text-lg font-semibold">Find Us On</span>
             {renderSocialLinks("w-7")}
           </div>
         </div>
