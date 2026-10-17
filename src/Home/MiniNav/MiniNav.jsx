@@ -1,5 +1,4 @@
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
-import { MdLanguage } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 const socialMediaLinks = [
@@ -72,10 +71,6 @@ const MiniNav = () => {
           <div className="flex items-center space-x-1">
             <FaEnvelope />
             <span>skylarkitltd@gmail.com</span>
-          </div>
-          <div className="flex items-center space-x-1">
-            <MdLanguage  className="text-xl" />
-            <span>Bangla</span>
           </div>
         </div>
 
