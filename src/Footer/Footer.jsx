@@ -1,4 +1,18 @@
 import { Link } from "react-router-dom";
+import {
+  FiCloud,
+  FiCode,
+  FiFileText,
+  FiMail,
+  FiMapPin,
+  FiMessageCircle,
+  FiPenTool,
+  FiPhone,
+  FiShield,
+  FiSmartphone,
+  FiTrendingUp,
+  FiUsers,
+} from "react-icons/fi";
 import logo from "../assets/logo.png";
 
 
@@ -85,31 +99,40 @@ const Footer = () => {
             <div className="col-span-2 grid grid-cols-2 gap-x-6 gap-y-10 md:col-span-8 md:grid-cols-3 md:gap-x-8">
               <div className="text-center md:text-left">
                 <p className="text-xl font-semibold text-white">Quick Links</p>
+                <div
+                  aria-hidden="true"
+                  className="mx-auto mt-2 h-1 w-12 rounded-full bg-gradient-to-r from-[#2FB3E3] to-[#1C75BC] md:mx-0"
+                />
 
                 <ul className="mt-6 space-y-4 text-sm">
 
                   <li>
-                    <Link className="text-white transition hover:text-normal-sky" to="/about-us">
+                    <Link className="inline-flex items-center justify-center gap-2 text-white transition hover:text-normal-sky md:justify-start" to="/about-us">
+                      <FiUsers aria-hidden="true" />
                       About Us
                     </Link>
                   </li>
                   <li>
-                    <Link className="text-white transition hover:text-normal-sky" to="/contact-us">
+                    <Link className="inline-flex items-center justify-center gap-2 text-white transition hover:text-normal-sky md:justify-start" to="/contact-us">
+                      <FiMail aria-hidden="true" />
                       Contact Us
                     </Link>
                   </li>
                   <li>
-                    <Link className="text-white transition hover:text-normal-sky" to="/live-chat">
+                    <Link className="inline-flex items-center justify-center gap-2 text-white transition hover:text-normal-sky md:justify-start" to="/live-chat">
+                      <FiMessageCircle aria-hidden="true" />
                       Live Chat
                     </Link>
                   </li>
                   <li>
-                    <Link className="text-white transition hover:text-normal-sky" to="/PrivacyPolicy">
+                    <Link className="inline-flex items-center justify-center gap-2 text-white transition hover:text-normal-sky md:justify-start" to="/PrivacyPolicy">
+                      <FiShield aria-hidden="true" />
                       Privacy Policy
                     </Link>
                   </li>
                   <li>
-                    <Link className="text-white transition hover:text-normal-sky" to="/terms">
+                    <Link className="inline-flex items-center justify-center gap-2 text-white transition hover:text-normal-sky md:justify-start" to="/terms">
+                      <FiFileText aria-hidden="true" />
                       Terms of Service
                     </Link>
                   </li>
@@ -118,33 +141,42 @@ const Footer = () => {
 
               <div className="text-center md:text-left">
                 <p className="text-xl font-semibold text-white">Our Services</p>
+                <div
+                  aria-hidden="true"
+                  className="mx-auto mt-2 h-1 w-12 rounded-full bg-gradient-to-r from-[#2FB3E3] to-[#1C75BC] md:mx-0"
+                />
 
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
-                    <Link className="text-white transition hover:text-normal-sky" to="/web-development">
+                    <Link className="inline-flex items-center justify-center gap-2 text-white transition hover:text-normal-sky md:justify-start" to="/web-development">
+                      <FiCode aria-hidden="true" />
                       Web Development
                     </Link>
                   </li>
 
                   <li>
-                    <Link className="text-white transition hover:text-normal-sky" to="/digital-marketing">
+                    <Link className="inline-flex items-center justify-center gap-2 text-white transition hover:text-normal-sky md:justify-start" to="/digital-marketing">
+                      <FiTrendingUp aria-hidden="true" />
                       Digital Marketing
                     </Link>
                   </li>
 
                   <li>
-                    <Link className="text-white transition hover:text-normal-sky" to="/graphic-design">
+                    <Link className="inline-flex items-center justify-center gap-2 text-white transition hover:text-normal-sky md:justify-start" to="/graphic-design">
+                      <FiPenTool aria-hidden="true" />
                       Graphic Design
                     </Link>
                   </li>
 
                   <li>
-                    <Link className="text-white transition hover:text-normal-sky" to="/app-development">
+                    <Link className="inline-flex items-center justify-center gap-2 text-white transition hover:text-normal-sky md:justify-start" to="/app-development">
+                      <FiSmartphone aria-hidden="true" />
                       App Development
                     </Link>
                   </li>
                   <li>
-                    <Link className="text-white transition hover:text-normal-sky" to="/cloud-services">
+                    <Link className="inline-flex items-center justify-center gap-2 text-white transition hover:text-normal-sky md:justify-start" to="/cloud-services">
+                      <FiCloud aria-hidden="true" />
                       Cloud Services
                     </Link>
                   </li>
@@ -153,25 +185,37 @@ const Footer = () => {
 
               <div className="col-span-2 text-center md:col-span-1 md:text-left">
                 <p className="text-xl font-semibold text-white">Contact Us</p>
+                <div
+                  aria-hidden="true"
+                  className="mx-auto mt-2 h-1 w-12 rounded-full bg-gradient-to-r from-[#2FB3E3] to-[#1C75BC] md:mx-0"
+                />
 
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
-                    <span className="text-white">
-                      93, Kazi Nazrul Islam Avenue
-                      <br className="sm:hidden" />{" "}
-                      Kawran Bazar, Dhaka-1215
+                    <span className="inline-flex items-start justify-center gap-2 text-white md:justify-start">
+                      <FiMapPin className="mt-1 shrink-0" aria-hidden="true" />
+                      <span>
+                        93, Kazi Nazrul Islam Avenue
+                        <br className="sm:hidden" />{" "}
+                        Kawran Bazar, Dhaka-1215
+                      </span>
+                    </span>
+                  </li>
+
+                  <li className="flex flex-col items-center gap-4 md:items-start">
+                    <span className="inline-flex items-center gap-2 text-white">
+                      <FiPhone aria-hidden="true" />
+                      +8801676047350
+                    </span>
+                    <span className="inline-flex items-center gap-2 text-white">
+                      <FiPhone aria-hidden="true" />
+                      +8801976369111
                     </span>
                   </li>
 
                   <li>
-                    <span className="text-white">
-                      <span className="block">+8801676047350</span>
-                      <span className="block">+8801976369111</span>
-                    </span>
-                  </li>
-
-                  <li>
-                    <span className="text-white">
+                    <span className="inline-flex items-center justify-center gap-2 text-white md:justify-start">
+                      <FiMail aria-hidden="true" />
                       skylarkitltd@gmail.com
                     </span>
                   </li>
