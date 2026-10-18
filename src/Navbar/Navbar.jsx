@@ -122,6 +122,7 @@ const Navbar = () => {
   top-[81px] md:top-0 
   left-0 
   h-[calc(100vh-80px)] md:h-auto 
+  pb-8 md:pb-0
   w-[75%] md:w-auto 
   overflow-y-auto overscroll-contain md:overflow-visible
   bg-white 
@@ -168,51 +169,6 @@ const Navbar = () => {
             >
               Contact Us
             </button>
-          </li>
-
-          <li className="md:hidden mt-auto shrink-0 px-6 pb-8">
-            <div className="flex flex-col items-center gap-5 text-center">
-              <img
-                src={skylarkLogo}
-                alt="SKYLARK IT"
-                className="w-28 h-auto mx-auto"
-              />
-
-              <div className="flex items-center justify-center gap-4 text-gray-500">
-                <a
-                  href="https://facebook.com"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="transition-colors duration-200 hover:text-blue-600"
-                >
-                  <FaFacebookF className="w-5 h-5" />
-                </a>
-                <a
-                  href="https://instagram.com"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="transition-colors duration-200 hover:text-pink-500"
-                >
-                  <FaInstagram className="w-5 h-5" />
-                </a>
-                <a
-                  href="https://linkedin.com"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="transition-colors duration-200 hover:text-blue-700"
-                >
-                  <FaLinkedinIn className="w-5 h-5" />
-                </a>
-                <a
-                  href="https://twitter.com"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="transition-colors duration-200 hover:text-sky-500"
-                >
-                  <FaTwitter className="w-5 h-5" />
-                </a>
-              </div>
-            </div>
           </li>
         </ul>
 

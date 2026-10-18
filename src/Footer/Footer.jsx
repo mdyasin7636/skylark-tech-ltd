@@ -225,13 +225,14 @@ const Footer = () => {
           </div>
 
           <div className="mt-10 border-t border-gray-100 pt-6 dark:border-gray-800">
-            <div className="flex flex-col gap-2 text-center sm:flex-row sm:justify-between sm:text-left">
+            <div className="flex items-center justify-center gap-3 text-center">
+              <p className="text-sm text-white">© {Year} SkyLark-IT</p>
+              <span
+                className="h-4 border-l border-white/50"
+                aria-hidden="true"
+              />
               <p className="text-sm text-white">
-                <span className="block sm:inline">All rights reserved</span>
-              </p>
-
-              <p className="text-sm text-white sm:order-first ">
-                © {Year} SkyLark-IT
+                All Rights Reserved
               </p>
             </div>
           </div>
