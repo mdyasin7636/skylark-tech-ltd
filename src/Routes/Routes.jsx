@@ -1,10 +1,6 @@
 import { createBrowserRouter, } from "react-router-dom";
 import Main from "../Layouts/Main";
 import ErrorPage from "../ErrorPage/ErrorPage";
-import Home from "../Home/Home/Home";
-import AllProjects from "../AllProjects/AllProjects";
-import InformationPage from "../InformationPage/InformationPage";
-import ContactPage from "../ContactPage/ContactPage";
 
 export const router = createBrowserRouter([
   {
@@ -14,22 +10,28 @@ export const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home />
+        lazy: async () => ({
+          Component: (await import("../Home/Home/Home")).default,
+        }),
       },
       {
         path: "/all-projects",
-        element: <AllProjects />
+        lazy: async () => ({
+          Component: (await import("../AllProjects/AllProjects")).default,
+        }),
       },
       {
         path: "/contact-us",
-        element: <ContactPage />
+        lazy: async () => ({
+          Component: (await import("../ContactPage/ContactPage")).default,
+        }),
       },
-      
       {
         path: "/:page",
-        element: <InformationPage />
+        lazy: async () => ({
+          Component: (await import("../InformationPage/InformationPage")).default,
+        }),
       },
-
     ]
   },
 ]);
